@@ -1,4 +1,8 @@
-<div class="icon_text_wrap" {{ block.shopify_attributes }}>
+<div
+  class="icon_text_wrap"
+  {{ block.shopify_attributes }}
+  style="--pt: {{ block.settings.pt }}px; --pb: {{ block.settings.pb }}px;"
+>
   {% content_for 'blocks' %}
 </div>
 
@@ -6,7 +10,26 @@
 {
   "name": "Icon Text",
   "tag": null,
-  "settings": [],
+  "settings": [
+    {
+      "type": "range",
+      "id": "pt",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "pb",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 30
+    }
+  ],
   "blocks": [
     {
       "type": "@theme"
