@@ -768,6 +768,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/SVG.svg",
                     "width": 24,
                     "link": "",
                     "open_in_new_tab": false
@@ -851,6 +852,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/SVG_1.svg",
                     "width": 24,
                     "link": "",
                     "open_in_new_tab": false
@@ -861,7 +863,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Secure Checkout</p>",
+                    "text": "<p>Fast Delivery Across Region</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -934,6 +936,7 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/SVG_2.svg",
                     "width": 24,
                     "link": "",
                     "open_in_new_tab": false
@@ -944,7 +947,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Secure Checkout</p>",
+                    "text": "<p>Premium Quality Guaranteed</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
