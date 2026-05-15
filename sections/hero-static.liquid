@@ -1,0 +1,175 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<div class="banner-slider-container">
+  <div class="slider__container-box">
+    <div class="slider__banner-wrap-custom">
+      <div class="slider__imagcontent-box">
+        <!-- IMAGE / VIDEO -->
+        <div class="customsliderimage__container-all">
+          <div class="banners_images-custom">
+            {% if section.settings.media_type == 'image' %}
+              <img
+                class="customslider customslider--desktop {% if section.settings.mobile_image != blank %}small-hide{% endif %}"
+                src="{{ section.settings.desktop_image | image_url }}"
+                alt="{{ section.settings.desktop_image.alt | escape }}"
+                loading="eager"
+                width="{{ section.settings.desktop_image.width }}"
+                height="{{ section.settings.desktop_image.height }}"
+              >
+
+              {% if section.settings.mobile_image != blank %}
+                <img
+                  class="customslider customslider--mobile medium-hide large-up-hide"
+                  src="{{ section.settings.mobile_image | image_url }}"
+                  alt="{{ section.settings.mobile_image.alt | escape }}"
+                  loading="eager"
+                  width="{{ section.settings.mobile_image.width }}"
+                  height="{{ section.settings.mobile_image.height }}"
+                >
+              {% endif %}
+
+            {% else %}
+              <div
+                class="video__hero-wrap {% if section.settings.customheight %}customheight{% endif %}"
+                style="
+                  --slider-video-height-desktop: {{ section.settings.height_desktop }}px;
+                  --slider-video-height-mobile: {{ section.settings.height_mobile }}px;
+                "
+              >
+                {{
+                  section.settings.video
+                  | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'custom-video_content'
+                }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- OVERLAY -->
+        {% if section.settings.show_overlay %}
+          <div
+            class="customskideroverlay__container-all"
+            style="
+              --slider-overlay-background: {{ section.settings.overlay_color }};
+              --slider-overlay-opacity: {{ section.settings.overlay_opacity }}%;
+            "
+          ></div>
+        {% endif %}
+
+        <div class="blocks-container-hero">
+        {% content_for 'blocks' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner (Static)",
+  "tag": "section",
+  "class": "section-hero-banner-static",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Media Settings"
+    },
+    {
+      "type": "select",
+      "id": "media_type",
+      "label": "Media Type",
+      "options": [
+        {
+          "value": "image",
+          "label": "Image"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image",
+      "info": "Recommended size: 1800×800px"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image",
+      "info": "Recommended size: 800×1000px"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "type": "checkbox",
+      "id": "customheight",
+      "label": "Use Custom Video Height",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "height_desktop",
+      "label": "Video Height (Desktop)",
+      "min": 300,
+      "max": 1000,
+      "step": 50,
+      "unit": "px",
+      "default": 450
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "label": "Video Height (Mobile)",
+      "min": 200,
+      "max": 1000,
+      "step": 50,
+      "unit": "px",
+      "default": 650
+    },
+    {
+      "type": "header",
+      "content": "Overlay Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show Overlay",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@theme"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner (Static)",
+      "category": "Custom",
+    }
+  ]
+}
+{% endschema %}
