@@ -1,7 +1,7 @@
 {{ 'icon.css' | asset_url | stylesheet_tag }}
 
 <section class="icon_text_section">
-  <div class="icon_text_container">
+  <div class="icon_text_container" style="--top: -{{ section.settings.top }}px;">
     {% if section.blocks.size > 0 %}
       {% content_for 'blocks' %}
     {% endif %}
@@ -11,7 +11,17 @@
 {% schema %}
 {
   "name": "Icon text Section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "range",
+      "id": "top",
+      "label": "Position Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 30
+    }
+  ],
   "blocks": [
     {
       "type": "icon-text"
