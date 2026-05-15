@@ -1,7 +1,16 @@
-
+.icon_text_section {
+    position: relative;
+}
 
 .icon_text_wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: var(--pt) 0 var(--pb) 0;
+}
+
+.icon_text_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
 }
