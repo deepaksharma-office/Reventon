@@ -1,0 +1,775 @@
+{% doc %}
+  @prompt
+    Create a premium “Event Packages” collection section with a clean luxury editorial layout exactly like the reference design.
+    
+    Section Requirements:
+    
+    3-column card grid on desktop
+    1-column stacked layout on mobile
+    Equal card heights
+    Soft light beige/off-white background (#F7F5F2)
+    Large rounded corners (24px)
+    Spacious luxury padding and white space
+    Minimal elegant aesthetic
+    Smooth hover animation with slight image zoom
+    
+    Card Design:
+    
+    Each card should contain:
+    
+    Top image with rounded corners
+    Package title in elegant serif typography
+    Short description text underneath
+    Thin divider line
+    “Starting from” small muted label
+    Price in bold large typography with “SR”
+    
+    Typography:
+    
+    Heading font style: elegant serif similar to Playfair Display or Cormorant
+    Body text: clean modern sans-serif
+    Title color: #1F1F1F
+    Description color: #6F6F6F
+    Price color: #111111
+    
+    Spacing:
+    
+    Card padding: 24px
+    Gap between cards: 28px
+    Image aspect ratio: portrait landscape hybrid similar to luxury editorial cards
+    Rounded image corners: 18px
+    
+    Hover Effects:
+    
+    Card slightly lifts upward
+    Image zooms subtly
+    Smooth transition duration 0.3s
+    
+    Content Structure Example:
+    
+    Card 1:
+    Title: Birthday Deluxe
+    Description: Complete setup including balloon arches, custom backdrop, and table decor.
+    Price: 499.00 SR
+    
+    Card 2:
+    Title: Wedding Elegance
+    Description: Premium floral arrangements, elegant lighting, and bespoke centerpieces.
+    Price: 1499.00 SR
+    
+    Card 3:
+    Title: Eid Celebration
+    Description: Festive setup with traditional elements, lanterns, and elegant tableware.
+    Price: 2299.00 SR
+    
+    Additional Settings:
+    
+    Allow editable image upload for each card
+    Allow editable title, description, and pricing
+    Mobile responsive
+    Keep cards centered with max-width container
+    Use subtle shadow only if necessary
+    Maintain exact luxury minimal style from the reference image
+    No gradients
+    No bold background colors
+    Editorial premium Shopify storefront aesthetic
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-event-packages-{{ ai_gen_id }} {
+    width: 100%;
+    display: block;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding_top }}px 20px {{ block.settings.section_padding_bottom }}px;
+  }
+
+  .ai-event-packages-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-event-packages-heading-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.heading_margin_bottom }}px;
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    line-height: 1.2;
+  }
+
+  .ai-event-packages-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.card_gap }}px;
+  }
+
+  .ai-event-packages-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: {{ block.settings.card_padding }}px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    {% if block.settings.card_shadow %}
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    {% endif %}
+  }
+
+  .ai-event-packages-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-8px);
+    {% if block.settings.card_shadow %}
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    {% endif %}
+  }
+
+  .ai-event-packages-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    margin-bottom: {{ block.settings.image_margin_bottom }}px;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+  }
+
+  .ai-event-packages-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-event-packages-card-{{ ai_gen_id }}:hover .ai-event-packages-image-{{ ai_gen_id }} {
+    transform: scale(1.05);
+  }
+
+  .ai-event-packages-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-event-packages-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-event-packages-card-content-{{ ai_gen_id }} {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-event-packages-title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.title_font.weight }};
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.title_margin_bottom }}px;
+    line-height: 1.3;
+  }
+
+  .ai-event-packages-description-{{ ai_gen_id }} {
+    font-family: {{ block.settings.description_font.family }}, {{ block.settings.description_font.fallback_families }};
+    font-weight: {{ block.settings.description_font.weight }};
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.6;
+    margin: 0 0 {{ block.settings.description_margin_bottom }}px;
+    flex-grow: 1;
+  }
+
+  .ai-event-packages-divider-{{ ai_gen_id }} {
+    width: 100%;
+    height: 1px;
+    background-color: {{ block.settings.divider_color }};
+    margin: {{ block.settings.divider_margin }}px 0;
+  }
+
+  .ai-event-packages-price-section-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ai-event-packages-price-label-{{ ai_gen_id }} {
+    font-family: {{ block.settings.description_font.family }}, {{ block.settings.description_font.fallback_families }};
+    font-size: {{ block.settings.price_label_size }}px;
+    color: {{ block.settings.description_color }};
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-event-packages-price-{{ ai_gen_id }} {
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.price_font_weight }};
+    font-size: {{ block.settings.price_size }}px;
+    color: {{ block.settings.price_color }};
+    line-height: 1.2;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-event-packages-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat(2, 1fr);
+      gap: {{ block.settings.card_gap_mobile }}px;
+    }
+
+    .ai-event-packages-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.7 }}px;
+    }
+
+    .ai-event-packages-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.9 }}px;
+    }
+
+    .ai-event-packages-card-{{ ai_gen_id }} {
+      padding: {{ block.settings.card_padding | times: 0.8 }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-event-packages-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.card_gap_mobile }}px;
+    }
+
+    .ai-event-packages-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_top | times: 0.6 }}px 16px {{ block.settings.section_padding_bottom | times: 0.6 }}px;
+    }
+  }
+{% endstyle %}
+
+<event-packages-{{ ai_gen_id }} class="ai-event-packages-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-event-packages-container-{{ ai_gen_id }}">
+    {% if block.settings.section_heading != blank %}
+      <h2 class="ai-event-packages-heading-{{ ai_gen_id }}">{{ block.settings.section_heading }}</h2>
+    {% endif %}
+
+    <div class="ai-event-packages-grid-{{ ai_gen_id }}">
+      {% for i in (1..3) %}
+        {% liquid
+          assign card_image_key = 'card_' | append: i | append: '_image'
+          assign card_title_key = 'card_' | append: i | append: '_title'
+          assign card_description_key = 'card_' | append: i | append: '_description'
+          assign card_price_key = 'card_' | append: i | append: '_price'
+
+          assign card_image = block.settings[card_image_key]
+          assign card_title = block.settings[card_title_key]
+          assign card_description = block.settings[card_description_key]
+          assign card_price = block.settings[card_price_key]
+        %}
+
+        <div class="ai-event-packages-card-{{ ai_gen_id }}">
+          <div class="ai-event-packages-image-wrapper-{{ ai_gen_id }}">
+            {% if card_image %}
+              <img
+                src="{{ card_image | image_url: width: 800 }}"
+                alt="{{ card_image.alt | escape }}"
+                loading="lazy"
+                width="{{ card_image.width }}"
+                height="{{ card_image.height }}"
+                class="ai-event-packages-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-event-packages-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-event-packages-card-content-{{ ai_gen_id }}">
+            {% if card_title != blank %}
+              <h3 class="ai-event-packages-title-{{ ai_gen_id }}">{{ card_title }}</h3>
+            {% endif %}
+
+            {% if card_description != blank %}
+              <p class="ai-event-packages-description-{{ ai_gen_id }}">{{ card_description }}</p>
+            {% endif %}
+
+            <div class="ai-event-packages-divider-{{ ai_gen_id }}"></div>
+
+            <div class="ai-event-packages-price-section-{{ ai_gen_id }}">
+              <span class="ai-event-packages-price-label-{{ ai_gen_id }}">{{ block.settings.price_label }}</span>
+              {% if card_price != blank %}
+                <span class="ai-event-packages-price-{{ ai_gen_id }}">{{ card_price }} {{ block.settings.currency_symbol }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</event-packages-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class EventPackages{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('event-packages-{{ ai_gen_id }}', EventPackages{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Event packages",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section heading",
+      "default": "Event Packages"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#F7F5F2"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "container_max_width",
+      "label": "Container max width",
+      "min": 800,
+      "max": 1600,
+      "step": 40,
+      "unit": "px",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Section heading"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Font",
+      "default": "playfair_display_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Size",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color",
+      "default": "#1F1F1F"
+    },
+    {
+      "type": "range",
+      "id": "heading_margin_bottom",
+      "label": "Bottom margin",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "header",
+      "content": "Card layout"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Padding",
+      "min": 12,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Gap between cards",
+      "min": 12,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "card_gap_mobile",
+      "label": "Gap on mobile",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "checkbox",
+      "id": "card_shadow",
+      "label": "Show shadow",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card image"
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Aspect ratio",
+      "options": [
+        {
+          "value": "4 / 3",
+          "label": "4:3"
+        },
+        {
+          "value": "3 / 4",
+          "label": "3:4"
+        },
+        {
+          "value": "16 / 9",
+          "label": "16:9"
+        },
+        {
+          "value": "1 / 1",
+          "label": "1:1"
+        },
+        {
+          "value": "5 / 4",
+          "label": "5:4"
+        }
+      ],
+      "default": "4 / 3"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "image_margin_bottom",
+      "label": "Bottom margin",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Card title"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font",
+      "label": "Font",
+      "default": "playfair_display_n4"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Color",
+      "default": "#1F1F1F"
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "label": "Bottom margin",
+      "min": 4,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Card description"
+    },
+    {
+      "type": "font_picker",
+      "id": "description_font",
+      "label": "Font",
+      "default": "inter_n4"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Color",
+      "default": "#6F6F6F"
+    },
+    {
+      "type": "range",
+      "id": "description_margin_bottom",
+      "label": "Bottom margin",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Divider"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Color",
+      "default": "#E5E5E5"
+    },
+    {
+      "type": "range",
+      "id": "divider_margin",
+      "label": "Margin",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Price"
+    },
+    {
+      "type": "text",
+      "id": "price_label",
+      "label": "Price label",
+      "default": "Starting from"
+    },
+    {
+      "type": "range",
+      "id": "price_label_size",
+      "label": "Label size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "price_size",
+      "label": "Price size",
+      "min": 20,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "price_font_weight",
+      "label": "Price weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Color",
+      "default": "#111111"
+    },
+    {
+      "type": "text",
+      "id": "currency_symbol",
+      "label": "Currency symbol",
+      "default": "SR"
+    },
+    {
+      "type": "header",
+      "content": "Card 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_1_title",
+      "label": "Title",
+      "default": "Birthday Deluxe"
+    },
+    {
+      "type": "textarea",
+      "id": "card_1_description",
+      "label": "Description",
+      "default": "Complete setup including balloon arches, custom backdrop, and table decor."
+    },
+    {
+      "type": "text",
+      "id": "card_1_price",
+      "label": "Price",
+      "default": "499.00"
+    },
+    {
+      "type": "header",
+      "content": "Card 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_2_title",
+      "label": "Title",
+      "default": "Wedding Elegance"
+    },
+    {
+      "type": "textarea",
+      "id": "card_2_description",
+      "label": "Description",
+      "default": "Premium floral arrangements, elegant lighting, and bespoke centerpieces."
+    },
+    {
+      "type": "text",
+      "id": "card_2_price",
+      "label": "Price",
+      "default": "1499.00"
+    },
+    {
+      "type": "header",
+      "content": "Card 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_3_title",
+      "label": "Title",
+      "default": "Eid Celebration"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_description",
+      "label": "Description",
+      "default": "Festive setup with traditional elements, lanterns, and elegant tableware."
+    },
+    {
+      "type": "text",
+      "id": "card_3_price",
+      "label": "Price",
+      "default": "2299.00"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Event packages"
+    }
+  ]
+}
+{% endschema %}

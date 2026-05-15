@@ -1,0 +1,523 @@
+{% doc %}
+  @prompt
+    Create a premium “Event Gallery” section with a modern editorial layout on a warm mustard-gold background (#D9B24C tone). The section should feel elegant, spacious, and luxury-event inspired.
+    
+    SECTION LAYOUT:
+    
+    Full-width section with generous top and bottom padding
+    Background color: warm muted gold/mustard
+    Content aligned inside a centered container
+    Top row:
+    Left side:
+    Large heading: “Our Event Gallery”
+    Elegant serif typography
+    White text color
+    Medium-large font size
+    Below heading:
+    Small subtitle text:
+    “Get inspired by our real event setups and custom decorations.”
+    Sans-serif font
+    White with slight opacity
+    Right side:
+    Text link button:
+    “View Full Catalogue”
+    Minimal underline below text
+    White color
+    Positioned top-right aligned
+    
+    GALLERY GRID:
+    Create a responsive asymmetrical image gallery with 4 images.
+    
+    Desktop Layout:
+    
+    Left side:
+    One large vertical image taking around 50% width
+    Large portrait-style card with no border radius
+    Middle column:
+    Two stacked smaller landscape/portrait images
+    Equal spacing between them
+    Right side:
+    One tall vertical image similar height to left image
+    Maintain consistent spacing/gutters between all images
+    Images should fully cover containers (object-fit: cover)
+    
+    STYLE:
+    
+    Clean luxury editorial aesthetic
+    No shadows
+    Sharp corners
+    Balanced whitespace
+    Minimal modern design
+    Slight hover zoom effect on images
+    Smooth transition animations
+    
+    MOBILE RESPONSIVE:
+    
+    Stack gallery into clean 2-column grid on mobile
+    Maintain equal spacing
+    Heading and CTA aligned vertically
+    Ensure images remain large and visually appealing
+    
+    CUSTOMIZATION SETTINGS:
+    
+    Editable heading
+    Editable subtitle
+    Editable CTA text + link
+    Upload option for all 4 gallery images
+    Adjustable background color
+    Adjustable spacing/padding
+    
+    Typography:
+    
+    Heading: elegant serif style
+    Body text: modern sans-serif
+    White typography throughout section
+    
+    Overall aesthetic:
+    Luxury event brand, premium gallery showcase, modern editorial Shopify section similar to high-end celebration or decor brands.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-event-gallery-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+  }
+
+  .ai-event-gallery-container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-event-gallery-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+    gap: 20px;
+  }
+
+  .ai-event-gallery-header-left-{{ ai_gen_id }} {
+    flex: 1;
+  }
+
+  .ai-event-gallery-heading-{{ ai_gen_id }} {
+    font-family: {{ block.settings.heading_font.family }}, serif;
+    font-weight: {{ block.settings.heading_font.weight }};
+    font-style: {{ block.settings.heading_font.style }};
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+  }
+
+  .ai-event-gallery-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    opacity: {{ block.settings.subtitle_opacity | divided_by: 100.0 }};
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .ai-event-gallery-header-right-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .ai-event-gallery-cta-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    text-decoration: none;
+    font-size: {{ block.settings.cta_size }}px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-event-gallery-cta-{{ ai_gen_id }}::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: {{ block.settings.text_color }};
+  }
+
+  .ai-event-gallery-cta-{{ ai_gen_id }}:hover {
+    opacity: 0.7;
+  }
+
+  .ai-event-gallery-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-event-gallery-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--large-left {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    aspect-ratio: 3 / 4;
+  }
+
+  .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--middle-top {
+    grid-column: 2;
+    grid-row: 1;
+    aspect-ratio: 4 / 3;
+  }
+
+  .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--middle-bottom {
+    grid-column: 2;
+    grid-row: 2;
+    aspect-ratio: 4 / 3;
+  }
+
+  .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--large-right {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    aspect-ratio: 3 / 4;
+  }
+
+  .ai-event-gallery-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+  }
+
+  .ai-event-gallery-image-wrapper-{{ ai_gen_id }}:hover .ai-event-gallery-image-{{ ai_gen_id }} {
+    transform: scale(1.05);
+  }
+
+  .ai-event-gallery-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-event-gallery-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-event-gallery-header-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .ai-event-gallery-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.7 }}px;
+    }
+
+    .ai-event-gallery-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+
+    .ai-event-gallery-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr 1fr;
+      gap: {{ block.settings.grid_gap | times: 0.7 }}px;
+    }
+
+    .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--large-left {
+      grid-column: 1;
+      grid-row: 1;
+      aspect-ratio: 1 / 1;
+    }
+
+    .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--middle-top {
+      grid-column: 2;
+      grid-row: 1;
+      aspect-ratio: 1 / 1;
+    }
+
+    .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--middle-bottom {
+      grid-column: 1;
+      grid-row: 2;
+      aspect-ratio: 1 / 1;
+    }
+
+    .ai-event-gallery-image-wrapper-{{ ai_gen_id }}--large-right {
+      grid-column: 2;
+      grid-row: 2;
+      aspect-ratio: 1 / 1;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-event-gallery-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-event-gallery-container-{{ ai_gen_id }}">
+    <div class="ai-event-gallery-header-{{ ai_gen_id }}">
+      <div class="ai-event-gallery-header-left-{{ ai_gen_id }}">
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-event-gallery-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <p class="ai-event-gallery-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+      <div class="ai-event-gallery-header-right-{{ ai_gen_id }}">
+        {% if block.settings.cta_text != blank %}
+          <a href="{{ block.settings.cta_link }}" class="ai-event-gallery-cta-{{ ai_gen_id }}">
+            {{ block.settings.cta_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="ai-event-gallery-grid-{{ ai_gen_id }}">
+      <div class="ai-event-gallery-image-wrapper-{{ ai_gen_id }} ai-event-gallery-image-wrapper-{{ ai_gen_id }}--large-left">
+        {% if block.settings.image_1 %}
+          <img
+            src="{{ block.settings.image_1 | image_url: width: 800 }}"
+            alt="{{ block.settings.image_1.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image_1.width }}"
+            height="{{ block.settings.image_1.height }}"
+            class="ai-event-gallery-image-{{ ai_gen_id }}"
+          >
+        {% else %}
+          <div class="ai-event-gallery-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-event-gallery-image-wrapper-{{ ai_gen_id }} ai-event-gallery-image-wrapper-{{ ai_gen_id }}--middle-top">
+        {% if block.settings.image_2 %}
+          <img
+            src="{{ block.settings.image_2 | image_url: width: 600 }}"
+            alt="{{ block.settings.image_2.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image_2.width }}"
+            height="{{ block.settings.image_2.height }}"
+            class="ai-event-gallery-image-{{ ai_gen_id }}"
+          >
+        {% else %}
+          <div class="ai-event-gallery-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-event-gallery-image-wrapper-{{ ai_gen_id }} ai-event-gallery-image-wrapper-{{ ai_gen_id }}--middle-bottom">
+        {% if block.settings.image_3 %}
+          <img
+            src="{{ block.settings.image_3 | image_url: width: 600 }}"
+            alt="{{ block.settings.image_3.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image_3.width }}"
+            height="{{ block.settings.image_3.height }}"
+            class="ai-event-gallery-image-{{ ai_gen_id }}"
+          >
+        {% else %}
+          <div class="ai-event-gallery-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-event-gallery-image-wrapper-{{ ai_gen_id }} ai-event-gallery-image-wrapper-{{ ai_gen_id }}--large-right">
+        {% if block.settings.image_4 %}
+          <img
+            src="{{ block.settings.image_4 | image_url: width: 800 }}"
+            alt="{{ block.settings.image_4.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image_4.width }}"
+            height="{{ block.settings.image_4.height }}"
+            class="ai-event-gallery-image-{{ ai_gen_id }}"
+          >
+        {% else %}
+          <div class="ai-event-gallery-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Event gallery",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our Event Gallery"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Get inspired by our real event setups and custom decorations."
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA text",
+      "default": "View Full Catalogue"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA link"
+    },
+    {
+      "type": "header",
+      "content": "Gallery images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1 (large left)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2 (middle top)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3 (middle bottom)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4 (large right)"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#D9B24C"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "playfair_display_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subtitle_opacity",
+      "label": "Subtitle opacity",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 85
+    },
+    {
+      "type": "range",
+      "id": "cta_size",
+      "label": "CTA size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "label": "Header spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid gap",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Event gallery"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}
