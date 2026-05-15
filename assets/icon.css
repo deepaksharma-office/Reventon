@@ -3,4 +3,5 @@
 .icon_text_wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: var(--pt) 0 var(--pb) 0;
 }
