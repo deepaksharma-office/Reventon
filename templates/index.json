@@ -718,7 +718,10 @@
         "icon_text_J7ceat": {
           "type": "icon-text",
           "name": "Icon Text",
-          "settings": {},
+          "settings": {
+            "pt": 20,
+            "pb": 20
+          },
           "blocks": {
             "group_rgBKdP": {
               "type": "group",
