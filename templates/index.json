@@ -81,7 +81,7 @@
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
                     "width": "custom",
-                    "custom_width": 90,
+                    "custom_width": 85,
                     "width_mobile": "custom",
                     "custom_width_mobile": 90,
                     "height": "fit",
@@ -352,7 +352,7 @@
             "group_9jxWaf"
           ]
         },
-        "horizon_slide_AhLqdP": {
+        "horizon_slide_FnFmCj": {
           "type": "horizon-slide",
           "name": "Hero Slide",
           "settings": {
@@ -368,7 +368,7 @@
             "overlay_opacity": 0
           },
           "blocks": {
-            "group_7jzAAQ": {
+            "group_VWHzgY": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -408,7 +408,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_HJYMWE": {
+                "group_adLmTn": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -421,7 +421,7 @@
                     "vertical_alignment_flex_direction_column": "center",
                     "gap": 12,
                     "width": "custom",
-                    "custom_width": 90,
+                    "custom_width": 85,
                     "width_mobile": "custom",
                     "custom_width_mobile": 90,
                     "height": "fit",
@@ -448,7 +448,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_iJtxqF": {
+                    "group_kLXbcT": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -488,7 +488,7 @@
                         "padding-inline-end": 15
                       },
                       "blocks": {
-                        "text_EXMUnU": {
+                        "text_EfNpxm": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -516,10 +516,10 @@
                         }
                       },
                       "block_order": [
-                        "text_EXMUnU"
+                        "text_EfNpxm"
                       ]
                     },
-                    "text_A3gBFD": {
+                    "text_VCB7Ph": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -545,7 +545,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_mft7ek": {
+                    "text_ah4WTe": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -571,7 +571,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_Mk8JPT": {
+                    "text_wzBYdp": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -597,7 +597,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_XTLEtD": {
+                    "group_k8yekk": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -637,7 +637,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "button_WnUdUB": {
+                        "button_PcjinP": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -652,7 +652,7 @@
                           },
                           "blocks": {}
                         },
-                        "button_cma9mC": {
+                        "button_rATxRk": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -669,33 +669,33 @@
                         }
                       },
                       "block_order": [
-                        "button_WnUdUB",
-                        "button_cma9mC"
+                        "button_PcjinP",
+                        "button_rATxRk"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_iJtxqF",
-                    "text_A3gBFD",
-                    "text_mft7ek",
-                    "text_Mk8JPT",
-                    "group_XTLEtD"
+                    "group_kLXbcT",
+                    "text_VCB7Ph",
+                    "text_ah4WTe",
+                    "text_wzBYdp",
+                    "group_k8yekk"
                   ]
                 }
               },
               "block_order": [
-                "group_HJYMWE"
+                "group_adLmTn"
               ]
             }
           },
           "block_order": [
-            "group_7jzAAQ"
+            "group_VWHzgY"
           ]
         }
       },
       "block_order": [
         "horizon_slide_MiqyiR",
-        "horizon_slide_AhLqdP"
+        "horizon_slide_FnFmCj"
       ],
       "name": "Hero Slider",
       "settings": {
