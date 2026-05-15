@@ -1,0 +1,27 @@
+{{ 'icon.css' | asset_url | stylesheet_tag }}
+
+<section class="icon_text_section">
+  <div class="icon_text_container">
+    {% if section.blocks.size > 0 %}
+      {% content_for 'blocks' %}
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Icon text Section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "icon-text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon text Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
