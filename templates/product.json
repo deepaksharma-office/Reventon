@@ -273,13 +273,13 @@
                 "text_wqVpKV": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Pairs well with</p>",
+                    "text": "<p><strong>Pairs well with</strong></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font_size": "1.25rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
