@@ -26,10 +26,24 @@
             "case": "none"
           },
           "blocks": {}
+        },
+        "announcement_K6tqLz": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Buy 3 get 40% Off on order",
+            "link": "",
+            "font": "var(--font-subheading--family)",
+            "font_size": "1.25rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "announcement_BxgCk9"
+        "announcement_BxgCk9",
+        "announcement_K6tqLz"
       ],
       "name": "t:names.announcement_bar",
       "settings": {
