@@ -2233,9 +2233,9 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Let us handle the details. Our all-inclusive packages are designed to make your celebration unforgettable.<br/><br/></p>",
+            "text": "<p>Let us handle the details. Our all-inclusive packages are designed to make your celebration unforgettable.</p>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
