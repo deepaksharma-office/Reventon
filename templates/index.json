@@ -2897,8 +2897,8 @@
         "email_signup_E39AMM": {
           "type": "email-signup",
           "settings": {
-            "width": "custom",
-            "custom_width": 50,
+            "width": "fill",
+            "custom_width": 100,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "heading": "",
@@ -2962,7 +2962,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 21,
         "section_width": "full-width",
-        "section_height": "custom",
+        "section_height": "",
         "section_height_custom": 40,
         "color_scheme": "scheme-6",
         "background_media": "image",
