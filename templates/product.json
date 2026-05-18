@@ -248,6 +248,31 @@
               },
               "blocks": {}
             },
+            "ai_gen_block_78f2609_LDpNfL": {
+              "type": "ai_gen_block_78f2609",
+              "settings": {
+                "title": "Bundle & Save",
+                "title_size": 24,
+                "product_1": "6-تعليقات-الهالوين-قطع",
+                "product_2": "acrylic-customized-gift",
+                "discount_text": "Buy 2 Get 10% Off",
+                "discount_badge_bg": "#f5f5f5",
+                "discount_badge_color": "#ffffff",
+                "discount_badge_radius": 8,
+                "button_text": "Add both to cart",
+                "button_bg": "#7eb58a",
+                "button_hover_bg": "#333333",
+                "button_text_color": "#ffffff",
+                "button_border_radius": 0,
+                "background_color": "#f5f5f5",
+                "text_color": "#000000",
+                "border_radius": 8,
+                "image_border_radius": 8,
+                "plus_icon_bg": "#7eb58a",
+                "plus_icon_color": "#ffffff"
+              },
+              "blocks": {}
+            },
             "product_recommendations_iWcxqX": {
               "type": "product-recommendations",
               "name": "t:names.product_recommendations",
@@ -394,6 +419,7 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "text_aEtTtq",
+            "ai_gen_block_78f2609_LDpNfL",
             "product_recommendations_iWcxqX"
           ]
         }
