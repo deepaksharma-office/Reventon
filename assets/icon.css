@@ -18,3 +18,16 @@
 .icon_text_wrap {
   padding: var(--pt) 0 var(--pb) 0;
 }
+
+@media screen and (max-width: 749px) {
+    .icon_text_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .icon_text_wrap {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
