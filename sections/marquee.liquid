@@ -9,6 +9,7 @@
 {% assign gap_between_elements = section.settings.gap_between_elements %}
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div class="border-style custom-section-content">
 <marquee-component
   class="section spacing-style gap-style color-{{ section.settings.color_scheme }}"
   style="
@@ -36,6 +37,7 @@
     </div>
   </div>
 </marquee-component>
+</div>
 
 {% stylesheet %}
   marquee-component {
