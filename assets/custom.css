@@ -1,3 +1,11 @@
 .tl-switcher-container.top-right.tl-custom-position {
     display: none;
 }
+
+.overflow_hidden{
+    overflow: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
