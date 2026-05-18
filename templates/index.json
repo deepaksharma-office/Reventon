@@ -492,7 +492,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p>Engagement Elegance</p>",
+                            "text": "<p>Celebrate Every Moment</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -523,7 +523,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>Explore Wedding</p>",
+                        "text": "<p>Discover Birthday</p>",
                         "width": "fit-content",
                         "max_width": "narrow",
                         "alignment": "left",
@@ -575,7 +575,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Luxurious table decor, backdrops, and romantic settings.</p>",
+                        "text": "<p>Vibrant decorations, themed setups, cakes, balloons, and joyful party vibes.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
@@ -832,7 +832,7 @@
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
-                            "text": "<p>Engagement Elegance</p>",
+                            "text": "<p>Embrace the Spirit of Ramadan</p>",
                             "width": "fit-content",
                             "max_width": "normal",
                             "alignment": "left",
@@ -863,7 +863,7 @@
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
-                        "text": "<p>Explore Wedding</p>",
+                        "text": "<p>Ramadan Event</p>",
                         "width": "fit-content",
                         "max_width": "narrow",
                         "alignment": "left",
@@ -915,7 +915,7 @@
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
-                        "text": "<p>Luxurious table decor, backdrops, and romantic settings.</p>",
+                        "text": "<p>Elegant Iftar arrangements, warm lighting, traditional décor, and peaceful gatherings.</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
