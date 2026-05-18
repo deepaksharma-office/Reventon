@@ -2,9 +2,9 @@
     display: none;
 }
 
-.overflow_hidden{
+/* .overflow_hidden{
     overflow: hidden;
-}
+} */
 
 body{
     overflow-x: hidden;
