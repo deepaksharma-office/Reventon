@@ -9,7 +9,6 @@
 {% assign gap_between_elements = section.settings.gap_between_elements %}
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
-<div class="border-style custom-section-content">
 <marquee-component
   class="section spacing-style gap-style color-{{ section.settings.color_scheme }}"
   style="
@@ -20,6 +19,8 @@
   data-speed-factor="25"
   data-movement-direction="{{ section.settings.movement_direction }}"
 >
+<div class="border-style custom-section-content">
+
   <div
     class="marquee__wrapper"
     ref="wrapper"
@@ -36,8 +37,8 @@
       </div>
     </div>
   </div>
-</marquee-component>
 </div>
+</marquee-component>
 
 {% stylesheet %}
   marquee-component {
