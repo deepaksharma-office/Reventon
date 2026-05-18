@@ -9,11 +9,11 @@
 }
 
 .left_animation_global {
-    transform: translateX(-80px);
+    transform: translateX(-150px);
 }
 
 .right_animation_global {
-    transform: translateX(80px);
+    transform: translateX(150px);
 }
 
 /* Active state */
