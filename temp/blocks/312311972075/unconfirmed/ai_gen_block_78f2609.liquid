@@ -1,6 +1,466 @@
+{% doc %}
+  @prompt
+    generate buy 2 get 10% off where I can select 2 products from settings and below there will be button which will add both the product to cart at once add plus icon in between the 2 product cards, layout: above title which I can edit, below 2 product card side by side middle plus icon then below the add to cart button which will add both selectyed product to cart... this is for the product page detail side block
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-bundle-deal-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 24px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-bundle-deal__title-{{ ai_gen_id }} {
+    margin: 0 0 20px;
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.text_color }};
+    text-align: center;
+  }
+
+  .ai-bundle-deal__products-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .ai-bundle-deal__product-card-{{ ai_gen_id }} {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  .ai-bundle-deal__product-image-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 12px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-bundle-deal__product-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-bundle-deal__product-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-bundle-deal__product-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+  }
+
+  .ai-bundle-deal__product-title-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 8px;
+    font-weight: 500;
+  }
+
+  .ai-bundle-deal__product-price-{{ ai_gen_id }} {
+    font-size: 16px;
+    color: {{ block.settings.text_color }};
+    font-weight: 600;
+  }
+
+  .ai-bundle-deal__plus-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: {{ block.settings.plus_icon_bg }};
+    border-radius: 50%;
+    color: {{ block.settings.plus_icon_color }};
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .ai-bundle-deal__discount-badge-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    background-color: {{ block.settings.discount_badge_bg }};
+    color: {{ block.settings.discount_badge_color }};
+    border-radius: {{ block.settings.discount_badge_radius }}px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .ai-bundle-deal__button-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 16px 24px;
+    background-color: {{ block.settings.button_bg }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-bundle-deal__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg }};
+  }
+
+  .ai-bundle-deal__button-{{ ai_gen_id }}:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .ai-bundle-deal__empty-state-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 40px 20px;
+    color: #999;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-bundle-deal__products-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ai-bundle-deal__product-card-{{ ai_gen_id }} {
+      max-width: 100%;
+    }
+
+    .ai-bundle-deal__plus-icon-{{ ai_gen_id }} {
+      transform: rotate(90deg);
+    }
+  }
+{% endstyle %}
+
+<bundle-deal-{{ ai_gen_id }}
+  class="ai-bundle-deal-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.title != blank %}
+    <h3 class="ai-bundle-deal__title-{{ ai_gen_id }}">{{ block.settings.title }}</h3>
+  {% endif %}
+
+  {% if block.settings.product_1 != blank and block.settings.product_2 != blank %}
+    <div class="ai-bundle-deal__discount-badge-{{ ai_gen_id }}">
+      {{ block.settings.discount_text }}
+    </div>
+
+    <div class="ai-bundle-deal__products-{{ ai_gen_id }}">
+      <div class="ai-bundle-deal__product-card-{{ ai_gen_id }}">
+        <div class="ai-bundle-deal__product-image-{{ ai_gen_id }}">
+          {% if block.settings.product_1.featured_image %}
+            <img
+              src="{{ block.settings.product_1.featured_image | image_url: width: 400 }}"
+              alt="{{ block.settings.product_1.featured_image.alt | escape }}"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+          {% else %}
+            <div class="ai-bundle-deal__product-placeholder-{{ ai_gen_id }}">
+              {{ 'product-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <h4 class="ai-bundle-deal__product-title-{{ ai_gen_id }}">{{ block.settings.product_1.title }}</h4>
+        <div class="ai-bundle-deal__product-price-{{ ai_gen_id }}">{{ block.settings.product_1.price | money }}</div>
+      </div>
+
+      <div class="ai-bundle-deal__plus-icon-{{ ai_gen_id }}">+</div>
+
+      <div class="ai-bundle-deal__product-card-{{ ai_gen_id }}">
+        <div class="ai-bundle-deal__product-image-{{ ai_gen_id }}">
+          {% if block.settings.product_2.featured_image %}
+            <img
+              src="{{ block.settings.product_2.featured_image | image_url: width: 400 }}"
+              alt="{{ block.settings.product_2.featured_image.alt | escape }}"
+              loading="lazy"
+              width="400"
+              height="400"
+            >
+          {% else %}
+            <div class="ai-bundle-deal__product-placeholder-{{ ai_gen_id }}">
+              {{ 'product-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <h4 class="ai-bundle-deal__product-title-{{ ai_gen_id }}">{{ block.settings.product_2.title }}</h4>
+        <div class="ai-bundle-deal__product-price-{{ ai_gen_id }}">{{ block.settings.product_2.price | money }}</div>
+      </div>
+    </div>
+
+    <button
+      class="ai-bundle-deal__button-{{ ai_gen_id }}"
+      data-product-1-id="{{ block.settings.product_1.variants.first.id }}"
+      data-product-2-id="{{ block.settings.product_2.variants.first.id }}"
+    >
+      {{ block.settings.button_text }}
+    </button>
+  {% else %}
+    <div class="ai-bundle-deal__empty-state-{{ ai_gen_id }}">
+      Next, select two products to create your bundle deal
+    </div>
+  {% endif %}
+</bundle-deal-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BundleDeal{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.button = this.querySelector('.ai-bundle-deal__button-{{ ai_gen_id }}');
+        if (this.button) {
+          this.button.addEventListener('click', this.handleAddToCart.bind(this));
+        }
+      }
+
+      async handleAddToCart(event) {
+        event.preventDefault();
+        
+        const button = event.target;
+        const product1Id = button.getAttribute('data-product-1-id');
+        const product2Id = button.getAttribute('data-product-2-id');
+
+        if (!product1Id || !product2Id) {
+          return;
+        }
+
+        button.disabled = true;
+        const originalText = button.textContent;
+        button.textContent = 'Adding...';
+
+        try {
+          const formData = {
+            items: [
+              {
+                id: product1Id,
+                quantity: 1
+              },
+              {
+                id: product2Id,
+                quantity: 1
+              }
+            ]
+          };
+
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+          });
+
+          if (!response.ok) {
+            throw new Error('Failed to add products to cart');
+          }
+
+          const data = await response.json();
+          
+          button.textContent = 'Added!';
+          
+          setTimeout(function() {
+            button.textContent = originalText;
+            button.disabled = false;
+          }, 2000);
+
+          document.dispatchEvent(new CustomEvent('cart:refresh'));
+          
+          if (window.theme && window.theme.cart) {
+            window.theme.cart.refresh();
+          }
+
+        } catch (error) {
+          console.error('Error adding to cart:', error);
+          button.textContent = 'Error - Try again';
+          setTimeout(function() {
+            button.textContent = originalText;
+            button.disabled = false;
+          }, 2000);
+        }
+      }
+    }
+
+    customElements.define('bundle-deal-{{ ai_gen_id }}', BundleDeal{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Buy 2 get 10% off",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Bundle & Save"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Products"
+    },
+    {
+      "type": "product",
+      "id": "product_1",
+      "label": "Product 1"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Product 2"
+    },
+    {
+      "type": "header",
+      "content": "Discount badge"
+    },
+    {
+      "type": "text",
+      "id": "discount_text",
+      "label": "Discount text",
+      "default": "Buy 2 Get 10% Off"
+    },
+    {
+      "type": "color",
+      "id": "discount_badge_bg",
+      "label": "Background",
+      "default": "#7eb58a"
+    },
+    {
+      "type": "color",
+      "id": "discount_badge_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "discount_badge_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Add both to cart"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Background",
+      "default": "#7eb58a"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg",
+      "label": "Hover background",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "plus_icon_bg",
+      "label": "Plus icon background",
+      "default": "#7eb58a"
+    },
+    {
+      "type": "color",
+      "id": "plus_icon_color",
+      "label": "Plus icon color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Buy 2 get 10% off"
+    }
+  ]
+}
 {% endschema %}
