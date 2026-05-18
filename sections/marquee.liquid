@@ -19,7 +19,7 @@
   data-speed-factor="25"
   data-movement-direction="{{ section.settings.movement_direction }}"
 >
-<div class="border-style custom-section-content overflow_hidden">
+{% comment %} <div class="border-style custom-section-content overflow_hidden"> {% endcomment %}
 
   <div
     class="marquee__wrapper"
@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-</div>
+{% comment %} </div> {% endcomment %}
 </marquee-component>
 
 {% stylesheet %}
