@@ -1122,7 +1122,7 @@
                   "settings": {
                     "text": "<p>Secure Checkout</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -1219,7 +1219,7 @@
                   "settings": {
                     "text": "<p>Fast Delivery Across Region</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -1316,7 +1316,7 @@
                   "settings": {
                     "text": "<p>Premium Quality Guaranteed</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
