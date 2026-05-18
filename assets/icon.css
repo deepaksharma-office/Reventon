@@ -11,7 +11,7 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: var(--pt) 0 var(--pb) 0;
+    
 
     background: #00000000;
     backdrop-filter: blur(5px);
@@ -19,5 +19,5 @@
 }
 
 .icon_text_wrap {
-  
+  padding: var(--pt) 0 var(--pb) 0;
 }
