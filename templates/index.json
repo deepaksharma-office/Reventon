@@ -1147,8 +1147,21 @@
                 "icon_xbPBhj",
                 "text_kHeihw"
               ]
-            },
-            "group_fxfD6t": {
+            }
+          },
+          "block_order": [
+            "group_rgBKdP"
+          ]
+        },
+        "icon_text_TxchAc": {
+          "type": "icon-text",
+          "name": "Icon Text",
+          "settings": {
+            "pt": 20,
+            "pb": 20
+          },
+          "blocks": {
+            "group_iAjpVr": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -1188,7 +1201,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "icon_KTzBUe": {
+                "icon_RRGTmf": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
@@ -1200,7 +1213,7 @@
                   },
                   "blocks": {}
                 },
-                "text_axw4qa": {
+                "text_igAUPt": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
@@ -1228,11 +1241,24 @@
                 }
               },
               "block_order": [
-                "icon_KTzBUe",
-                "text_axw4qa"
+                "icon_RRGTmf",
+                "text_igAUPt"
               ]
-            },
-            "group_dWhjhb": {
+            }
+          },
+          "block_order": [
+            "group_iAjpVr"
+          ]
+        },
+        "icon_text_WkkCGW": {
+          "type": "icon-text",
+          "name": "Icon Text",
+          "settings": {
+            "pt": 20,
+            "pb": 20
+          },
+          "blocks": {
+            "group_kyXcBa": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -1272,7 +1298,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "icon_HpCfpK": {
+                "icon_yLEkVh": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
@@ -1284,7 +1310,7 @@
                   },
                   "blocks": {}
                 },
-                "text_ALRBR7": {
+                "text_WYK7hm": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
@@ -1312,20 +1338,20 @@
                 }
               },
               "block_order": [
-                "icon_HpCfpK",
-                "text_ALRBR7"
+                "icon_yLEkVh",
+                "text_WYK7hm"
               ]
             }
           },
           "block_order": [
-            "group_rgBKdP",
-            "group_fxfD6t",
-            "group_dWhjhb"
+            "group_kyXcBa"
           ]
         }
       },
       "block_order": [
-        "icon_text_J7ceat"
+        "icon_text_J7ceat",
+        "icon_text_TxchAc",
+        "icon_text_WkkCGW"
       ],
       "name": "Icon text Section",
       "settings": {
