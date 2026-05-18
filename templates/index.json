@@ -1608,7 +1608,7 @@
           "photobooth"
         ],
         "layout_type": "grid",
-        "carousel_on_mobile": false,
+        "carousel_on_mobile": true,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
@@ -1793,7 +1793,7 @@
           "ramadan-copy"
         ],
         "layout_type": "grid",
-        "carousel_on_mobile": false,
+        "carousel_on_mobile": true,
         "columns": 5,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
