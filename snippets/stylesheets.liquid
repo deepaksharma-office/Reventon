@@ -2,4 +2,8 @@
 {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
 {{ 'splide.css' | asset_url | stylesheet_tag: preload: true }}
 {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
-{{ 'animation_global.css' | asset_url | stylesheet_tag: preload: true }}
+
+
+{% unless request.design_mode %}
+  {{ 'animation_global.css' | asset_url | stylesheet_tag: preload: true }}
+{% endunless %}
