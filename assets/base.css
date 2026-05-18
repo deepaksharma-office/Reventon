@@ -2608,16 +2608,16 @@ form.payment-terms {
   }
 
   .layout-panel-flex--row:not(.mobile-column) {
-    /* flex-wrap: var(--flex-wrap-mobile); */
+    flex-wrap: var(--flex-wrap-mobile);
     height: auto;
 
     > .menu {
       flex: 1 1 min-content;
     }
 
-    > .text-block {
+    /* > .text-block {
       flex: 1 1 var(--max-width--display-tight);
-    }
+    } */
 
     > .image-block {
       flex: 1 1 var(--size-style-width-mobile-min);
