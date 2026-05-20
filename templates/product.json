@@ -697,7 +697,7 @@
         "customheight": true,
         "height_desktop": 450,
         "height_mobile": 650,
-        "show_overlay": true,
+        "show_overlay": false,
         "overlay_color": "#000000",
         "overlay_opacity": 30
       }
