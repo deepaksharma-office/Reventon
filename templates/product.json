@@ -685,7 +685,21 @@
         "enable_sticky_add_to_cart": true,
         "color_scheme": "",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 45
+      }
+    },
+    "hero_static_pgafxE": {
+      "type": "hero-static",
+      "name": "Hero Banner (Static)",
+      "settings": {
+        "media_type": "image",
+        "desktop_image": "shopify://shop_images/IMG_4904_1.png",
+        "customheight": true,
+        "height_desktop": 450,
+        "height_mobile": 650,
+        "show_overlay": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "product_recommendations_qggXJq": {
@@ -832,6 +846,7 @@
   },
   "order": [
     "main",
+    "hero_static_pgafxE",
     "product_recommendations_qggXJq"
   ]
 }
