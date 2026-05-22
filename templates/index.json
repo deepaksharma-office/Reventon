@@ -17,7 +17,7 @@
           "name": "Hero Slide",
           "settings": {
             "content_type": "image",
-            "desktop_image": "shopify://shop_images/Reventon_banner.png",
+            "desktop_image": "shopify://shop_images/Reventon_Banner_4.png",
             "mobile_image": "shopify://shop_images/Container_4_8f1c4f51-1de0-488a-b476-21a5a81d0a08.png",
             "alt": "",
             "url": "",
@@ -34,7 +34,7 @@
           "name": "Hero Slide",
           "settings": {
             "content_type": "image",
-            "desktop_image": "shopify://shop_images/Reventon_banner_2_bb8df2a9-448b-4be1-bd11-817e8a146724.png",
+            "desktop_image": "shopify://shop_images/Reventon_Banner_5.png",
             "mobile_image": "shopify://shop_images/Reventon_banner_1_01240151-9ada-4f10-abef-b9627cc2af90.png",
             "alt": "",
             "url": "",
@@ -51,7 +51,24 @@
           "name": "Hero Slide",
           "settings": {
             "content_type": "image",
-            "desktop_image": "shopify://shop_images/Reventon_banner_50d94039-846e-4af1-85ac-e19840057ef3.png",
+            "desktop_image": "shopify://shop_images/Reventon_Banner_3.png",
+            "mobile_image": "shopify://shop_images/Reventon_banner_2_c55a46b9-5763-4932-94d2-671c9d6ed3a2.png",
+            "alt": "",
+            "url": "",
+            "new_tab": false,
+            "height_desktop": 450,
+            "height_mobile": 450,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          },
+          "blocks": {}
+        },
+        "horizon_slide_NQ4WmQ": {
+          "type": "horizon-slide",
+          "name": "Hero Slide",
+          "settings": {
+            "content_type": "image",
+            "desktop_image": "shopify://shop_images/Reventon_Banner_6.png",
             "mobile_image": "shopify://shop_images/Reventon_banner_2_c55a46b9-5763-4932-94d2-671c9d6ed3a2.png",
             "alt": "",
             "url": "",
@@ -67,7 +84,8 @@
       "block_order": [
         "horizon_slide_MiqyiR",
         "horizon_slide_yBLVJE",
-        "horizon_slide_CgyNda"
+        "horizon_slide_CgyNda",
+        "horizon_slide_NQ4WmQ"
       ],
       "name": "Hero Slider",
       "settings": {
