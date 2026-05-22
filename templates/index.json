@@ -3229,7 +3229,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Link-1.png",
+                "image": "shopify://shop_images/IMG-20260513-WA0013.jpg",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -3252,9 +3252,9 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Link-2.png",
+                "image": "shopify://shop_images/IMG-20260514-WA0013.jpg",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -3275,7 +3275,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Link-4.png",
+                "image": "shopify://shop_images/IMG-20260514-WA0014.jpg",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -3298,9 +3298,9 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Link.png",
+                "image": "shopify://shop_images/IMG-20260514-WA0011.jpg",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -3321,9 +3321,9 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Link-3.png",
+                "image": "shopify://shop_images/IMG-20260513-WA0012.jpg",
                 "link": "",
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
