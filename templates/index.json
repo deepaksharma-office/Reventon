@@ -2645,7 +2645,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/IMG_4904_1.png",
+            "image_1": "shopify://shop_images/IMG-20250410-WA0023_d0da6f43-7f0b-42b5-aafb-b20ba33df5bb.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2670,7 +2670,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Birthday Celebration</h2>",
+                "text": "<h2>Eid Celebration</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
