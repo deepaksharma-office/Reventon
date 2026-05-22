@@ -17,6 +17,81 @@
           "name": "Hero Slide",
           "settings": {
             "content_type": "image",
+            "desktop_image": "shopify://shop_images/Reventon_banner.png",
+            "mobile_image": "shopify://shop_images/Container_4_8f1c4f51-1de0-488a-b476-21a5a81d0a08.png",
+            "alt": "",
+            "url": "",
+            "new_tab": false,
+            "height_desktop": 450,
+            "height_mobile": 450,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          },
+          "blocks": {}
+        },
+        "horizon_slide_yBLVJE": {
+          "type": "horizon-slide",
+          "name": "Hero Slide",
+          "settings": {
+            "content_type": "image",
+            "desktop_image": "shopify://shop_images/Reventon_banner_1_9bf5c929-5480-4ada-b76c-54b9aa6bad32.png",
+            "mobile_image": "shopify://shop_images/Reventon_banner_1_01240151-9ada-4f10-abef-b9627cc2af90.png",
+            "alt": "",
+            "url": "",
+            "new_tab": false,
+            "height_desktop": 450,
+            "height_mobile": 450,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          },
+          "blocks": {}
+        },
+        "horizon_slide_CgyNda": {
+          "type": "horizon-slide",
+          "name": "Hero Slide",
+          "settings": {
+            "content_type": "image",
+            "desktop_image": "shopify://shop_images/Reventon_banner_50d94039-846e-4af1-85ac-e19840057ef3.png",
+            "mobile_image": "shopify://shop_images/Reventon_banner_2_c55a46b9-5763-4932-94d2-671c9d6ed3a2.png",
+            "alt": "",
+            "url": "",
+            "new_tab": false,
+            "height_desktop": 450,
+            "height_mobile": 450,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "horizon_slide_MiqyiR",
+        "horizon_slide_yBLVJE",
+        "horizon_slide_CgyNda"
+      ],
+      "name": "Hero Slider",
+      "settings": {
+        "slider_type": "loop",
+        "perPageDesktop": 1,
+        "perPageMobile": 1,
+        "perMove": 1,
+        "gap": 0,
+        "gap_mobile": 0,
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "transition_speed": 1000,
+        "show_arrows": false,
+        "show_pagination": false
+      }
+    },
+    "hero_splide_pKcAHe": {
+      "type": "hero-splide",
+      "blocks": {
+        "horizon_slide_wW69bt": {
+          "type": "horizon-slide",
+          "name": "Hero Slide",
+          "settings": {
+            "content_type": "image",
             "desktop_image": "shopify://shop_images/Container_4.png",
             "mobile_image": "shopify://shop_images/Container_4_8f1c4f51-1de0-488a-b476-21a5a81d0a08.png",
             "alt": "",
@@ -28,7 +103,7 @@
             "overlay_opacity": 0
           },
           "blocks": {
-            "group_9jxWaf": {
+            "group_7V4Gpf": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -68,7 +143,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_T4PKAB": {
+                "group_qGnni6": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -108,7 +183,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_hNPbhi": {
+                    "group_XpFAVX": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -148,7 +223,7 @@
                         "padding-inline-end": 15
                       },
                       "blocks": {
-                        "text_Jm3Xqt": {
+                        "text_DL99NH": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -176,10 +251,10 @@
                         }
                       },
                       "block_order": [
-                        "text_Jm3Xqt"
+                        "text_DL99NH"
                       ]
                     },
-                    "text_66DHKJ": {
+                    "text_6zphfp": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -205,7 +280,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_MnyUCJ": {
+                    "text_L4RkLB": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -231,7 +306,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_FrFPkk": {
+                    "text_dpnGcN": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -257,7 +332,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_6JUhqf": {
+                    "group_HNbYMt": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -297,7 +372,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "button_wJMW4E": {
+                        "button_Dx8p6F": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -312,7 +387,7 @@
                           },
                           "blocks": {}
                         },
-                        "button_AgmXaE": {
+                        "button_rxdpiQ": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -329,30 +404,30 @@
                         }
                       },
                       "block_order": [
-                        "button_wJMW4E",
-                        "button_AgmXaE"
+                        "button_Dx8p6F",
+                        "button_rxdpiQ"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_hNPbhi",
-                    "text_66DHKJ",
-                    "text_MnyUCJ",
-                    "text_FrFPkk",
-                    "group_6JUhqf"
+                    "group_XpFAVX",
+                    "text_6zphfp",
+                    "text_L4RkLB",
+                    "text_dpnGcN",
+                    "group_HNbYMt"
                   ]
                 }
               },
               "block_order": [
-                "group_T4PKAB"
+                "group_qGnni6"
               ]
             }
           },
           "block_order": [
-            "group_9jxWaf"
+            "group_7V4Gpf"
           ]
         },
-        "horizon_slide_yBLVJE": {
+        "horizon_slide_YhVi4q": {
           "type": "horizon-slide",
           "name": "Hero Slide",
           "settings": {
@@ -368,7 +443,7 @@
             "overlay_opacity": 0
           },
           "blocks": {
-            "group_qyUhj8": {
+            "group_EVEhhp": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -408,7 +483,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_D9f6Me": {
+                "group_BYAW9A": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -448,7 +523,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_WWrJRq": {
+                    "group_TJLAXJ": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -488,7 +563,7 @@
                         "padding-inline-end": 15
                       },
                       "blocks": {
-                        "text_xFjcEN": {
+                        "text_kkrMjC": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -516,10 +591,10 @@
                         }
                       },
                       "block_order": [
-                        "text_xFjcEN"
+                        "text_kkrMjC"
                       ]
                     },
-                    "text_yp7hqV": {
+                    "text_qREVzA": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -545,7 +620,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_mEYNXM": {
+                    "text_XKxY89": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -571,7 +646,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_iyEtEN": {
+                    "text_eNKQXM": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -597,7 +672,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_mwkpMM": {
+                    "group_FD6wmF": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -637,7 +712,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "button_jKgQhz": {
+                        "button_xC9jFg": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -652,7 +727,7 @@
                           },
                           "blocks": {}
                         },
-                        "button_khKNcG": {
+                        "button_XVJzRw": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -669,30 +744,30 @@
                         }
                       },
                       "block_order": [
-                        "button_jKgQhz",
-                        "button_khKNcG"
+                        "button_xC9jFg",
+                        "button_XVJzRw"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_WWrJRq",
-                    "text_yp7hqV",
-                    "text_mEYNXM",
-                    "text_iyEtEN",
-                    "group_mwkpMM"
+                    "group_TJLAXJ",
+                    "text_qREVzA",
+                    "text_XKxY89",
+                    "text_eNKQXM",
+                    "group_FD6wmF"
                   ]
                 }
               },
               "block_order": [
-                "group_D9f6Me"
+                "group_BYAW9A"
               ]
             }
           },
           "block_order": [
-            "group_qyUhj8"
+            "group_EVEhhp"
           ]
         },
-        "horizon_slide_CgyNda": {
+        "horizon_slide_J4BGna": {
           "type": "horizon-slide",
           "name": "Hero Slide",
           "settings": {
@@ -708,7 +783,7 @@
             "overlay_opacity": 0
           },
           "blocks": {
-            "group_hDWw6E": {
+            "group_aaAYYG": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -748,7 +823,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_7zFTCJ": {
+                "group_XbbcPA": {
                   "type": "group",
                   "name": "t:names.group",
                   "settings": {
@@ -788,7 +863,7 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "group_jNTMWm": {
+                    "group_YyLHtP": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -828,7 +903,7 @@
                         "padding-inline-end": 15
                       },
                       "blocks": {
-                        "text_7FyBJT": {
+                        "text_PnRMKf": {
                           "type": "text",
                           "name": "t:names.text",
                           "settings": {
@@ -856,10 +931,10 @@
                         }
                       },
                       "block_order": [
-                        "text_7FyBJT"
+                        "text_PnRMKf"
                       ]
                     },
-                    "text_NNpHKw": {
+                    "text_WkX9BA": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -885,7 +960,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_VUrJxL": {
+                    "text_3qLpBr": {
                       "type": "text",
                       "name": "t:names.heading",
                       "settings": {
@@ -911,7 +986,7 @@
                       },
                       "blocks": {}
                     },
-                    "text_YYhkkn": {
+                    "text_pBPjFf": {
                       "type": "text",
                       "name": "t:names.text",
                       "settings": {
@@ -937,7 +1012,7 @@
                       },
                       "blocks": {}
                     },
-                    "group_jBNjVa": {
+                    "group_YrwR7w": {
                       "type": "group",
                       "name": "t:names.group",
                       "settings": {
@@ -977,7 +1052,7 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {
-                        "button_YPQxKU": {
+                        "button_fxVnr4": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -992,7 +1067,7 @@
                           },
                           "blocks": {}
                         },
-                        "button_rHKiVb": {
+                        "button_pznNF8": {
                           "type": "button",
                           "name": "t:names.button",
                           "settings": {
@@ -1009,35 +1084,36 @@
                         }
                       },
                       "block_order": [
-                        "button_YPQxKU",
-                        "button_rHKiVb"
+                        "button_fxVnr4",
+                        "button_pznNF8"
                       ]
                     }
                   },
                   "block_order": [
-                    "group_jNTMWm",
-                    "text_NNpHKw",
-                    "text_VUrJxL",
-                    "text_YYhkkn",
-                    "group_jBNjVa"
+                    "group_YyLHtP",
+                    "text_WkX9BA",
+                    "text_3qLpBr",
+                    "text_pBPjFf",
+                    "group_YrwR7w"
                   ]
                 }
               },
               "block_order": [
-                "group_7zFTCJ"
+                "group_XbbcPA"
               ]
             }
           },
           "block_order": [
-            "group_hDWw6E"
+            "group_aaAYYG"
           ]
         }
       },
       "block_order": [
-        "horizon_slide_MiqyiR",
-        "horizon_slide_yBLVJE",
-        "horizon_slide_CgyNda"
+        "horizon_slide_wW69bt",
+        "horizon_slide_YhVi4q",
+        "horizon_slide_J4BGna"
       ],
+      "disabled": true,
       "name": "Hero Slider",
       "settings": {
         "slider_type": "loop",
@@ -4142,6 +4218,7 @@
   },
   "order": [
     "hero_splide_tnaJ3j",
+    "hero_splide_pKcAHe",
     "icon_dqF9jD",
     "section_pcnyDj",
     "section_pT8fnU",
