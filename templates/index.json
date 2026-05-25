@@ -51,7 +51,6 @@
         "horizon_slide_CgyNda": {
           "type": "horizon-slide",
           "name": "Hero Slide",
-          "disabled": true,
           "settings": {
             "content_type": "image",
             "desktop_image": "shopify://shop_images/Reventon_Banner_3.png",
