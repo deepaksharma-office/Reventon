@@ -15,6 +15,7 @@
         "horizon_slide_MiqyiR": {
           "type": "horizon-slide",
           "name": "Hero Slide",
+          "disabled": true,
           "settings": {
             "content_type": "image",
             "desktop_image": "shopify://shop_images/Reventon_Banner_4_1.png",
@@ -32,6 +33,7 @@
         "horizon_slide_yBLVJE": {
           "type": "horizon-slide",
           "name": "Hero Slide",
+          "disabled": true,
           "settings": {
             "content_type": "image",
             "desktop_image": "shopify://shop_images/Reventon_Banner_5.png",
@@ -49,6 +51,7 @@
         "horizon_slide_CgyNda": {
           "type": "horizon-slide",
           "name": "Hero Slide",
+          "disabled": true,
           "settings": {
             "content_type": "image",
             "desktop_image": "shopify://shop_images/Reventon_Banner_3.png",
