@@ -509,7 +509,7 @@
                 "discount_badge_color": "#333333",
                 "discount_badge_radius": 8,
                 "button_text": "Add both to cart",
-                "button_bg": "#7eb58a",
+                "button_bg": "#28195c",
                 "button_hover_bg": "#333333",
                 "button_text_color": "#ffffff",
                 "button_border_radius": 0,
@@ -517,7 +517,7 @@
                 "text_color": "#000000",
                 "border_radius": 8,
                 "image_border_radius": 8,
-                "plus_icon_bg": "#7eb58a",
+                "plus_icon_bg": "#28195c",
                 "plus_icon_color": "#ffffff"
               },
               "blocks": {}
