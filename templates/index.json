@@ -1447,6 +1447,7 @@
         "icon_text_TxchAc",
         "icon_text_WkkCGW"
       ],
+      "disabled": true,
       "name": "Icon text Section",
       "settings": {
         "top": 66
