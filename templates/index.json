@@ -1719,14 +1719,14 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
-          "cake-toppers-1",
           "eid-collection",
           "halloween-1",
-          "party-bags-1",
-          "valentian-s-day",
           "frames-and-activity-packages",
           "luxury-gifts",
-          "photobooth"
+          "costumes",
+          "cake-toppers",
+          "father-day-gifts",
+          "graduation"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": true,
