@@ -1911,7 +1911,12 @@
           "eid-copy",
           "engagement-copy",
           "birthday-copy",
-          "ramadan-copy"
+          "ramadan-copy",
+          "ramadan-packages",
+          "roshen-league-set",
+          "valentines-day",
+          "halloween-1",
+          "luxury-gifts"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": true,
