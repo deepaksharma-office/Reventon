@@ -92,7 +92,7 @@
       ],
       "name": "Hero Slider",
       "settings": {
-        "slider_type": "loop",
+        "slider_type": "slide",
         "perPageDesktop": 1,
         "perPageMobile": 1,
         "perMove": 1,
