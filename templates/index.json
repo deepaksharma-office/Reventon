@@ -1883,7 +1883,7 @@
               "name": "t:names.collection_card_image",
               "static": true,
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -1907,11 +1907,6 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
-          "birthday",
-          "eid-copy",
-          "engagement-copy",
-          "birthday-copy",
-          "ramadan-copy",
           "ramadan-packages",
           "roshen-league-set",
           "valentines-day",
