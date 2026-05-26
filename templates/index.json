@@ -17,8 +17,8 @@
           "name": "Hero Slide",
           "settings": {
             "content_type": "image",
-            "desktop_image": "shopify://shop_images/Reventon_Banner_4_1.png",
-            "mobile_image": "shopify://shop_images/Reventon_Banner_4.png",
+            "desktop_image": "shopify://shop_images/Reventon_Banner_3.png",
+            "mobile_image": "shopify://shop_images/Reventon_Banner_3.png",
             "alt": "",
             "url": "",
             "new_tab": false,
