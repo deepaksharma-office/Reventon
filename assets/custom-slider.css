@@ -5,3 +5,10 @@
 .slider__inner_content {
     position: relative;
 }
+
+.image_float_wrap {
+    position: absolute;
+    width: 228px;
+    height: auto;
+    object-fit: contain;
+}
