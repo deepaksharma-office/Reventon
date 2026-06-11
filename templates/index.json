@@ -400,6 +400,7 @@
       "block_order": [
         "group_LGQLrV"
       ],
+      "disabled": true,
       "name": "Custom Slider",
       "settings": {
         "float_left": "shopify://shop_images/Clip_path_group.png",
