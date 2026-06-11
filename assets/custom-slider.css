@@ -107,7 +107,7 @@
     z-index: -1;
     animation: floatMiddle 6s ease-in-out infinite;
     left: 2%;
-    top: 0%;
+    top: 3%;
 }
 
 @keyframes floatMiddle {
