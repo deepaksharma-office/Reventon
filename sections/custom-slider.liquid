@@ -23,6 +23,43 @@
         {% content_for 'blocks' %}
       </div>
       <div class="slide--side_wrapper">
+        {% if section.settings.float_left != blank %}
+          <div class="image_float_wrap float_left">
+            <img
+              class="float_img"
+              src="{{ section.settings.float_left | image_url }}"
+              alt="Floating Image"
+              loading="eager"
+              width="{{ section.settings.float_left.width }}"
+              height="{{ section.settings.float_left.height }}"
+            >
+          </div>
+        {% endif %}
+        {% if section.settings.float_middle != blank %}
+          <div class="image_float_wrap float_middle">
+            <img
+              class="float_img"
+              src="{{ section.settings.float_middle | image_url }}"
+              alt="Floating Image"
+              loading="eager"
+              width="{{ section.settings.float_middle.width }}"
+              height="{{ section.settings.float_middle.height }}"
+            >
+          </div>
+        {% endif %}
+        {% if section.settings.float_right != blank %}
+          <div class="image_float_wrap float_right">
+            <img
+              class="float_img"
+              src="{{ section.settings.float_right | image_url }}"
+              alt="Floating Image"
+              loading="eager"
+              width="{{ section.settings.float_right.width }}"
+              height="{{ section.settings.float_right.height }}"
+            >
+          </div>
+        {% endif %}
+
         {% assign has_images = false %}
         {% for i in (1..4) %}
           {% capture image_key %}desktop_{{ i }}{% endcapture %}
@@ -90,6 +127,21 @@
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "float_left",
+      "label": "Floating Image Left"
+    },
+    {
+      "type": "image_picker",
+      "id": "float_middle",
+      "label": "Floating Image Middle"
+    },
+    {
+      "type": "image_picker",
+      "id": "float_right",
+      "label": "Floating Image Right"
+    },
     {
       "type": "header",
       "content": "Images"
