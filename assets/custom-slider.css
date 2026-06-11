@@ -76,7 +76,7 @@
 .image_float_wrap.float_right {
     z-index: 2;
     animation: floatRight 7s ease-in-out infinite;
-    right: 2%;
+    right: -5%;
     top: 13%;
 }
 
