@@ -578,7 +578,7 @@
         "perMove": 1,
         "gap_slide": 0,
         "gap_mobile": 0,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 3,
         "transition_speed": 1000,
         "show_arrows": false,
