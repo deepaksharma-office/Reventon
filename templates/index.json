@@ -3857,7 +3857,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3>@Revenfon </h3>",
+                "text": "<h3>@Reventon </h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
