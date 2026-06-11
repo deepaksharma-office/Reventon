@@ -308,7 +308,6 @@
     gap: 3rem;
   }
 
-  .main--wrapper-custom .content--side_wrapper,
   .main--wrapper-custom .slide--side_wrapper {
     flex: 0 0 100%;
     max-width: 100%;
