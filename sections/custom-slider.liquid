@@ -22,7 +22,12 @@
     style="{% render 'spacing-style', settings: section.settings %}"
     data-testid="section-content"
   >
-    {{ children }}
+    <div class="main--wrapper position--{{ section.settings.side }}">
+      <div class="content--side_wrapper">
+        {{ children }}
+      </div>
+      <div class="slide--side_wrapper"></div>
+    </div>
   </div>
 </div>
 
@@ -39,12 +44,31 @@
     },
     {
       "type": "_divider"
+    },
+    {
+      "type": "slide-image"
     }
   ],
   "disabled_on": {
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type": "select",
+      "id": "side",
+      "label": "Content Position",
+      "default": "content-left",
+      "options": [
+        {
+          "label": "Content Left",
+          "value": "content-left"
+        },
+        {
+          "label": "Content Right",
+          "value": "content-right"
+        }
+      ]
+    },
     {
       "type": "header",
       "content": "t:content.appearance"
