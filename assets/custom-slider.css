@@ -1,0 +1,430 @@
+```css
+/* ==========================================
+   CUSTOM SLIDER SECTION
+   ========================================== */
+
+.main--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  width: 100%;
+  position: relative;
+}
+
+.position--content-right {
+  flex-direction: row-reverse;
+}
+
+.content--side_wrapper {
+  flex: 0 0 42%;
+  max-width: 42%;
+  position: relative;
+  z-index: 2;
+}
+
+.slide--side_wrapper {
+  flex: 0 0 58%;
+  max-width: 58%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ==========================================
+   CONTENT SIDE
+   ========================================== */
+
+.content--side_wrapper > * {
+  width: 100%;
+}
+
+.content--side_wrapper h1,
+.content--side_wrapper h2,
+.content--side_wrapper h3 {
+  margin-bottom: 2rem;
+  line-height: 0.95;
+}
+
+.content--side_wrapper p {
+  margin-bottom: 1.6rem;
+}
+
+.content--side_wrapper .button,
+.content--side_wrapper .btn {
+  margin-top: 2rem;
+}
+
+/* ==========================================
+   SLIDER WRAPPER
+   ========================================== */
+
+.slide--side_wrapper .splide {
+  position: relative;
+  overflow: visible;
+}
+
+.slide--side_wrapper .splide__track {
+  overflow: visible;
+}
+
+.slide--side_wrapper .splide__list {
+  align-items: center;
+}
+
+.slider__banner-wrap-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banners_images-custom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customslider {
+  display: block;
+  width: min(100%, 700px);
+  margin: 0 auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+
+  border-radius:
+    40% 60% 57% 43% /
+    47% 37% 63% 53%;
+
+  position: relative;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ==========================================
+   FLOATING IMAGES
+   ========================================== */
+
+.image_float_wrap {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.float_img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.float_left {
+  width: 170px;
+  left: -4%;
+  bottom: 10%;
+  animation: floatHorizontal 6s ease-in-out infinite;
+}
+
+.float_middle {
+  width: 120px;
+  top: -3%;
+  left: 42%;
+  animation: floatHorizontal 8s ease-in-out infinite;
+}
+
+.float_right {
+  width: 150px;
+  top: 5%;
+  right: -3%;
+  animation: floatHorizontal 7s ease-in-out infinite;
+}
+
+/* ==========================================
+   ANIMATIONS
+   ========================================== */
+
+@keyframes floatHorizontal {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(12px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes floatVertical {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ==========================================
+   PAGINATION
+   ========================================== */
+
+.slide--side_wrapper .splide__pagination {
+  position: relative;
+  bottom: auto;
+  margin-top: 3rem;
+  gap: .8rem;
+}
+
+.slide--side_wrapper .splide__pagination__page {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  margin: 0;
+  opacity: .35;
+  transition: all .3s ease;
+}
+
+.slide--side_wrapper .splide__pagination__page.is-active {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+/* ==========================================
+   ARROWS
+   ========================================== */
+
+.slide--side_wrapper .splide__arrow {
+  width: 4.4rem;
+  height: 4.4rem;
+  opacity: 1;
+  transition: .3s ease;
+}
+
+.slide--side_wrapper .splide__arrow:hover {
+  transform: scale(1.08);
+}
+
+.slide--side_wrapper .splide__arrow svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* ==========================================
+   DESKTOP LARGE
+   ========================================== */
+
+@media screen and (min-width: 1440px) {
+
+  .main--wrapper {
+    gap: 10rem;
+  }
+
+  .customslider {
+    max-width: 760px;
+  }
+
+  .float_left {
+    width: 210px;
+  }
+
+  .float_middle {
+    width: 140px;
+  }
+
+  .float_right {
+    width: 180px;
+  }
+}
+
+/* ==========================================
+   LAPTOP
+   ========================================== */
+
+@media screen and (max-width: 1200px) {
+
+  .main--wrapper {
+    gap: 5rem;
+  }
+
+  .content--side_wrapper {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
+
+  .slide--side_wrapper {
+    flex-basis: 55%;
+    max-width: 55%;
+  }
+
+  .float_left {
+    width: 140px;
+  }
+
+  .float_middle {
+    width: 100px;
+  }
+
+  .float_right {
+    width: 120px;
+  }
+}
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media screen and (max-width: 989px) {
+
+  .main--wrapper {
+    gap: 4rem;
+  }
+
+  .content--side_wrapper {
+    flex-basis: 48%;
+    max-width: 48%;
+  }
+
+  .slide--side_wrapper {
+    flex-basis: 52%;
+    max-width: 52%;
+  }
+
+  .customslider {
+    border-radius:
+      42% 58% 60% 40% /
+      43% 38% 62% 57%;
+  }
+
+  .float_left {
+    width: 110px;
+    left: -3%;
+  }
+
+  .float_middle {
+    width: 80px;
+  }
+
+  .float_right {
+    width: 95px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+
+  .main--wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .position--content-right {
+    flex-direction: column;
+  }
+
+  .content--side_wrapper,
+  .slide--side_wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .content--side_wrapper {
+    text-align: center;
+  }
+
+  .content--side_wrapper .button,
+  .content--side_wrapper .btn {
+    margin-inline: auto;
+  }
+
+  .customslider {
+    width: min(100%, 340px);
+  }
+
+  .float_left {
+    width: 90px;
+    left: 2%;
+    bottom: 8%;
+  }
+
+  .float_middle {
+    width: 65px;
+    top: -5%;
+    left: 20%;
+  }
+
+  .float_right {
+    width: 85px;
+    right: 2%;
+    top: 0;
+  }
+
+  .slide--side_wrapper .splide__pagination {
+    margin-top: 2rem;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE
+   ========================================== */
+
+@media screen and (max-width: 480px) {
+
+  .main--wrapper {
+    gap: 2.5rem;
+  }
+
+  .content--side_wrapper h1,
+  .content--side_wrapper h2 {
+    line-height: 1;
+  }
+
+  .customslider {
+    width: min(100%, 300px);
+  }
+
+  .float_left {
+    width: 70px;
+  }
+
+  .float_middle {
+    width: 50px;
+  }
+
+  .float_right {
+    width: 70px;
+  }
+
+  .slide--side_wrapper .splide__pagination {
+    margin-top: 1.6rem;
+  }
+}
+
+/* ==========================================
+   ONLY ONE SLIDE
+   ========================================== */
+
+.splide.is-visible .splide__pagination,
+.splide.is-visible .splide__arrows {
+  display: none !important;
+}
+
+/* ==========================================
+   IMAGE QUALITY
+   ========================================== */
+
+.customslider,
+.float_img {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+```
