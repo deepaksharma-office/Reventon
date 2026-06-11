@@ -19,9 +19,7 @@
       section-content-wrapper
       {% if section.settings.vertical_on_mobile %} mobile-column{% endif %}
     "
-    style="
-      {% render 'spacing-style', settings: section.settings %}
-    "
+    style="{% render 'spacing-style', settings: section.settings %}"
     data-testid="section-content"
   >
     {{ children }}
