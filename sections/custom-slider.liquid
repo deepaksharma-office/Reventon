@@ -9,17 +9,7 @@
     data-shopify-visual-preview
   {% endif %}
 >
-  <div
-    class="
-      spacing-style
-      layout-panel-flex
-      layout-panel-flex--{{ section.settings.content_direction }}
-      section-content-wrapper
-      {% if section.settings.vertical_on_mobile %} mobile-column{% endif %}
-    "
-    style="{% render 'spacing-style', settings: section.settings %}"
-    data-testid="section-content"
-  >
+ 
     <div class="main--wrapper-custom position--{{ section.settings.side }}">
       <div class="content--side_wrapper">
         {% content_for 'blocks' %}
@@ -112,7 +102,6 @@
       </div>
     </div>
   </div>
-</div>
 
 {% render 'splide-slider', section: section %}
 
