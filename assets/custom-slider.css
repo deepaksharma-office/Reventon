@@ -1,3 +1,7 @@
+/* ==========================================
+   MAIN WRAPPERS
+========================================== */
+
 .custom_slider_div {
     width: fit-content;
 }
@@ -6,21 +10,118 @@
     position: relative;
 }
 
+
+/* ==========================================
+   FLOATING IMAGES - BASE STYLES
+========================================== */
+
 .image_float_wrap {
     position: absolute;
     width: 228px;
     height: auto;
     object-fit: contain;
+    will-change: transform;
 }
+
+.image_float_wrap img,
+.image_float_wrap .float_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ==========================================
+   FLOAT LEFT IMAGE
+========================================== */
 
 .image_float_wrap.float_left {
     z-index: 2;
+    animation: floatLeft 5s ease-in-out infinite;
 }
+
+@keyframes floatLeft {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(-8px, -10px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translate(4px, -18px) rotate(1deg);
+    }
+
+    75% {
+        transform: translate(10px, -8px) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
+/* ==========================================
+   FLOAT RIGHT IMAGE
+========================================== */
 
 .image_float_wrap.float_right {
     z-index: 2;
+    animation: floatRight 7s ease-in-out infinite;
 }
+
+@keyframes floatRight {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(12px, -8px) rotate(2deg);
+    }
+
+    60% {
+        transform: translate(-6px, -16px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
+/* ==========================================
+   FLOAT MIDDLE IMAGE
+========================================== */
 
 .image_float_wrap.float_middle {
     z-index: -1;
+    animation: floatMiddle 6s ease-in-out infinite;
+}
+
+@keyframes floatMiddle {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-24px) scale(1.03);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* ==========================================
+   OPTIONAL: REDUCE ANIMATION FOR USERS
+   WHO PREFER LESS MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .image_float_wrap {
+        animation: none !important;
+    }
 }
