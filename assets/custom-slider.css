@@ -14,6 +14,10 @@
     display: none !important;
 }
 
+.custom_slider_div .splide__track {
+    overflow: visible;
+}
+
 
 /* ==========================================
    FLOATING IMAGES - BASE STYLES
