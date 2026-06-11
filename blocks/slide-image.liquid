@@ -4,18 +4,18 @@
 <div
   class="
     group-block
-    group-block--height-{{ settings.height }}
-    group-block--width-{{ settings.width }}
+    group-block--height-{{ block.settings.height }}
+    group-block--width-{{ block.settings.width }}
     border-style
     spacing-style
     size-style
     left_animation_global
-    {% if settings.inherit_color_scheme == false %} color-{{ settings.color_scheme }}{% endif %}
+    {% if block.settings.inherit_color_scheme == false %} color-{{ block.settings.color_scheme }}{% endif %}
   "
   style="
-    {% render 'border-override', settings: settings %}
-    {% render 'spacing-style', settings: settings %}
-    {% render 'size-style', settings: settings %}
+    {% render 'border-override', settings: block.settings %}
+    {% render 'spacing-style', settings: block.settings %}
+    {% render 'size-style', settings: block.settings %}
   "
   data-testid="group-block"
 >
@@ -24,10 +24,10 @@
       group-block-content
       {% if request.design_mode %}group-block-content--design-mode{% endif %}
       layout-panel-flex
-      layout-panel-flex--{{ settings.content_direction | default: 'column' }}
-      {% if settings.vertical_on_mobile %} mobile-column{% endif %}
+      layout-panel-flex--{{ block.settings.content_direction | default: 'column' }}
+      {% if block.settings.vertical_on_mobile %} mobile-column{% endif %}
     "
-    style="{% render 'layout-panel-style', settings: settings %}"
+    style="{% render 'layout-panel-style', settings: block.settings %}"
   >
     <div class="custom_slider_wrapper">
       <div
