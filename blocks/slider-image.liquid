@@ -1,6 +1,11 @@
 <div class="slider__inner_content">
   {% if block.settings.float_left != blank %}
-    <div class="image_float_wrap float_left">
+    <div class="image_float_wrap float_left"
+    style="
+    --mobile-size: {{ section.settings.left_size_m }}px;
+    --size: {{ section.settings.left_size }}px;
+    "
+    >
       <img
         class="float_img"
         src="{{ block.settings.float_left | image_url }}"
@@ -12,7 +17,12 @@
     </div>
   {% endif %}
   {% if block.settings.float_middle != blank %}
-    <div class="image_float_wrap float_middle">
+    <div class="image_float_wrap float_middle"
+    style="
+    --mobile-size: {{ section.settings.middle_size_m }}px;
+    --size: {{ section.settings.middle_size }}px;
+    "
+    >
       <img
         class="float_img"
         src="{{ block.settings.float_middle | image_url }}"
@@ -24,7 +34,12 @@
     </div>
   {% endif %}
   {% if block.settings.float_right != blank %}
-    <div class="image_float_wrap float_right">
+    <div class="image_float_wrap float_right" 
+    style="
+    --mobile-size: {{ section.settings.right_size_m }}px;
+    --size: {{ section.settings.right_size }}px;
+    "
+    >
       <img
         class="float_img"
         src="{{ block.settings.float_right | image_url }}"
@@ -90,14 +105,64 @@
       "default": 220
     },
     {
+      "type": "range",
+      "id": "left_size_m",
+      "label": "Left Image Size Mobile",
+      "min": 40,
+      "max": 400,
+      "step": 5,
+      "unit": "px",
+      "default": 120
+    },
+    {
       "type": "image_picker",
       "id": "float_middle",
       "label": "Middle Floating Image"
     },
     {
+      "type": "range",
+      "id": "middle_size",
+      "label": "Middle Image Size",
+      "min": 40,
+      "max": 400,
+      "step": 5,
+      "unit": "px",
+      "default": 220
+    },
+    {
+      "type": "range",
+      "id": "middle_size_m",
+      "label": "Middle Image Size Mobile",
+      "min": 40,
+      "max": 400,
+      "step": 5,
+      "unit": "px",
+      "default": 120
+    },
+    {
       "type": "image_picker",
       "id": "float_right",
       "label": "Right Floating Image"
+    },
+    {
+      "type": "range",
+      "id": "right_size",
+      "label": "Right Image Size",
+      "min": 40,
+      "max": 400,
+      "step": 5,
+      "unit": "px",
+      "default": 220
+    },
+    {
+      "type": "range",
+      "id": "right_size_m",
+      "label": "Right Image Size Mobile",
+      "min": 40,
+      "max": 400,
+      "step": 5,
+      "unit": "px",
+      "default": 120
     }
   ],
   "presets": [
