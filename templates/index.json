@@ -421,13 +421,13 @@
                 "image": "shopify://shop_images/Star_1_2.png",
                 "alt": "",
                 "float_left": "shopify://shop_images/image_25.png",
-                "left_size": 220,
+                "left_size": 240,
                 "left_size_m": 120,
                 "middle_size": 260,
                 "middle_size_m": 160,
                 "float_right": "shopify://shop_images/image_24_1.png",
-                "right_size": 100,
-                "right_size_m": 60
+                "right_size": 260,
+                "right_size_m": 130
               },
               "blocks": {}
             },
