@@ -59,7 +59,7 @@
   flex: 0 0 58%;
   max-width: 58%;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .main--wrapper-custom .splide {
