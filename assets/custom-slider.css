@@ -101,9 +101,6 @@
   aspect-ratio: 1;
   object-fit: contain;
 
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, .08);
-
   backface-visibility: hidden;
   transform: translateZ(0);
 }
