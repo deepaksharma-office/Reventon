@@ -9,6 +9,37 @@
  */
 {
   "sections": {
+    "custom_slider_dH7c7p": {
+      "type": "custom-slider",
+      "name": "Custom Slider",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 54,
+        "padding-block-end": 66
+      }
+    },
     "hero_splide_tnaJ3j": {
       "type": "hero-splide",
       "blocks": {
@@ -4236,6 +4267,7 @@
     }
   },
   "order": [
+    "custom_slider_dH7c7p",
     "hero_splide_tnaJ3j",
     "hero_splide_pKcAHe",
     "icon_dqF9jD",
