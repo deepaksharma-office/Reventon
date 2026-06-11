@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.custom_slider_div .splide__arrows.splide__arrows--ltr {
+    display: none !important;
+}
+
 
 /* ==========================================
    FLOATING IMAGES - BASE STYLES
