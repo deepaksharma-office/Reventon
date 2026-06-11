@@ -12,3 +12,15 @@
     height: auto;
     object-fit: contain;
 }
+
+.image_float_wrap.float_left {
+    z-index: 2;
+}
+
+.image_float_wrap.float_right {
+    z-index: 2;
+}
+
+.image_float_wrap.float_middle {
+    z-index: -1;
+}
