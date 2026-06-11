@@ -38,6 +38,8 @@
 .image_float_wrap.float_left {
     z-index: 2;
     animation: floatLeft 5s ease-in-out infinite;
+    left: 0;
+    bottom: 23%;
 }
 
 @keyframes floatLeft {
@@ -70,6 +72,8 @@
 .image_float_wrap.float_right {
     z-index: 2;
     animation: floatRight 7s ease-in-out infinite;
+    right: 2%;
+    top: 13%;
 }
 
 @keyframes floatRight {
@@ -98,6 +102,8 @@
 .image_float_wrap.float_middle {
     z-index: -1;
     animation: floatMiddle 6s ease-in-out infinite;
+    left: 2%;
+    top: 0%;
 }
 
 @keyframes floatMiddle {
