@@ -1,3 +1,7 @@
 .custom_slider_div {
     width: fit-content;
 }
+
+.slider__inner_content {
+    position: relative;
+}
