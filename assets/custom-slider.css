@@ -111,7 +111,7 @@
 
 .main--wrapper-custom .image_float_wrap {
   position: absolute;
-  z-index: 10;
+  z-index: -1;
   pointer-events: none;
 }
 
@@ -125,8 +125,8 @@
 
 .main--wrapper-custom .float_left {
   width: 170px;
-  left: -4%;
-  bottom: 10%;
+  left: -3%;
+  bottom: 22%;
   animation: customSliderFloat 6s ease-in-out infinite;
 }
 
@@ -134,8 +134,8 @@
 
 .main--wrapper-custom .float_middle {
   width: 120px;
-  top: -3%;
-  left: 42%;
+  top: -2%;
+  left: 28%;
   animation: customSliderFloat 8s ease-in-out infinite;
 }
 
@@ -144,7 +144,7 @@
 .main--wrapper-custom .float_right {
   width: 150px;
   top: 4%;
-  right: -3%;
+  right: 10%;
   animation: customSliderFloat 7s ease-in-out infinite;
 }
 
