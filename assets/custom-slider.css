@@ -99,6 +99,10 @@
   pointer-events: none;
 }
 
+.image_float_wrap.float_middle {
+    z-index: 2;
+}
+
 .main--wrapper-custom .float_img {
   width: 100%;
   height: auto;
