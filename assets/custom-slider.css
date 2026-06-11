@@ -25,7 +25,7 @@
 
 .image_float_wrap {
     position: absolute;
-    width: 228px;
+    width: var(--size);
     height: auto;
     object-fit: contain;
     will-change: transform;
@@ -142,6 +142,6 @@
 
 @media screen and (max-width: 749px) {
     .image_float_wrap {
-        width: 120px;
-    }
+     width: var(--mobile-size);
+  }
 }
