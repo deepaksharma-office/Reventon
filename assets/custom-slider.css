@@ -314,6 +314,11 @@
     width: 100%;
   }
 
+   .main--wrapper-custom .content--side_wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .main--wrapper-custom .content--side_wrapper {
    padding-left: 0;
   }
