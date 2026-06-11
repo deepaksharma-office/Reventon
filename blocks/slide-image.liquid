@@ -1,3 +1,88 @@
+{% if section.settings.float_left != blank %}
+          <div class="image_float_wrap float_left">
+            <img
+              class="float_img"
+              src="{{ section.settings.float_left | image_url }}"
+              alt="Floating Image"
+              loading="eager"
+              width="{{ section.settings.float_left.width }}"
+              height="{{ section.settings.float_left.height }}"
+            >
+          </div>
+        {% endif %}
+        {% if section.settings.float_middle != blank %}
+          <div class="image_float_wrap float_middle">
+            <img
+              class="float_img"
+              src="{{ section.settings.float_middle | image_url }}"
+              alt="Floating Image"
+              loading="eager"
+              width="{{ section.settings.float_middle.width }}"
+              height="{{ section.settings.float_middle.height }}"
+            >
+          </div>
+        {% endif %}
+        {% if section.settings.float_right != blank %}
+          <div class="image_float_wrap float_right">
+            <img
+              class="float_img"
+              src="{{ section.settings.float_right | image_url }}"
+              alt="Floating Image"
+              loading="eager"
+              width="{{ section.settings.float_right.width }}"
+              height="{{ section.settings.float_right.height }}"
+            >
+          </div>
+        {% endif %}
+
+        {% assign has_images = false %}
+        {% for i in (1..4) %}
+          {% capture image_key %}desktop_{{ i }}{% endcapture %}
+          {% if section.settings[image_key] %}
+            {% assign has_images = true %}
+          {% endif %}
+        {% endfor %}
+
+        <div
+          class="splide {% if has_images == false or section.blocks.size <= 1 %}is-visible{% endif %}"
+          {% if has_images and section.blocks.size > 1 %}
+            id="splide-{{ section.id }}"
+          {% else %}
+            id="splide-{{ section.id }}"
+          {% endif %}
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for i in (1..4) %}
+                {% capture image_key %}desktop_{{ i }}{% endcapture %}
+                {% capture alt_key %}alt_{{ i }}{% endcapture %}
+                {% if section.settings[image_key] %}
+                  <li class="splide__slide slider__banner-wrap">
+                    <div class="banners_images-wrap">
+                      {{
+                        section.settings[image_key]
+                        | image_url: width: section.settings[image_key].width
+                        | image_tag:
+                          class: 'customslider_img customslider--overall',
+                          alt: section.settings[alt_key],
+                          loading: 'eager',
+                          width: section.settings[image_key].width,
+                          height: section.settings[image_key].height,
+                          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000',
+                          sizes: '100vw'
+                      }}
+                    </div>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+
+          {% if section.settings.show_pagination %}
+            <ul class="splide__pagination splide-pagination-{{ section.id }}"></ul>
+          {% endif %}
+        </div>
+
 {% schema %}
 {
   "name": "Slide Image",
