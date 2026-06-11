@@ -25,7 +25,106 @@
 {% schema %}
 {
   "name": "Slider Gallery",
-  "settings": [],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Splide Settings"
+    },
+    {
+      "type": "select",
+      "id": "slider_type",
+      "label": "Slider Type",
+      "options": [
+        { "value": "slide", "label": "Slide" },
+        { "value": "loop", "label": "Loop" },
+        { "value": "fade", "label": "Fade" }
+      ],
+      "default": "loop"
+    },
+    {
+      "type": "range",
+      "id": "perPageDesktop",
+      "label": "Slides per view (Desktop)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "perPageMobile",
+      "label": "Slides per view (Mobile)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "perMove",
+      "label": "Slides to move",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap (Desktop)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Gap (Mobile)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable autoplay",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay speed (seconds)",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "transition_speed",
+      "label": "Transition speed (ms)",
+      "min": 300,
+      "max": 2000,
+      "step": 100,
+      "default": 1000
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show arrows",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination",
+      "label": "Show pagination",
+      "default": false
+    }
+  ],
   "blocks": [
     {
       "type": "slider-image"
