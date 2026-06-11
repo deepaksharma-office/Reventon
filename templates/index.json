@@ -418,11 +418,11 @@
               "name": "Slide Image",
               "settings": {
                 "desktop_image": true,
-                "image": "shopify://shop_images/Star_1.png",
+                "image": "shopify://shop_images/Star_1_1.png",
                 "alt": "",
-                "float_left": "shopify://shop_images/Clip_path_group.png",
-                "float_middle": "shopify://shop_images/image_13.png",
-                "float_right": "shopify://shop_images/Clip_path_group_1.png"
+                "float_left": "shopify://shop_images/image_20.png",
+                "float_middle": "shopify://shop_images/image_19.png",
+                "float_right": "shopify://shop_images/image_21.png"
               },
               "blocks": {}
             },
@@ -431,18 +431,31 @@
               "name": "Slide Image",
               "settings": {
                 "desktop_image": true,
-                "image": "shopify://shop_images/Star_1.png",
+                "image": "shopify://shop_images/Star_2_1.png",
                 "alt": "",
-                "float_left": "shopify://shop_images/Clip_path_group.png",
-                "float_middle": "shopify://shop_images/image_13.png",
-                "float_right": "shopify://shop_images/Clip_path_group_1.png"
+                "float_left": "shopify://shop_images/image_22_1.png",
+                "float_right": "shopify://shop_images/image_23_1.png"
+              },
+              "blocks": {}
+            },
+            "slider_image_Mrtiq3": {
+              "type": "slider-image",
+              "name": "Slide Image",
+              "settings": {
+                "desktop_image": true,
+                "image": "shopify://shop_images/Star_2.png",
+                "alt": "",
+                "float_left": "shopify://shop_images/image_11.png",
+                "float_middle": "shopify://shop_images/Clip_path_group_2.png",
+                "float_right": "shopify://shop_images/image_13_1.png"
               },
               "blocks": {}
             }
           },
           "block_order": [
             "slider_image_CcHJpC",
-            "slider_image_G7kAFX"
+            "slider_image_G7kAFX",
+            "slider_image_Mrtiq3"
           ]
         }
       },
