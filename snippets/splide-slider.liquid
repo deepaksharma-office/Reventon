@@ -1,28 +1,3 @@
-{%- comment -%}
-  Reusable Splide Slider Snippet
-  Usage:
-  {% render 'splide-slider',
-    slider_id: section.id,
-    section_id: section.id,
-    config: splide_config
-  %}
-
-  Requirements:
-  - Wrap slides with .splide__slide
-  - Each slide must have:
-    data-block-id="{{ block.id }}"
-    data-slide-index="{{ forloop.index0 }}"
-    {{ block.shopify_attributes }}
-
-    Loop startalwasy
-    <li
-                class="splide__slide relative"
-                data-block-id="{{ block.id }}"
-                data-slide-index="{{ forloop.index0 }}"
-                {{ block.shopify_attributes }}
-              >
-{%- endcomment -%}
-
 {%- assign custom_slider_id = slider_id | default: section.id -%}
 {%- assign custom_section_id = section_id | default: section.id -%}
 {%- assign custom_safe_id = custom_slider_id | replace: '-', '_' | replace: '__', '_' -%}
@@ -45,7 +20,6 @@
       var el = document.getElementById(sliderId);
       if (!el) return;
 
-      // Destroy existing instance safely
       if (el.splideInstance) {
         el.splideInstance.destroy(true);
       }
@@ -88,7 +62,6 @@
 
       var splide = new Splide(el, config);
 
-      // Restore last known slide (editor refresh fix)
       splide.on('mounted', function () {
         el.style.visibility = 'visible';
         var savedIndex = window.__splideState[stateKey];
@@ -97,7 +70,6 @@
         }
       });
 
-      // Track active slide
       splide.on('move', function (newIndex) {
         window.__splideState[stateKey] = newIndex;
       });
@@ -106,21 +78,18 @@
       el.splideInstance = splide;
     }
 
-    // Init on load
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initSplide_{{ custom_safe_id }});
     } else {
       initSplide_{{ custom_safe_id }}();
     }
 
-    // Section reload (Theme Editor)
     document.addEventListener('shopify:section:load', function (e) {
       if (e.detail.sectionId === "{{ custom_section_id }}") {
         setTimeout(initSplide_{{ custom_safe_id }}, 100);
       }
     });
 
-    // Section unload cleanup
     document.addEventListener('shopify:section:unload', function (e) {
       if (e.detail.sectionId === "{{ custom_section_id }}") {
         var el = document.getElementById(sliderId);
@@ -130,7 +99,6 @@
       }
     });
 
-    // 🔥 Block → slide sync (MAIN FIX)
     if (Shopify.designMode) {
       document.addEventListener('shopify:block:select', function (e) {
         var slide = document.querySelector(
@@ -149,123 +117,3 @@
     }
   })();
 </script>
-
-{% comment %}
-  {% schema %}
-      {
-        "type": "header",
-        "content": "Splide Settings"
-      },
-      {
-        "type": "select",
-        "id": "slider_type",
-        "label": "Slider Type",
-        "options": [
-          {
-            "value": "slide",
-            "label": "Slide"
-          },
-          {
-            "value": "loop",
-            "label": "Loop"
-          },
-          {
-            "value": "fade",
-            "label": "Fade"
-          }
-        ],
-        "default": "loop"
-      },
-      {
-        "type": "range",
-        "id": "perPageDesktop",
-        "label": "Slides per view (Desktop)",
-        "min": 1,
-        "max": 6,
-        "step": 1,
-        "default": 3
-      },
-      {
-        "type": "range",
-        "id": "perPageMobile",
-        "label": "Slides per view (Mobile)",
-        "min": 0.5,
-        "max": 3,
-        "step": 0.5,
-        "default": 1.5
-      },
-      {
-        "type": "range",
-        "id": "perMove",
-        "label": "Slides to move",
-        "min": 1,
-        "max": 3,
-        "step": 1,
-        "default": 1
-      },
-      {
-        "type": "range",
-        "id": "gap",
-        "label": "Gap between slides (Desktop)",
-        "default": 20,
-        "min": 0,
-        "max": 60
-      },
-      {
-        "type": "range",
-        "id": "gap_mobile",
-        "label": "Gap between slides (Mobile)",
-        "default": 10,
-        "min": 0,
-        "max": 60
-      },
-      {
-        "type": "checkbox",
-        "id": "autoplay",
-        "label": "Enable autoplay",
-        "default": false
-      },
-      {
-        "type": "range",
-        "id": "autoplay_speed",
-        "label": "Autoplay speed (seconds)",
-        "min": 1,
-        "max": 10,
-        "step": 1,
-        "default": 3
-      },
-      {
-        "type": "range",
-        "id": "transition_speed",
-        "label": "Transition speed (milliseconds)",
-        "min": 300,
-        "max": 2000,
-        "step": 100,
-        "default": 1000
-      },
-      {
-        "type": "checkbox",
-        "id": "show_arrows",
-        "label": "Show navigation arrows",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_pagination",
-        "label": "Show pagination dots",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "pause_on_hover",
-        "label": "Pause on hover",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "pause_on_focus",
-        "label": "Pause on focus",
-        "default": true
-      }
-  {% endschema %}
-{% endcomment %}
