@@ -64,7 +64,7 @@
         speed: {{ section.settings.transition_speed | default: 400 }},
         arrows: {{ section.settings.show_arrows | default: true | json }},
         pagination: {{ section.settings.show_pagination | default: false | json }},
-        gap: '{{ section.settings.gap | default: 10 }}px',
+        gap: '{{ section.settings.gap_slide | default: 10 }}px',
         pauseOnHover: {{ section.settings.pause_on_hover | default: false | json }},
         pauseOnFocus: {{ section.settings.pause_on_focus | default: false | json }},
         focus: Shopify.designMode ? false : {{ section.settings.focus | json }},
