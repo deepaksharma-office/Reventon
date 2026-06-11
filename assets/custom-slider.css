@@ -34,23 +34,6 @@
   width: 100%;
 }
 
-.main--wrapper-custom .content--side_wrapper h1,
-.main--wrapper-custom .content--side_wrapper h2,
-.main--wrapper-custom .content--side_wrapper h3,
-.main--wrapper-custom .content--side_wrapper h4 {
-  margin-bottom: 2rem;
-  line-height: 1;
-}
-
-.main--wrapper-custom .content--side_wrapper p {
-  margin-bottom: 1.5rem;
-}
-
-.main--wrapper-custom .content--side_wrapper .button,
-.main--wrapper-custom .content--side_wrapper .btn {
-  margin-top: 2rem;
-}
-
 /* ==================================================
    SLIDER SIDE
 ================================================== */
