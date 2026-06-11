@@ -424,7 +424,7 @@
         "transition_speed": 1000,
         "show_arrows": false,
         "show_pagination": false,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "padding-block-start": 54,
         "padding-block-end": 66
       }
