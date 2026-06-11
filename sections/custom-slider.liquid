@@ -1,5 +1,19 @@
 {{ 'custom-slider.css' | asset_url | stylesheet_tag }}
 
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
   class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
@@ -10,7 +24,7 @@
   {% endif %}
 >
  
-    <div class="main--wrapper-custom position--{{ section.settings.side }}">
+    <div class="main--wrapper-custom section-{{ section.id }}-padding position--{{ section.settings.side }}">
       <div class="content--side_wrapper">
         {% content_for 'blocks' %}
       </div>
