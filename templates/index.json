@@ -418,15 +418,14 @@
               "name": "Slide Image",
               "settings": {
                 "desktop_image": true,
-                "image": "shopify://shop_images/Star_1_1.png",
+                "image": "shopify://shop_images/Star_1_2.png",
                 "alt": "",
-                "float_left": "shopify://shop_images/image_20.png",
+                "float_left": "shopify://shop_images/image_25.png",
                 "left_size": 220,
                 "left_size_m": 120,
-                "float_middle": "shopify://shop_images/image_19.png",
                 "middle_size": 260,
                 "middle_size_m": 160,
-                "float_right": "shopify://shop_images/image_21.png",
+                "float_right": "shopify://shop_images/image_24_1.png",
                 "right_size": 100,
                 "right_size_m": 60
               },
