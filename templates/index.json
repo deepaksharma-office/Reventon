@@ -458,13 +458,13 @@
                 "image": "shopify://shop_images/Star_2.png",
                 "alt": "",
                 "float_left": "shopify://shop_images/image_11.png",
-                "left_size": 220,
+                "left_size": 250,
                 "left_size_m": 120,
                 "float_middle": "shopify://shop_images/Clip_path_group_2.png",
                 "middle_size": 220,
                 "middle_size_m": 120,
                 "float_right": "shopify://shop_images/image_13_1.png",
-                "right_size": 220,
+                "right_size": 280,
                 "right_size_m": 120
               },
               "blocks": {}
