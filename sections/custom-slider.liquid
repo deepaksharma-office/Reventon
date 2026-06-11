@@ -1,7 +1,3 @@
-{% capture children %}
-  {% content_for 'blocks' %}
-{% endcapture %}
-
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
   class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
@@ -24,9 +20,11 @@
   >
     <div class="main--wrapper position--{{ section.settings.side }}">
       <div class="content--side_wrapper">
-        {{ children }}
+        {% comment %} {% content_for 'slide-content' %} {% endcomment %}
       </div>
-      <div class="slide--side_wrapper"></div>
+      <div class="slide--side_wrapper">
+        {% comment %} {% content_for 'slide-image' %} {% endcomment %}
+      </div>
     </div>
   </div>
 </div>
@@ -37,10 +35,7 @@
   "class": "section-wrapper",
   "blocks": [
     {
-      "type": "@theme"
-    },
-    {
-      "type": "@app"
+      "type": "slide-content"
     },
     {
       "type": "_divider"
