@@ -1,4 +1,3 @@
-<div class="splide__slide">
   <div class="slider__inner_content">
     {% if block.settings.float_left != blank %}
       <div class="image_float_wrap float_left">
@@ -49,11 +48,11 @@
       {% endif %}
     </div>
   </div>
-</div>
 
 {% schema %}
 {
   "name": "Slide Image",
+  "class": "splide__slide",
   "settings": [
     {
       "type": "checkbox",
