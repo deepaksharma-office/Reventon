@@ -20,7 +20,7 @@
     style="{% render 'spacing-style', settings: section.settings %}"
     data-testid="section-content"
   >
-    <div class="main--wrapper position--{{ section.settings.side }}">
+    <div class="main--wrapper-custom position--{{ section.settings.side }}">
       <div class="content--side_wrapper">
         {% content_for 'blocks' %}
       </div>
@@ -84,13 +84,13 @@
                 {% capture image_key %}desktop_{{ i }}{% endcapture %}
                 {% capture alt_key %}alt_{{ i }}{% endcapture %}
                 {% if section.settings[image_key] %}
-                  <li class="splide__slide slider__banner-wrap-custom">
-                    <div class="banners_images-custom">
+                  <li class="splide__slide slider__banner-wrap">
+                    <div class="banners_images-wrap">
                       {{
                         section.settings[image_key]
                         | image_url: width: section.settings[image_key].width
                         | image_tag:
-                          class: 'customslider customslider--desktop',
+                          class: 'customslider_img customslider--overall',
                           alt: section.settings[alt_key],
                           loading: 'eager',
                           width: section.settings[image_key].width,
