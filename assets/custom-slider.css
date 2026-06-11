@@ -363,7 +363,6 @@
 ================================================== */
 
 @media screen and (max-width: 480px) {
-
   .main--wrapper-custom {
     gap: 2rem;
   }
@@ -372,15 +371,11 @@
     width: min(100%, 300px);
   }
 
-  .main--wrapper-custom .float_left {
-    width: 70px;
-  }
-
   .main--wrapper-custom .float_middle {
-    width: 50px;
+    width: 100px;
   }
 
   .main--wrapper-custom .float_right {
-    width: 70px;
+    width: 110px;
   }
 }
