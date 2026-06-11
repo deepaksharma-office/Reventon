@@ -95,11 +95,6 @@
         "disabled": false,
         "settings": {}
       },
-      "4015264832934714879": {
-        "type": "shopify://apps/sendwill-email-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": false,
-        "settings": {}
-      },
       "7456567658179156570": {
         "type": "shopify://apps/adroll-advertising-marketing/blocks/adroll-pixel/c60853ed-1adb-4359-83ae-4ed43ed0b559",
         "disabled": false,
@@ -185,6 +180,11 @@
       "16735461377607925125": {
         "type": "shopify://apps/terms-checkbox/blocks/app-embed/17661ca5-aeea-41b9-8091-d8f7233e8b22",
         "disabled": false,
+        "settings": {}
+      },
+      "4015264832934714879": {
+        "type": "shopify://apps/sendwill-email-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": true,
         "settings": {}
       }
     },
