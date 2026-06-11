@@ -135,3 +135,9 @@
         animation: none !important;
     }
 }
+
+@media screen and (max-width: 749px) {
+    .image_float_wrap {
+        width: 120px;
+    }
+}
