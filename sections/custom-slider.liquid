@@ -23,33 +23,47 @@
         {% content_for 'blocks' %}
       </div>
       <div class="slide--side_wrapper">
+        {% assign has_images = false %}
+        {% for i in (1..4) %}
+          {% capture image_key %}desktop_{{ i }}{% endcapture %}
+          {% if section.settings[image_key] %}
+            {% assign has_images = true %}
+          {% endif %}
+        {% endfor %}
+
         <div
-          class="splide {% unless section.blocks.size > 1 %}visible{% endunless %}"
-          {% if section.blocks.size > 1 %}
+          class="splide {% if has_images == false or section.blocks.size <= 1 %}is-visible{% endif %}"
+          {% if has_images and section.blocks.size > 1 %}
+            id="splide-{{ section.id }}"
+          {% else %}
             id="splide-{{ section.id }}"
           {% endif %}
         >
           <div class="splide__track">
-            <div class="splide__list">
+            <ul class="splide__list">
               {% for i in (1..4) %}
-                {% capture image %}desktop_{{ i }}{% endcapture %}
-                {% capture alt %}alt_{{ i }}{% endcapture %}
-                {% if section.settings[image] %}
-                  <div class="splide__slide slider__banner-wrap-custom">
+                {% capture image_key %}desktop_{{ i }}{% endcapture %}
+                {% capture alt_key %}alt_{{ i }}{% endcapture %}
+                {% if section.settings[image_key] %}
+                  <li class="splide__slide slider__banner-wrap-custom">
                     <div class="banners_images-custom">
-                      <img
-                        class="customslider customslider--desktop"
-                        src="{{ section.settings[image] | image_url }}"
-                        alt="{{ section.settings[alt] | escape }}"
-                        loading="eager"
-                        width="{{ section.settings[image].width }}"
-                        height="{{ section.settings[image].height }}"
-                      >
+                      {{
+                        section.settings[image_key]
+                        | image_url: width: section.settings[image_key].width
+                        | image_tag:
+                          class: 'customslider customslider--desktop',
+                          alt: section.settings[alt_key],
+                          loading: 'eager',
+                          width: section.settings[image_key].width,
+                          height: section.settings[image_key].height,
+                          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000',
+                          sizes: '100vw'
+                      }}
                     </div>
-                  </div>
+                  </li>
                 {% endif %}
               {% endfor %}
-            </div>
+            </ul>
           </div>
 
           {% if section.settings.show_pagination %}
@@ -60,6 +74,7 @@
     </div>
   </div>
 </div>
+
 {% render 'splide-slider', section: section %}
 
 {% schema %}
@@ -75,6 +90,97 @@
     "groups": ["header"]
   },
   "settings": [
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_1",
+      "label": "Slide 1 Image"
+    },
+    {
+      "type": "text",
+      "id": "alt_1",
+      "label": "Slide 1 Alt Text",
+      "default": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_2",
+      "label": "Slide 2 Image"
+    },
+    {
+      "type": "text",
+      "id": "alt_2",
+      "label": "Slide 2 Alt Text",
+      "default": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_3",
+      "label": "Slide 3 Image"
+    },
+    {
+      "type": "text",
+      "id": "alt_3",
+      "label": "Slide 3 Alt Text",
+      "default": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_4",
+      "label": "Slide 4 Image"
+    },
+    {
+      "type": "text",
+      "id": "alt_4",
+      "label": "Slide 4 Alt Text",
+      "default": "Banner Image"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section Width",
+      "default": "full-width",
+      "options": [
+        { "value": "full-width", "label": "Full Width" },
+        { "value": "page-width", "label": "Page Width" },
+        { "value": "narrow", "label": "Narrow" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_direction",
+      "label": "Content Direction",
+      "default": "row",
+      "options": [
+        { "value": "row", "label": "Row (Horizontal)" },
+        { "value": "row-reverse", "label": "Row Reverse" },
+        { "value": "column", "label": "Column (Vertical)" },
+        { "value": "column-reverse", "label": "Column Reverse" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "vertical_on_mobile",
+      "label": "Stack vertically on mobile",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "side",
+      "label": "Content Position",
+      "default": "content-left",
+      "options": [
+        { "label": "Content Left", "value": "content-left" },
+        { "label": "Content Right", "value": "content-right" }
+      ]
+    },
     {
       "type": "header",
       "content": "Splide Settings"
@@ -95,7 +201,7 @@
       "id": "perPageDesktop",
       "label": "Slides per view (Desktop)",
       "min": 1,
-      "max": 1,
+      "max": 4,
       "step": 1,
       "default": 1
     },
@@ -104,7 +210,7 @@
       "id": "perPageMobile",
       "label": "Slides per view (Mobile)",
       "min": 1,
-      "max": 1,
+      "max": 4,
       "step": 1,
       "default": 1
     },
@@ -113,7 +219,7 @@
       "id": "perMove",
       "label": "Slides to move",
       "min": 1,
-      "max": 3,
+      "max": 4,
       "step": 1,
       "default": 1
     },
@@ -123,6 +229,8 @@
       "label": "Gap (Desktop)",
       "min": 0,
       "max": 60,
+      "step": 2,
+      "unit": "px",
       "default": 0
     },
     {
@@ -131,6 +239,8 @@
       "label": "Gap (Mobile)",
       "min": 0,
       "max": 60,
+      "step": 2,
+      "unit": "px",
       "default": 0
     },
     {
@@ -145,6 +255,7 @@
       "label": "Autoplay speed (seconds)",
       "min": 1,
       "max": 10,
+      "step": 1,
       "default": 3
     },
     {
@@ -167,22 +278,6 @@
       "id": "show_pagination",
       "label": "Show pagination",
       "default": false
-    },
-    {
-      "type": "select",
-      "id": "side",
-      "label": "Content Position",
-      "default": "content-left",
-      "options": [
-        {
-          "label": "Content Left",
-          "value": "content-left"
-        },
-        {
-          "label": "Content Right",
-          "value": "content-right"
-        }
-      ]
     },
     {
       "type": "header",
