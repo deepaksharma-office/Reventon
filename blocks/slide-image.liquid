@@ -5,9 +5,9 @@
   <div
     class="splide {% if section.blocks.size <= 1 %}is-visible{% endif %}"
     {% if section.blocks.size > 1 %}
-      id="splide-{{ section.id }}"
+      id="splide-{{ block.id }}"
     {% else %}
-      id="splide-{{ section.id }}"
+      id="splide-{{ block.id }}"
     {% endif %}
   >
     <div class="splide__track">
@@ -17,7 +17,7 @@
     </div>
 
     {% if section.settings.show_pagination %}
-      <ul class="splide__pagination splide-pagination-{{ section.id }}"></ul>
+      <ul class="splide__pagination splide-pagination-{{ block.id }}"></ul>
     {% endif %}
   </div>
 </div>
