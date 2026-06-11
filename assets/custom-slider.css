@@ -309,7 +309,6 @@
   }
 
   .main--wrapper-custom .slide--side_wrapper {
-    flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
   }
