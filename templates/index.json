@@ -24,9 +24,9 @@
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
-            "width_mobile": "fill",
+            "width_mobile": "custom",
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
@@ -51,26 +51,92 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "text_t6HzUr": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>New arrivals</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_t6HzUr"
+          ]
+        },
+        "slide_image_LTqqQL": {
+          "type": "slide-image",
+          "name": "Slider Gallery",
+          "settings": {},
+          "blocks": {
+            "slider_image_CcHJpC": {
+              "type": "slider-image",
+              "name": "Slide Image",
+              "settings": {
+                "desktop_image": true,
+                "image": "shopify://shop_images/Star_1.png",
+                "alt": "",
+                "float_left": "shopify://shop_images/Clip_path_group.png",
+                "float_middle": "shopify://shop_images/image_13.png"
+              },
+              "blocks": {}
+            },
+            "slider_image_G7kAFX": {
+              "type": "slider-image",
+              "name": "Slide Image",
+              "settings": {
+                "desktop_image": true,
+                "image": "shopify://shop_images/Star_1.png",
+                "alt": "",
+                "float_left": "shopify://shop_images/Clip_path_group.png",
+                "float_middle": "shopify://shop_images/image_13.png"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "slider_image_CcHJpC",
+            "slider_image_G7kAFX"
+          ]
         }
       },
       "block_order": [
-        "group_9TL4Mt"
+        "group_9TL4Mt",
+        "slide_image_LTqqQL"
       ],
       "name": "t:names.custom_section",
       "settings": {
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "gap": 40,
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
