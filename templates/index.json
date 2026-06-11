@@ -402,6 +402,9 @@
       ],
       "name": "Custom Slider",
       "settings": {
+        "float_left": "shopify://shop_images/Clip_path_group.png",
+        "float_middle": "shopify://shop_images/image_13.png",
+        "float_right": "shopify://shop_images/Clip_path_group_1.png",
         "desktop_1": "shopify://shop_images/Star_1.png",
         "alt_1": "Banner Image",
         "desktop_2": "shopify://shop_images/Star_1.png",
@@ -507,6 +510,7 @@
         "horizon_slide_CgyNda",
         "horizon_slide_NQ4WmQ"
       ],
+      "disabled": true,
       "name": "Hero Slider",
       "settings": {
         "slider_type": "slide",
