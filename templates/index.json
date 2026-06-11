@@ -421,7 +421,8 @@
                 "image": "shopify://shop_images/Star_1.png",
                 "alt": "",
                 "float_left": "shopify://shop_images/Clip_path_group.png",
-                "float_middle": "shopify://shop_images/image_13.png"
+                "float_middle": "shopify://shop_images/image_13.png",
+                "float_right": "shopify://shop_images/Clip_path_group_1.png"
               },
               "blocks": {}
             },
@@ -433,7 +434,8 @@
                 "image": "shopify://shop_images/Star_1.png",
                 "alt": "",
                 "float_left": "shopify://shop_images/Clip_path_group.png",
-                "float_middle": "shopify://shop_images/image_13.png"
+                "float_middle": "shopify://shop_images/image_13.png",
+                "float_right": "shopify://shop_images/Clip_path_group_1.png"
               },
               "blocks": {}
             }
