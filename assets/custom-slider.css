@@ -1,8 +1,8 @@
-/* ==========================================
+/* ==================================================
    CUSTOM SLIDER SECTION
-   ========================================== */
+================================================== */
 
-.main--wrapper {
+.main--wrapper-custom {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,139 +11,152 @@
   position: relative;
 }
 
-.position--content-right {
+/* ==================================================
+   CONTENT POSITION
+================================================== */
+
+.main--wrapper-custom.position--content-right {
   flex-direction: row-reverse;
 }
 
-.content--side_wrapper {
+/* ==================================================
+   CONTENT SIDE
+================================================== */
+
+.main--wrapper-custom .content--side_wrapper {
   flex: 0 0 42%;
   max-width: 42%;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
-.slide--side_wrapper {
-  flex: 0 0 58%;
-  max-width: 58%;
-  position: relative;
-  z-index: 1;
-}
-
-/* ==========================================
-   CONTENT SIDE
-   ========================================== */
-
-.content--side_wrapper > * {
+.main--wrapper-custom .content--side_wrapper > * {
   width: 100%;
 }
 
-.content--side_wrapper h1,
-.content--side_wrapper h2,
-.content--side_wrapper h3 {
+.main--wrapper-custom .content--side_wrapper h1,
+.main--wrapper-custom .content--side_wrapper h2,
+.main--wrapper-custom .content--side_wrapper h3,
+.main--wrapper-custom .content--side_wrapper h4 {
   margin-bottom: 2rem;
-  line-height: 0.95;
+  line-height: 1;
 }
 
-.content--side_wrapper p {
-  margin-bottom: 1.6rem;
+.main--wrapper-custom .content--side_wrapper p {
+  margin-bottom: 1.5rem;
 }
 
-.content--side_wrapper .button,
-.content--side_wrapper .btn {
+.main--wrapper-custom .content--side_wrapper .button,
+.main--wrapper-custom .content--side_wrapper .btn {
   margin-top: 2rem;
 }
 
-/* ==========================================
-   SLIDER WRAPPER
-   ========================================== */
+/* ==================================================
+   SLIDER SIDE
+================================================== */
 
-.slide--side_wrapper .splide {
+.main--wrapper-custom .slide--side_wrapper {
+  flex: 0 0 58%;
+  max-width: 58%;
+  position: relative;
+}
+
+.main--wrapper-custom .splide {
   position: relative;
   overflow: visible;
 }
 
-.slide--side_wrapper .splide__track {
+.main--wrapper-custom .splide__track {
   overflow: visible;
 }
 
-.slide--side_wrapper .splide__list {
+.main--wrapper-custom .splide__list {
   align-items: center;
 }
 
-.slider__banner-wrap-custom {
+.main--wrapper-custom .slider__banner-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banners_images-custom {
+.main--wrapper-custom .banners_images-wrap {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.customslider {
+/* ==================================================
+   HERO IMAGE
+================================================== */
+
+.main--wrapper-custom .customslider_img {
   display: block;
   width: min(100%, 700px);
-  margin: 0 auto;
+  height: auto;
+  margin-inline: auto;
+
   aspect-ratio: 1;
   object-fit: cover;
 
-  border-radius:
-    40% 60% 57% 43% /
-    47% 37% 63% 53%;
-
-  position: relative;
-
   box-shadow:
-    0 10px 30px rgba(0,0,0,.08);
+    0 12px 30px rgba(0, 0, 0, .08);
+
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
-/* ==========================================
-   FLOATING IMAGES
-   ========================================== */
+/* ==================================================
+   FLOATING DECORATIONS
+================================================== */
 
-.image_float_wrap {
+.main--wrapper-custom .image_float_wrap {
   position: absolute;
-  z-index: 3;
+  z-index: 10;
   pointer-events: none;
 }
 
-.float_img {
-  display: block;
+.main--wrapper-custom .float_img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-.float_left {
+/* Bottom Left */
+
+.main--wrapper-custom .float_left {
   width: 170px;
   left: -4%;
   bottom: 10%;
-  animation: floatHorizontal 6s ease-in-out infinite;
+  animation: customSliderFloat 6s ease-in-out infinite;
 }
 
-.float_middle {
+/* Top Center */
+
+.main--wrapper-custom .float_middle {
   width: 120px;
   top: -3%;
   left: 42%;
-  animation: floatHorizontal 8s ease-in-out infinite;
+  animation: customSliderFloat 8s ease-in-out infinite;
 }
 
-.float_right {
+/* Top Right */
+
+.main--wrapper-custom .float_right {
   width: 150px;
-  top: 5%;
+  top: 4%;
   right: -3%;
-  animation: floatHorizontal 7s ease-in-out infinite;
+  animation: customSliderFloat 7s ease-in-out infinite;
 }
 
-/* ==========================================
-   ANIMATIONS
-   ========================================== */
+/* ==================================================
+   ANIMATION
+================================================== */
 
-@keyframes floatHorizontal {
+@keyframes customSliderFloat {
   0% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   50% {
@@ -151,278 +164,234 @@
   }
 
   100% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 
-@keyframes floatVertical {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/* ==========================================
+/* ==================================================
    PAGINATION
-   ========================================== */
+================================================== */
 
-.slide--side_wrapper .splide__pagination {
+.main--wrapper-custom .splide__pagination {
   position: relative;
   bottom: auto;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   gap: .8rem;
 }
 
-.slide--side_wrapper .splide__pagination__page {
+.main--wrapper-custom .splide__pagination__page {
   width: 8px;
   height: 8px;
-  border-radius: 999px;
   margin: 0;
+  border-radius: 999px;
   opacity: .35;
   transition: all .3s ease;
 }
 
-.slide--side_wrapper .splide__pagination__page.is-active {
+.main--wrapper-custom .splide__pagination__page.is-active {
   opacity: 1;
   transform: scale(1.4);
 }
 
-/* ==========================================
+/* ==================================================
    ARROWS
-   ========================================== */
+================================================== */
 
-.slide--side_wrapper .splide__arrow {
+.main--wrapper-custom .splide__arrow {
   width: 4.4rem;
   height: 4.4rem;
-  opacity: 1;
   transition: .3s ease;
 }
 
-.slide--side_wrapper .splide__arrow:hover {
+.main--wrapper-custom .splide__arrow:hover {
   transform: scale(1.08);
 }
 
-.slide--side_wrapper .splide__arrow svg {
+.main--wrapper-custom .splide__arrow svg {
   width: 1.6rem;
   height: 1.6rem;
 }
 
-/* ==========================================
-   DESKTOP LARGE
-   ========================================== */
+/* ==================================================
+   SINGLE SLIDE
+================================================== */
+
+.main--wrapper-custom .splide.is-visible .splide__pagination,
+.main--wrapper-custom .splide.is-visible .splide__arrows {
+  display: none !important;
+}
+
+/* ==================================================
+   LARGE DESKTOP
+================================================== */
 
 @media screen and (min-width: 1440px) {
 
-  .main--wrapper {
+  .main--wrapper-custom {
     gap: 10rem;
   }
 
-  .customslider {
+  .main--wrapper-custom .customslider_img {
     max-width: 760px;
   }
 
-  .float_left {
-    width: 210px;
+  .main--wrapper-custom .float_left {
+    width: 220px;
   }
 
-  .float_middle {
-    width: 140px;
+  .main--wrapper-custom .float_middle {
+    width: 150px;
   }
 
-  .float_right {
+  .main--wrapper-custom .float_right {
     width: 180px;
   }
 }
 
-/* ==========================================
+/* ==================================================
    LAPTOP
-   ========================================== */
+================================================== */
 
 @media screen and (max-width: 1200px) {
 
-  .main--wrapper {
+  .main--wrapper-custom {
     gap: 5rem;
   }
 
-  .content--side_wrapper {
+  .main--wrapper-custom .content--side_wrapper {
     flex-basis: 45%;
     max-width: 45%;
   }
 
-  .slide--side_wrapper {
+  .main--wrapper-custom .slide--side_wrapper {
     flex-basis: 55%;
     max-width: 55%;
   }
 
-  .float_left {
+  .main--wrapper-custom .float_left {
     width: 140px;
   }
 
-  .float_middle {
+  .main--wrapper-custom .float_middle {
     width: 100px;
   }
 
-  .float_right {
+  .main--wrapper-custom .float_right {
     width: 120px;
   }
 }
 
-/* ==========================================
+/* ==================================================
    TABLET
-   ========================================== */
+================================================== */
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 990px) {
 
-  .main--wrapper {
+  .main--wrapper-custom {
     gap: 4rem;
   }
 
-  .content--side_wrapper {
+  .main--wrapper-custom .content--side_wrapper {
     flex-basis: 48%;
     max-width: 48%;
   }
 
-  .slide--side_wrapper {
+  .main--wrapper-custom .slide--side_wrapper {
     flex-basis: 52%;
     max-width: 52%;
   }
 
-  .customslider {
-    border-radius:
-      42% 58% 60% 40% /
-      43% 38% 62% 57%;
-  }
-
-  .float_left {
+  .main--wrapper-custom .float_left {
     width: 110px;
-    left: -3%;
   }
 
-  .float_middle {
+  .main--wrapper-custom .float_middle {
     width: 80px;
   }
 
-  .float_right {
+  .main--wrapper-custom .float_right {
     width: 95px;
   }
 }
 
-/* ==========================================
+/* ==================================================
    MOBILE
-   ========================================== */
+================================================== */
 
 @media screen and (max-width: 767px) {
 
-  .main--wrapper {
+  .main--wrapper-custom,
+  .main--wrapper-custom.position--content-right {
     flex-direction: column;
     gap: 3rem;
   }
 
-  .position--content-right {
-    flex-direction: column;
-  }
-
-  .content--side_wrapper,
-  .slide--side_wrapper {
+  .main--wrapper-custom .content--side_wrapper,
+  .main--wrapper-custom .slide--side_wrapper {
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
   }
 
-  .content--side_wrapper {
+  .main--wrapper-custom .content--side_wrapper {
     text-align: center;
   }
 
-  .content--side_wrapper .button,
-  .content--side_wrapper .btn {
+  .main--wrapper-custom .content--side_wrapper .button,
+  .main--wrapper-custom .content--side_wrapper .btn {
     margin-inline: auto;
   }
 
-  .customslider {
-    width: min(100%, 340px);
+  .main--wrapper-custom .customslider_img {
+    width: min(100%, 360px);
   }
 
-  .float_left {
+  .main--wrapper-custom .float_left {
     width: 90px;
     left: 2%;
-    bottom: 8%;
+    bottom: 10%;
   }
 
-  .float_middle {
-    width: 65px;
-    top: -5%;
-    left: 20%;
+  .main--wrapper-custom .float_middle {
+    width: 60px;
+    left: 18%;
+    top: -4%;
   }
 
-  .float_right {
-    width: 85px;
+  .main--wrapper-custom .float_right {
+    width: 80px;
     right: 2%;
-    top: 0;
+    top: 2%;
   }
 
-  .slide--side_wrapper .splide__pagination {
-    margin-top: 2rem;
+  .main--wrapper-custom .splide__pagination {
+    margin-top: 1.8rem;
   }
 }
 
-/* ==========================================
+/* ==================================================
    SMALL MOBILE
-   ========================================== */
+================================================== */
 
 @media screen and (max-width: 480px) {
 
-  .main--wrapper {
-    gap: 2.5rem;
+  .main--wrapper-custom {
+    gap: 2rem;
   }
 
-  .content--side_wrapper h1,
-  .content--side_wrapper h2 {
-    line-height: 1;
-  }
-
-  .customslider {
+  .main--wrapper-custom .customslider_img {
     width: min(100%, 300px);
   }
 
-  .float_left {
+  .main--wrapper-custom .float_left {
     width: 70px;
   }
 
-  .float_middle {
+  .main--wrapper-custom .float_middle {
     width: 50px;
   }
 
-  .float_right {
+  .main--wrapper-custom .float_right {
     width: 70px;
   }
-
-  .slide--side_wrapper .splide__pagination {
-    margin-top: 1.6rem;
-  }
-}
-
-/* ==========================================
-   ONLY ONE SLIDE
-   ========================================== */
-
-.splide.is-visible .splide__pagination,
-.splide.is-visible .splide__arrows {
-  display: none !important;
-}
-
-/* ==========================================
-   IMAGE QUALITY
-   ========================================== */
-
-.customslider,
-.float_img {
-  backface-visibility: hidden;
-  transform: translateZ(0);
 }
