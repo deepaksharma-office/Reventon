@@ -2,8 +2,8 @@
   {% if block.settings.float_left != blank %}
     <div class="image_float_wrap float_left"
     style="
-    --mobile-size: {{ section.settings.left_size_m }}px;
-    --size: {{ section.settings.left_size }}px;
+    --mobile-size: {{ block.settings.left_size_m }}px;
+    --size: {{ block.settings.left_size }}px;
     "
     >
       <img
@@ -19,8 +19,8 @@
   {% if block.settings.float_middle != blank %}
     <div class="image_float_wrap float_middle"
     style="
-    --mobile-size: {{ section.settings.middle_size_m }}px;
-    --size: {{ section.settings.middle_size }}px;
+    --mobile-size: {{ block.settings.middle_size_m }}px;
+    --size: {{ block.settings.middle_size }}px;
     "
     >
       <img
@@ -36,8 +36,8 @@
   {% if block.settings.float_right != blank %}
     <div class="image_float_wrap float_right" 
     style="
-    --mobile-size: {{ section.settings.right_size_m }}px;
-    --size: {{ section.settings.right_size }}px;
+    --mobile-size: {{ block.settings.right_size_m }}px;
+    --size: {{ block.settings.right_size }}px;
     "
     >
       <img
