@@ -86,7 +86,19 @@
         "slide_image_LTqqQL": {
           "type": "slide-image",
           "name": "Slider Gallery",
-          "settings": {},
+          "settings": {
+            "slider_type": "fade",
+            "perPageDesktop": 1,
+            "perPageMobile": 1,
+            "perMove": 1,
+            "gap": 0,
+            "gap_mobile": 0,
+            "autoplay": false,
+            "autoplay_speed": 3,
+            "transition_speed": 1000,
+            "show_arrows": false,
+            "show_pagination": false
+          },
           "blocks": {
             "slider_image_CcHJpC": {
               "type": "slider-image",
