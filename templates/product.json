@@ -243,9 +243,9 @@
                 ]
               },
               "blocks": {
-                "new_buy_fYC6Yc": {
+                "new_buy_GKFqLf": {
                   "type": "new-buy",
-                  "name": "t:names.product_buy_buttons",
+                  "name": "New Button",
                   "settings": {
                     "stacking": false,
                     "show_pickup_availability": true,
@@ -281,7 +281,7 @@
                 }
               },
               "block_order": [
-                "new_buy_fYC6Yc"
+                "new_buy_GKFqLf"
               ]
             },
             "text_aEtTtq": {
