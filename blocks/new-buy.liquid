@@ -217,7 +217,7 @@
             </volume-pricing>
           {%- endif -%}
           {% content_for 'block',
-            type: 'add-to-cart',
+            type: 'add-new',
             id: 'add-to-cart',
             can_add_to_cart: can_add_to_cart,
             add_to_cart_text: add_to_cart_text
@@ -453,7 +453,7 @@
           "static": true
         },
         "add-to-cart": {
-          "type": "add-to-cart",
+          "type": "add-new",
           "static": true,
           "settings": {
             "style_class": "button-secondary"
