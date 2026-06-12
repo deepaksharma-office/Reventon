@@ -228,6 +228,21 @@
                 "font_color": ""
               }
             },
+            "switch_upsell_EHJcVq": {
+              "type": "switch-upsell",
+              "name": "Switch Upsell",
+              "settings": {
+                "label": "Goes well With",
+                "products": [
+                  "12in-red-heart-latex-balloons",
+                  "6-تعليقات-الهالوين-قطع",
+                  "90s-party-bags-اكياس",
+                  "acrylic-club-stand",
+                  "acrylic-customized-gift"
+                ]
+              },
+              "blocks": {}
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -527,145 +542,6 @@
                 "plus_icon_color": "#ffffff"
               },
               "blocks": {}
-            },
-            "product_recommendations_iWcxqX": {
-              "type": "product-recommendations",
-              "name": "t:names.product_recommendations",
-              "settings": {
-                "recommendation_type": "related",
-                "layout_type": "carousel",
-                "carousel_on_mobile": true,
-                "max_products": 8,
-                "columns_gap": 16,
-                "rows_gap": 16,
-                "icons_style": "arrow",
-                "icons_shape": "none",
-                "gap": 12,
-                "border_radius": 0,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_wqVpKV": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p><strong>Pairs well with</strong></p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "custom",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1.25rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "static-product-card": {
-                  "type": "_product-card",
-                  "static": true,
-                  "settings": {
-                    "product_card_gap": 4,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "product_card_gallery_H46Ktw": {
-                      "type": "_product-card-gallery",
-                      "settings": {
-                        "image_ratio": "portrait",
-                        "border": "none",
-                        "border_width": 1,
-                        "border_opacity": 100,
-                        "border_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "product_title_HTUiJG": {
-                      "type": "product-title",
-                      "name": "t:names.product_title",
-                      "settings": {
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "paragraph",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 4,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "price_MC8xiz": {
-                      "type": "price",
-                      "name": "t:names.product_price",
-                      "settings": {
-                        "show_sale_price_first": true,
-                        "show_installments": false,
-                        "show_tax_info": false,
-                        "type_preset": "h6",
-                        "width": "100%",
-                        "alignment": "left",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "color": "var(--color-foreground)",
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_gallery_H46Ktw",
-                    "product_title_HTUiJG",
-                    "price_MC8xiz"
-                  ]
-                }
-              },
-              "block_order": [
-                "text_wqVpKV"
-              ]
             }
           },
           "block_order": [
@@ -674,12 +550,12 @@
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
             "vo_product_options_block_rAmkb3",
+            "switch_upsell_EHJcVq",
             "text_aEtTtq",
             "group_UiBFEH",
             "group_WkUn66",
             "group_8eF3cA",
-            "ai_gen_block_78f2609_LDpNfL",
-            "product_recommendations_iWcxqX"
+            "ai_gen_block_78f2609_LDpNfL"
           ]
         }
       },
