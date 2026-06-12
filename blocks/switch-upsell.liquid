@@ -1,0 +1,40 @@
+<div class="switcher_container">
+  <div class="top_switch_bar">
+    <label class="switch">
+      <input class="addonswitch is--active" type="checkbox" data-id="addonproducts">
+      <span class="switch-slider round"></span>
+    </label>
+    <div class="label_switch">{{ block.settings.label }}</div>
+  </div>
+  <div class="addonswitch_container is--active" data-id="addonproducts">
+    <div class="upsell_container">
+      {% for item in block.settings.products %}
+        <div class="products">{{ item.title }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Switch Upsell",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "Goes well With"
+    },
+    {
+      "type": "product_list",
+      "label": "Product List",
+      "id": "products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Switch Upsell"
+    }
+  ]
+}
+{% endschema %}
