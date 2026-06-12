@@ -2,3 +2,212 @@
     width: 25px;
     height: auto;
 }
+
+/* =========================
+   SWITCHER WRAPPER
+========================= */
+
+.switcher_container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.top_switch_bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.label_switch {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #5d0d0d;
+}
+
+/* =========================
+   TOGGLE SWITCH
+========================= */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  background: #e6e1db;
+  transition: all .3s ease;
+  border: 1px solid #5d0d0d;
+}
+
+.switch-slider:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  background: #5d0d0d;
+  transition: transform .3s ease;
+}
+
+.switch-slider.round {
+  border-radius: 30px;
+}
+
+.switch-slider.round:before {
+  border-radius: 50%;
+}
+
+.switch input:checked + .switch-slider {
+  background: #f6f3ef;
+}
+
+.switch input:checked + .switch-slider:before {
+  transform: translateX(22px);
+}
+
+/* =========================
+   CONTENT TOGGLE
+========================= */
+
+.addonswitch_container {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.addonswitch_container.is--active {
+  display: flex;
+}
+
+/* =========================
+   PRODUCT LIST
+========================= */
+
+.upsell_container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.prop-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.prop-product_title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.prop-product_image {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+
+.product_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prop-info--wrapper {
+  flex: 1;
+}
+
+.prop-label {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #5d0d0d;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.prop-subtext {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #5d0d0d;
+}
+
+.link-prop {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #5d0d0d;
+}
+
+/* =========================
+   ADD TO CART AREA
+========================= */
+
+.prop-addto-cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+/* Example if your block renders button */
+
+.prop-addto-cart button,
+.prop-addto-cart .button {
+  min-width: 110px;
+  min-height: 40px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 749px) {
+  .prop-wrapper {
+    gap: 10px;
+  }
+
+  .prop-product_image {
+    width: 48px;
+    height: 48px;
+  }
+
+  .prop-label {
+    font-size: 12px;
+  }
+
+  .prop-subtext,
+  .link-prop {
+    font-size: 10px;
+  }
+}
