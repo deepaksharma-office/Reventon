@@ -10,6 +10,38 @@
     <div class="upsell_container">
       {% for item in block.settings.products %}
         <div class="products">{{ item.title }}</div>
+
+        <div class="prop-wrapper" x-data="featuredProductsSliderModal">
+          <div class="prop-product_title">
+            <div class="prop-product_image">
+              <img
+                src="{{ item.featured_image | image_url }}"
+                alt="{{ item.title }}"
+                width="{{ item.featured_image.width }}"
+                height="{{ item.featured_image.height }}"
+                class="product_image"
+              >
+            </div>
+            <div class="prop-info--wrapper">
+              <p class="prop-label">
+                {{ item.title }}
+                <span class="prop-subtext">{{ item.price | money }}</span>
+                <a
+                  href="{{ item.url }}"
+                  class="link-prop"
+                  data-handle="{{ item.handle }}"
+                  data-context="addon"
+                  data-index="1"
+                  @click.prevent="toggle"
+                  >View More</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="prop-addto-cart">
+            {% content_for 'blocks' %}
+          </div>
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -29,6 +61,11 @@
       "type": "product_list",
       "label": "Product List",
       "id": "products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "new-buy"
     }
   ],
   "presets": [
