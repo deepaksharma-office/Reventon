@@ -5,7 +5,6 @@
   Intended for product-form.liquid block.
 
   @param {string} can_add_to_cart - Whether the product can be added to the cart
-  @param {string} add_to_cart_text - The text of the add to cart button
 {%- enddoc -%}
 
 {% liquid
@@ -17,12 +16,11 @@
   {{ block.shopify_attributes }}
   style="--add-to-cart-font-case: {{ settings.button_text_case }};"
 >
-  {% render 'add-to-cart-button',
+  {% render 'button-new',
     id: id,
     class: class,
     can_add_to_cart: can_add_to_cart,
     product: closest.product,
-    add_to_cart_text: add_to_cart_text,
     data_testid: 'standalone-add-to-cart'
   %}
 </span>
