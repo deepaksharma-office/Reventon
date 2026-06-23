@@ -26,12 +26,7 @@
 
       var defaultConfig = {
         type: Shopify.designMode ? 'slide' : '{{ section.settings.slider_type | default: "loop" }}',
-        {% if section.settings.slider_type == 'slide' %}
           rewind: true,
-        {% endif %}
-        {% if section.settings.slider_type == 'loop' %}
-          rewind: true,
-        {% endif %}
         perPage: {{ section.settings.perPageDesktop | default: 1 }},
         perMove: {{ section.settings.perMove | default: 1 }},
         autoplay: Shopify.designMode
