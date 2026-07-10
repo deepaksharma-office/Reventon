@@ -2404,6 +2404,7 @@
       "block_order": [
         "group_L8UW7N"
       ],
+      "disabled": true,
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
@@ -2680,7 +2681,7 @@
       "name": "Featured collection",
       "settings": {
         "collection": "all",
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 8,
         "columns": 4,
