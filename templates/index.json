@@ -2699,6 +2699,258 @@
         "padding-block-end": 48
       }
     },
+    "featured_product_information_qjBqjg": {
+      "type": "featured-product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_featured-product-information-carousel",
+          "static": true,
+          "settings": {
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "icons_style": "arrow",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_fxEaUW": {
+              "type": "group",
+              "name": "t:names.header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "product_title_zG9GhN": {
+                  "type": "product-title",
+                  "name": "t:names.title",
+                  "settings": {
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h2",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_7eWpLQ": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": true,
+                    "show_tax_info": true,
+                    "type_preset": "h4",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_zG9GhN",
+                "price_7eWpLQ"
+              ]
+            },
+            "review_xJkT6r": {
+              "type": "review",
+              "name": "t:names.product_review_stars",
+              "settings": {
+                "stars_style": "shaded",
+                "show_number": true,
+                "rating_color": "primary",
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "left"
+              },
+              "blocks": {}
+            },
+            "vo_product_options_block_anywhere_pcrCPk": {
+              "type": "shopify://apps/vo-product-options/blocks/block-anywhere/430cbd7b-bd20-4c16-ba41-db6f4c645164",
+              "settings": {
+                "product": "{{closest.product}}",
+                "font_color": ""
+              }
+            },
+            "easy_appointment_booking_event_calendar_khm96n": {
+              "type": "shopify://apps/easy-appointment-booking/blocks/event_calendar/cc7b690c-65b5-4bb4-a46c-1e4bd73e1c12",
+              "settings": {
+                "height": 750,
+                "iframe_title": "Easy Appointment Booking Calendar",
+                "initial_view": "month",
+                "css_class_names": "servicify-event-calendar"
+              }
+            },
+            "variant_picker_tNMaAR": {
+              "type": "variant-picker",
+              "name": "t:names.product_variant_picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": true,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_UQEf3z": {
+              "type": "buy-buttons",
+              "name": "t:names.product_buy_buttons",
+              "settings": {
+                "stacking": false,
+                "show_pickup_availability": true,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button-secondary"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            }
+          },
+          "block_order": [
+            "group_fxEaUW",
+            "review_xJkT6r",
+            "vo_product_options_block_anywhere_pcrCPk",
+            "easy_appointment_booking_event_calendar_khm96n",
+            "variant_picker_tNMaAR",
+            "buy_buttons_UQEf3z"
+          ]
+        }
+      },
+      "name": "t:names.featured_product_information",
+      "settings": {
+        "product": "create-your-event",
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": true,
+        "limit_details_width": false,
+        "gap": 48,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
     "section_WAkY8L": {
       "type": "section",
       "blocks": {
@@ -3466,323 +3718,6 @@
         "slideshow_controls_style": "counter",
         "autoplay": true,
         "autoplay_speed": 4,
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "section_raBwth": {
-      "type": "section",
-      "blocks": {
-        "text_BG989x": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h3><strong>Curated Event Packages</strong></h3>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_qVKzTg": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Let us handle the details. Our all-inclusive packages are designed to make your celebration unforgettable.</p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "1.125rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_BG989x",
-        "text_qVKzTg"
-      ],
-      "name": "t:names.rich_text_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 25,
-        "section_width": "page-width",
-        "section_height": "custom",
-        "section_height_custom": 0,
-        "color_scheme": "scheme-3",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 100,
-        "padding-block-end": 0
-      }
-    },
-    "17786772678245940f": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_32fa549_D9VEdG": {
-          "type": "ai_gen_block_32fa549",
-          "settings": {
-            "section_heading": "",
-            "background_color": "#faf8f5",
-            "section_padding_top": 80,
-            "section_padding_bottom": 80,
-            "container_max_width": 1200,
-            "desktop_width_percent": 100,
-            "heading_font": "playfair_display_n4",
-            "heading_size": 48,
-            "heading_color": "#1f1f1f",
-            "heading_margin_bottom": 56,
-            "card_background": "#ffffff",
-            "card_border_radius": 24,
-            "card_padding": 24,
-            "card_gap": 28,
-            "card_gap_mobile": 20,
-            "card_shadow": true,
-            "image_aspect_ratio": "4 / 3",
-            "image_border_radius": 18,
-            "image_margin_bottom": 20,
-            "title_font": "playfair_display_n4",
-            "title_size": 26,
-            "title_color": "#1f1f1f",
-            "title_margin_bottom": 12,
-            "description_font": "inter_n4",
-            "description_size": 15,
-            "description_color": "#6f6f6f",
-            "description_margin_bottom": 16,
-            "divider_color": "#e5e5e5",
-            "divider_margin": 16,
-            "price_label": "Starting from",
-            "price_label_size": 11,
-            "price_size": 32,
-            "price_font_weight": "600",
-            "price_color": "#111111",
-            "currency_symbol": "SR",
-            "card_1_image": "shopify://shop_images/Gemini_Generated_Image_ax90f5ax90f5ax90.png",
-            "card_1_title": "Birthday Deluxe",
-            "card_1_description": "Complete setup including balloon arches, custom backdrop, and table decor.",
-            "card_1_price": "499.00",
-            "card_2_image": "shopify://shop_images/WhatsApp_Image_2026-03-03_cxccat_10.36.03_PM.jpg",
-            "card_2_title": "Wedding Elegance",
-            "card_2_description": "Premium floral arrangements, elegant lighting, and bespoke centerpieces.",
-            "card_2_price": "1499.00",
-            "card_3_image": "shopify://shop_images/IMG-20250410-WA0117.jpg",
-            "card_3_title": "Eid Celebration",
-            "card_3_description": "Festive setup with traditional elements, lanterns, and elegant tableware.",
-            "card_3_price": "2299.00"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_32fa549_D9VEdG"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-3",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "1778682657ff495a6d": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_4034407_rDNmJc": {
-          "type": "ai_gen_block_4034407",
-          "settings": {
-            "heading": "Our Event Gallery",
-            "subtitle": "Get inspired by our real event setups and custom decorations.",
-            "cta_text": "View Full Catalogue",
-            "cta_link": "",
-            "image_1": "shopify://shop_images/IMG-20260514-WA0017_1.jpg",
-            "image_2": "shopify://shop_images/IMG-20260513-WA0012.jpg",
-            "image_3": "shopify://shop_images/IMG-20260513-WA0017.jpg",
-            "image_4": "shopify://shop_images/IMG-20260514-WA0042.jpg",
-            "background_color": "#28195c",
-            "text_color": "#ffffff",
-            "heading_font": "playfair_display_n4",
-            "heading_size": 48,
-            "subtitle_size": 16,
-            "subtitle_opacity": 85,
-            "cta_size": 14,
-            "padding_top": 80,
-            "padding_bottom": 80,
-            "header_spacing": 50,
-            "grid_gap": 20
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_4034407_rDNmJc"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "17786832755e8b13fd": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_55aef9c_gmgEdJ": {
-          "type": "ai_gen_block_55aef9c",
-          "settings": {
-            "heading": "Loved by Our Clients",
-            "heading_size": 48,
-            "heading_size_mobile": 32,
-            "heading_color": "#000000",
-            "heading_spacing": 60,
-            "heading_spacing_mobile": 40,
-            "section_padding_top": 100,
-            "section_padding_bottom": 100,
-            "section_padding_top_mobile": 60,
-            "section_padding_bottom_mobile": 60,
-            "background_color": "#f5f5f3",
-            "card_background": "#ffffff",
-            "card_border_color": "#e0e0e0",
-            "card_border_width": 1,
-            "card_padding": 40,
-            "card_padding_mobile": 30,
-            "card_gap": 30,
-            "card_gap_mobile": 20,
-            "star_color": "#d4af37",
-            "star_size": 20,
-            "stars_spacing": 20,
-            "text_color": "#666666",
-            "text_size": 16,
-            "text_spacing": 25,
-            "name_color": "#000000",
-            "name_size": 14,
-            "show_card_1": true,
-            "stars_1": "★★★★★",
-            "testimonial_1": "Absolutely stunning decorations for my daughter's birthday. The team was professional and the setup was flawless.",
-            "name_1": "— Sarah M.",
-            "show_card_2": true,
-            "stars_2": "★★★★★",
-            "testimonial_2": "The Ramadan package transformed our home. Premium quality items and excellent customer service.",
-            "name_2": "— Ahmed K.",
-            "show_card_3": true,
-            "stars_3": "★★★★★",
-            "testimonial_3": "Used Festiva for my engagement party. The floral arrangements and backdrops were breathtaking. Highly recommend!",
-            "name_3": "— Fatima R.",
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_55aef9c_gmgEdJ"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-2",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -4953,13 +4888,10 @@
     "collection_list_E3tHeV",
     "collection_list_yyABBD",
     "product_list_fa6P9H",
+    "featured_product_information_qjBqjg",
     "section_WAkY8L",
     "marquee_AiH9hM",
     "slideshow_cJdEQQ",
-    "section_raBwth",
-    "17786772678245940f",
-    "1778682657ff495a6d",
-    "17786832755e8b13fd",
     "section_d7yQRU",
     "section_dBPMGm",
     "section_ypN4CL"
