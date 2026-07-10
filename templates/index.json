@@ -2154,11 +2154,11 @@
           "name": "t:names.collection_card",
           "static": true,
           "settings": {
-            "placement": "on_image",
+            "placement": "below_image",
             "horizontal_alignment": "center",
             "vertical_alignment": "center",
             "collection_card_gap": 8,
-            "inherit_color_scheme": true,
+            "inherit_color_scheme": false,
             "color_scheme": "",
             "border": "none",
             "border_width": 1,
@@ -2166,14 +2166,14 @@
             "border_radius": 0
           },
           "blocks": {
-            "collection_title_64ULmw": {
+            "collection_title_BgACRY": {
               "type": "collection-title",
               "name": "t:names.collection_title",
               "settings": {
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -2182,7 +2182,7 @@
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": false,
-                "background_color": "#ffffff",
+                "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -2210,7 +2210,7 @@
             }
           },
           "block_order": [
-            "collection_title_64ULmw"
+            "collection_title_BgACRY"
           ]
         }
       },
@@ -2220,14 +2220,13 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
-          "eid-collection",
-          "halloween-1",
-          "frames-and-activity-packages",
-          "luxury-gifts",
-          "costumes",
-          "cake-toppers",
-          "father-day-gifts",
-          "graduation"
+          "party-accessories",
+          "dizer-box",
+          "gifts",
+          "occasions",
+          "catalogue",
+          "create-your-packages",
+          "read-made-packages"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": true,
