@@ -280,6 +280,57 @@
                 "new_buy_GKFqLf"
               ]
             },
+            "switch_upsell_nwTGQX": {
+              "type": "switch-upsell",
+              "name": "Switch Upsell",
+              "settings": {
+                "label": "Elevated Elements",
+                "products": "{{ closest.product.metafields.custom.elevated_elements.value }}"
+              },
+              "blocks": {
+                "new_buy_QxHB6T": {
+                  "type": "new-buy",
+                  "name": "New Button",
+                  "settings": {
+                    "stacking": false,
+                    "show_pickup_availability": true,
+                    "gift_card_form": true,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "quantity": {
+                      "type": "quantity",
+                      "disabled": true,
+                      "static": true,
+                      "settings": {},
+                      "blocks": {}
+                    },
+                    "add-to-cart": {
+                      "type": "add-new",
+                      "static": true,
+                      "settings": {
+                        "style_class": "button-secondary"
+                      },
+                      "blocks": {}
+                    },
+                    "accelerated-checkout": {
+                      "type": "accelerated-checkout",
+                      "disabled": true,
+                      "static": true,
+                      "settings": {},
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": []
+                }
+              },
+              "block_order": [
+                "new_buy_QxHB6T"
+              ]
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -588,6 +639,7 @@
             "buy_buttons_eYQEYi",
             "vo_product_options_block_rAmkb3",
             "switch_upsell_EHJcVq",
+            "switch_upsell_nwTGQX",
             "text_aEtTtq",
             "group_UiBFEH",
             "group_WkUn66",
