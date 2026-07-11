@@ -201,7 +201,6 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
-                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -235,13 +234,7 @@
               "name": "Switch Upsell",
               "settings": {
                 "label": "Goes well With",
-                "products": [
-                  "12in-red-heart-latex-balloons",
-                  "6-تعليقات-الهالوين-قطع",
-                  "90s-party-bags-اكياس",
-                  "acrylic-club-stand",
-                  "acrylic-customized-gift"
-                ]
+                "products": "{{ closest.product.metafields.custom.little_bit_of_extra.value }}"
               },
               "blocks": {
                 "new_buy_GKFqLf": {
@@ -259,12 +252,13 @@
                   "blocks": {
                     "quantity": {
                       "type": "quantity",
+                      "disabled": true,
                       "static": true,
                       "settings": {},
                       "blocks": {}
                     },
                     "add-to-cart": {
-                      "type": "add-to-cart",
+                      "type": "add-new",
                       "static": true,
                       "settings": {
                         "style_class": "button-secondary"
@@ -273,6 +267,7 @@
                     },
                     "accelerated-checkout": {
                       "type": "accelerated-checkout",
+                      "disabled": true,
                       "static": true,
                       "settings": {},
                       "blocks": {}
