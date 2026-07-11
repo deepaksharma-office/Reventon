@@ -1,6 +1,6 @@
+{% if block.settings.products !=blank %}
 {{ 'switch.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'switch.js' | asset_url }}" defer="defer"></script>
-
 <div class="switcher_container">
   <div class="top_switch_bar">
     <label class="switch">
@@ -55,6 +55,7 @@
     </div>
   </div>
 </div>
+{% endif %}
 
 {% schema %}
 {
