@@ -233,7 +233,7 @@
               "type": "switch-upsell",
               "name": "Switch Upsell",
               "settings": {
-                "label": "Goes well With",
+                "label": "Little Bit of Extra",
                 "products": "{{ closest.product.metafields.custom.little_bit_of_extra.value }}"
               },
               "blocks": {
