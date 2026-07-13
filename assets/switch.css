@@ -189,8 +189,11 @@ IMAGE
 }
 
 .prop-shape{
-    position:absolute;
-    inset:0;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
 }
 
 .product_image{
