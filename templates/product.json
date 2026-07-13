@@ -234,102 +234,20 @@
               "name": "Switch Upsell",
               "settings": {
                 "label": "Little Bit of Extra",
-                "products": "{{ closest.product.metafields.custom.little_bit_of_extra.value }}"
+                "products": "{{ closest.product.metafields.custom.little_bit_of_extra.value }}",
+                "image": "shopify://shop_images/Untitled_design_3e691908-b867-493a-8e7a-3b3e0387bdea.png"
               },
-              "blocks": {
-                "new_buy_GKFqLf": {
-                  "type": "new-buy",
-                  "name": "New Button",
-                  "settings": {
-                    "stacking": false,
-                    "show_pickup_availability": true,
-                    "gift_card_form": true,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "quantity": {
-                      "type": "quantity",
-                      "disabled": true,
-                      "static": true,
-                      "settings": {},
-                      "blocks": {}
-                    },
-                    "add-to-cart": {
-                      "type": "add-new",
-                      "static": true,
-                      "settings": {
-                        "style_class": "button-secondary"
-                      },
-                      "blocks": {}
-                    },
-                    "accelerated-checkout": {
-                      "type": "accelerated-checkout",
-                      "disabled": true,
-                      "static": true,
-                      "settings": {},
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": []
-                }
-              },
-              "block_order": [
-                "new_buy_GKFqLf"
-              ]
+              "blocks": {}
             },
             "switch_upsell_nwTGQX": {
               "type": "switch-upsell",
               "name": "Switch Upsell",
               "settings": {
                 "label": "Elevated Elements",
-                "products": "{{ closest.product.metafields.custom.elevated_elements.value }}"
+                "products": "{{ closest.product.metafields.custom.elevated_elements.value }}",
+                "image": "shopify://shop_images/Untitled_design_3e691908-b867-493a-8e7a-3b3e0387bdea.png"
               },
-              "blocks": {
-                "new_buy_QxHB6T": {
-                  "type": "new-buy",
-                  "name": "New Button",
-                  "settings": {
-                    "stacking": false,
-                    "show_pickup_availability": true,
-                    "gift_card_form": true,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "quantity": {
-                      "type": "quantity",
-                      "disabled": true,
-                      "static": true,
-                      "settings": {},
-                      "blocks": {}
-                    },
-                    "add-to-cart": {
-                      "type": "add-new",
-                      "static": true,
-                      "settings": {
-                        "style_class": "button-secondary"
-                      },
-                      "blocks": {}
-                    },
-                    "accelerated-checkout": {
-                      "type": "accelerated-checkout",
-                      "disabled": true,
-                      "static": true,
-                      "settings": {},
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": []
-                }
-              },
-              "block_order": [
-                "new_buy_QxHB6T"
-              ]
+              "blocks": {}
             },
             "text_aEtTtq": {
               "type": "text",
