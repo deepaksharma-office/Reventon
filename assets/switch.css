@@ -110,7 +110,6 @@ CARD
 .prop-card{
     background:#271859;
     border-radius:18px;
-    overflow:hidden;
     padding:0 20px;
 }
 
@@ -189,9 +188,6 @@ IMAGE
 .prop-shape{
     position:absolute;
     inset:0;
-    background:#d9cdf8;
-    border-radius:42% 58% 55% 45% /
-                  46% 38% 62% 54%;
 }
 
 .product_image{
