@@ -224,28 +224,71 @@ IMAGE
   min-height: 40px;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/*=========================
+ADD ITEM LOGIC
+=========================*/
 
-@media screen and (max-width: 749px) {
-  .prop-wrapper {
-    gap: 10px;
-  }
+.prop-add-wrap{
+    position:relative;
+    width:145px;
+    height:38px;
+}
 
-  .prop-product_image {
-    width: 48px;
-    height: 48px;
-  }
+.prop-add-btn,
+.prop-qty-wrap{
+    position:absolute;
+    inset:0;
+    transition:.25s;
+}
 
-  .prop-label {
-    font-size: 12px;
-  }
+.prop-add-btn{
+    width:100%;
+    z-index:2;
+}
 
-  .prop-subtext,
-  .link-prop {
-    font-size: 10px;
-  }
+.prop-qty-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#fff;
+    border-radius:999px;
+    padding:0 10px;
+
+    opacity:0;
+    visibility:hidden;
+    transform:scale(.95);
+}
+
+.prop-add-wrap.is-added .prop-add-btn{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+.prop-add-wrap.is-added .prop-qty-wrap{
+    opacity:1;
+    visibility:visible;
+    transform:scale(1);
+}
+
+.prop-qty-btn{
+    border:none;
+    background:none;
+    width:28px;
+    height:28px;
+    cursor:pointer;
+    font-size:20px;
+    color:#271859;
+    font-weight:700;
+    line-height:1;
+}
+
+.prop-qty{
+    min-width:20px;
+    text-align:center;
+    color:#271859;
+    font-weight:700;
+    font-size:15px;
 }
 
 /*=========================
@@ -281,3 +324,29 @@ MOBILE
         height:82px;
     }
 }
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 749px) {
+  .prop-wrapper {
+    gap: 10px;
+  }
+
+  .prop-product_image {
+    width: 48px;
+    height: 48px;
+  }
+
+  .prop-label {
+    font-size: 12px;
+  }
+
+  .prop-subtext,
+  .link-prop {
+    font-size: 10px;
+  }
+}
+
