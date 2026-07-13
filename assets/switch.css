@@ -93,80 +93,115 @@
   display: flex;
 }
 
-/* =========================
-   PRODUCT LIST
-========================= */
+/*=========================
+PRODUCT LIST
+=========================*/
 
-.upsell_container {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+.upsell_container{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
 }
 
-/* =========================
-   PRODUCT CARD
-========================= */
+/*=========================
+CARD
+=========================*/
 
-.prop-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
+.prop-card{
+    background:#271859;
+    border-radius:18px;
+    overflow:hidden;
+    padding:18px 20px;
 }
 
-.prop-product_title {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
+.prop-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
 }
 
-.prop-product_image {
-  width: 55px;
-  height: 55px;
-  flex-shrink: 0;
-  background: #f6f6f6;
-  overflow: hidden;
+/*=========================
+TEXT
+=========================*/
+
+.prop-details{
+    flex:1;
+    min-width:0;
 }
 
-.product_image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.prop-title{
+    margin:0 0 12px;
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+    line-height:1.2;
 }
 
-.prop-info--wrapper {
-  flex: 1;
+.prop-bottom{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
 }
 
-.prop-label {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  color: #5d0d0d;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.2;
+.prop-price{
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
 }
 
-.prop-subtext {
-  display: block;
-  font-size: 11px;
-  font-weight: 600;
-  color: #5d0d0d;
+/*=========================
+BUTTON
+=========================*/
+
+.prop-add-btn{
+    appearance:none;
+    border:none;
+    background:#fff;
+    color:#271859;
+    padding:9px 18px;
+    border-radius:999px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.25s;
 }
 
-.link-prop {
-  display: inline-block;
-  margin-top: 2px;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: underline;
-  color: #5d0d0d;
+.prop-add-btn:hover{
+    transform:translateY(-2px);
 }
+
+/*=========================
+IMAGE
+=========================*/
+
+.prop-image-wrap{
+    position:relative;
+    width:110px;
+    height:110px;
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.prop-shape{
+    position:absolute;
+    inset:0;
+    background:#d9cdf8;
+    border-radius:42% 58% 55% 45% /
+                  46% 38% 62% 54%;
+}
+
+.product_image{
+    position:relative;
+    z-index:2;
+    width:78%;
+    height:78%;
+    object-fit:contain;
+}
+
 
 /* =========================
    ADD TO CART AREA
@@ -209,4 +244,38 @@
   .link-prop {
     font-size: 10px;
   }
+}
+
+/*=========================
+MOBILE
+=========================*/
+
+@media(max-width:749px){
+
+    .prop-card{
+        padding:14px;
+    }
+
+    .prop-content{
+        gap:14px;
+    }
+
+    .prop-title{
+        font-size:18px;
+        margin-bottom:10px;
+    }
+
+    .prop-price{
+        font-size:15px;
+    }
+
+    .prop-add-btn{
+        padding:8px 14px;
+        font-size:13px;
+    }
+
+    .prop-image-wrap{
+        width:82px;
+        height:82px;
+    }
 }

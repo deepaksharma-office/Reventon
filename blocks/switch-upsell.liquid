@@ -20,9 +20,25 @@
     >
       <div class="upsell_container">
         {% for item in block.settings.products %}
-          <div class="prop-wrapper" x-data="featuredProductsSliderModal">
-            <div class="prop-product_title">
-              <div class="prop-product_image">
+          <div class="prop-card" x-data="featuredProductsSliderModal">
+            <div class="prop-content">
+              <div class="prop-details">
+                <h4 class="prop-title">
+                  {{ item.title }}
+                </h4>
+
+                <div class="prop-bottom">
+                  <span class="prop-price">
+                    {{ item.price | money }}
+                  </span>
+
+                  <button class="prop-add-btn">Add Item</button>
+                </div>
+              </div>
+
+              <div class="prop-image-wrap">
+                <div class="prop-shape"></div>
+
                 <img
                   src="{{ item.featured_image | image_url }}"
                   alt="{{ item.title }}"
@@ -31,24 +47,6 @@
                   class="product_image"
                 >
               </div>
-              <div class="prop-info--wrapper">
-                <p class="prop-label">
-                  {{ item.title }}
-                  <span class="prop-subtext">{{ item.price | money }}</span>
-                  <a
-                    href="{{ item.url }}"
-                    class="link-prop"
-                    data-handle="{{ item.handle }}"
-                    data-context="addon"
-                    data-index="1"
-                    @click.prevent="toggle"
-                    >View More</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="prop-addto-cart">
-              <div class="add_item">Add Item</div>
             </div>
           </div>
         {% endfor %}
