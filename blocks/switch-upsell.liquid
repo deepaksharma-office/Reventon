@@ -37,7 +37,15 @@
               </div>
 
               <div class="prop-image-wrap">
-                <div class="prop-shape"></div>
+                <div class="prop-shape">
+                  <img
+                    src="{{ block.settings.image | image_url }}"
+                    alt="{{ item.title }}"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                    class="product_image_bg"
+                  >
+                </div>
 
                 <img
                   src="{{ item.featured_image | image_url }}"
@@ -69,6 +77,11 @@
       "type": "product_list",
       "label": "Product List",
       "id": "products"
+    },
+    {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "image"
     }
   ],
   "presets": [
