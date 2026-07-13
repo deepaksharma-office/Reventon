@@ -20,7 +20,12 @@
     >
       <div class="upsell_container">
         {% for item in block.settings.products %}
-          <div class="prop-card" x-data="featuredProductsSliderModal">
+          {% assign first_variant = item.selected_or_first_available_variant %}
+
+          <div
+            class="prop-card"
+            data-add-item-id="{{ first_variant.id }}"
+          >
             <div class="prop-content">
               <div class="prop-details">
                 <h4 class="prop-title">
@@ -32,27 +37,52 @@
                     {{ item.price | money }}
                   </span>
 
-                  <button class="prop-add-btn">Add Item</button>
+                  <div class="prop-add-wrap">
+                    <button
+                      class="prop-add-btn"
+                      type="button"
+                    >
+                      Add Item
+                    </button>
+
+                    <div class="prop-qty-wrap">
+                      <button
+                        type="button"
+                        class="prop-qty-btn"
+                        data-action="minus"
+                      >
+                        −
+                      </button>
+
+                      <span class="prop-qty"> 1 </span>
+
+                      <button
+                        type="button"
+                        class="prop-qty-btn"
+                        data-action="plus"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class="prop-image-wrap">
-                <div class="prop-shape">
-                  <img
-                    src="{{ block.settings.image | image_url }}"
-                    alt="{{ item.title }}"
-                    width="{{ block.settings.image.width }}"
-                    height="{{ block.settings.image.height }}"
-                    class="product_image_bg"
-                  >
-                </div>
+                <img
+                  src="{{ block.settings.image | image_url }}"
+                  alt="{{ item.title }}"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.height }}"
+                  class="product_image_bg"
+                >
 
                 <img
                   src="{{ item.featured_image | image_url }}"
                   alt="{{ item.title }}"
+                  class="product_image"
                   width="{{ item.featured_image.width }}"
                   height="{{ item.featured_image.height }}"
-                  class="product_image"
                 >
               </div>
             </div>
