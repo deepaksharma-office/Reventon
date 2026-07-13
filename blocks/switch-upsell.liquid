@@ -1,60 +1,60 @@
-{% if block.settings.products !=blank %}
-{{ 'switch.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'switch.js' | asset_url }}" defer="defer"></script>
-<div class="switcher_container">
-  <div class="top_switch_bar">
-    <label class="switch">
-      <input
-        class="addonswitch is--active"
-        type="checkbox"
-        checked
-        data-id="addonproducts"
-      >
-      <span class="switch-slider round"></span>
-    </label>
-    <div class="label_switch">{{ block.settings.label }}</div>
-  </div>
-  <div
-    class="addonswitch_container is--active"
-    data-id="addonproducts"
-  >
-    <div class="upsell_container">
-      {% for item in block.settings.products %}
-        <div class="prop-wrapper" x-data="featuredProductsSliderModal">
-          <div class="prop-product_title">
-            <div class="prop-product_image">
-              <img
-                src="{{ item.featured_image | image_url }}"
-                alt="{{ item.title }}"
-                width="{{ item.featured_image.width }}"
-                height="{{ item.featured_image.height }}"
-                class="product_image"
-              >
-            </div>
-            <div class="prop-info--wrapper">
-              <p class="prop-label">
-                {{ item.title }}
-                <span class="prop-subtext">{{ item.price | money }}</span>
-                <a
-                  href="{{ item.url }}"
-                  class="link-prop"
-                  data-handle="{{ item.handle }}"
-                  data-context="addon"
-                  data-index="1"
-                  @click.prevent="toggle"
-                  >View More</a
+{% if block.settings.products != blank %}
+  {{ 'switch.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'switch.js' | asset_url }}" defer="defer"></script>
+  <div class="switcher_container">
+    <div class="top_switch_bar">
+      <label class="switch">
+        <input
+          class="addonswitch is--active"
+          type="checkbox"
+          checked
+          data-id="addonproducts"
+        >
+        <span class="switch-slider round"></span>
+      </label>
+      <div class="label_switch">{{ block.settings.label }}</div>
+    </div>
+    <div
+      class="addonswitch_container is--active"
+      data-id="addonproducts"
+    >
+      <div class="upsell_container">
+        {% for item in block.settings.products %}
+          <div class="prop-wrapper" x-data="featuredProductsSliderModal">
+            <div class="prop-product_title">
+              <div class="prop-product_image">
+                <img
+                  src="{{ item.featured_image | image_url }}"
+                  alt="{{ item.title }}"
+                  width="{{ item.featured_image.width }}"
+                  height="{{ item.featured_image.height }}"
+                  class="product_image"
                 >
-              </p>
+              </div>
+              <div class="prop-info--wrapper">
+                <p class="prop-label">
+                  {{ item.title }}
+                  <span class="prop-subtext">{{ item.price | money }}</span>
+                  <a
+                    href="{{ item.url }}"
+                    class="link-prop"
+                    data-handle="{{ item.handle }}"
+                    data-context="addon"
+                    data-index="1"
+                    @click.prevent="toggle"
+                    >View More</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="prop-addto-cart">
+              <div class="add_item">Add Item</div>
             </div>
           </div>
-          <div class="prop-addto-cart">
-            {% content_for 'blocks' %}
-          </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
-</div>
 {% endif %}
 
 {% schema %}
@@ -71,11 +71,6 @@
       "type": "product_list",
       "label": "Product List",
       "id": "products"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "new-buy"
     }
   ],
   "presets": [
