@@ -187,6 +187,32 @@
               },
               "blocks": {}
             },
+            "vo_product_options_block_rAmkb3": {
+              "type": "shopify://apps/vo-product-options/blocks/block/430cbd7b-bd20-4c16-ba41-db6f4c645164",
+              "settings": {
+                "font_color": ""
+              }
+            },
+            "switch_upsell_EHJcVq": {
+              "type": "switch-upsell",
+              "name": "Switch Upsell",
+              "settings": {
+                "label": "Little Bit of Extra",
+                "products": "{{ closest.product.metafields.custom.little_bit_of_extra.value }}",
+                "image": "shopify://shop_images/Untitled_design_3e691908-b867-493a-8e7a-3b3e0387bdea.png"
+              },
+              "blocks": {}
+            },
+            "switch_upsell_nwTGQX": {
+              "type": "switch-upsell",
+              "name": "Switch Upsell",
+              "settings": {
+                "label": "Elevated Elements",
+                "products": "{{ closest.product.metafields.custom.elevated_elements.value }}",
+                "image": "shopify://shop_images/Untitled_design_3e691908-b867-493a-8e7a-3b3e0387bdea.png"
+              },
+              "blocks": {}
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -222,32 +248,6 @@
                 }
               },
               "block_order": []
-            },
-            "vo_product_options_block_rAmkb3": {
-              "type": "shopify://apps/vo-product-options/blocks/block/430cbd7b-bd20-4c16-ba41-db6f4c645164",
-              "settings": {
-                "font_color": ""
-              }
-            },
-            "switch_upsell_EHJcVq": {
-              "type": "switch-upsell",
-              "name": "Switch Upsell",
-              "settings": {
-                "label": "Little Bit of Extra",
-                "products": "{{ closest.product.metafields.custom.little_bit_of_extra.value }}",
-                "image": "shopify://shop_images/Untitled_design_3e691908-b867-493a-8e7a-3b3e0387bdea.png"
-              },
-              "blocks": {}
-            },
-            "switch_upsell_nwTGQX": {
-              "type": "switch-upsell",
-              "name": "Switch Upsell",
-              "settings": {
-                "label": "Elevated Elements",
-                "products": "{{ closest.product.metafields.custom.elevated_elements.value }}",
-                "image": "shopify://shop_images/Untitled_design_3e691908-b867-493a-8e7a-3b3e0387bdea.png"
-              },
-              "blocks": {}
             },
             "text_aEtTtq": {
               "type": "text",
@@ -554,10 +554,10 @@
             "group_icgrde",
             "divider_VJhene",
             "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi",
             "vo_product_options_block_rAmkb3",
             "switch_upsell_EHJcVq",
             "switch_upsell_nwTGQX",
+            "buy_buttons_eYQEYi",
             "text_aEtTtq",
             "group_UiBFEH",
             "group_WkUn66",
