@@ -381,7 +381,13 @@
           "cake-toppers",
           "gift-bags",
           "swirls",
-          "activity-packages"
+          "activity-packages",
+          "dizer-box",
+          "gifts",
+          "occasions",
+          "catalogue",
+          "create-your-packages",
+          "ready-made-packages"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
