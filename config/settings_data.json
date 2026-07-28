@@ -123,16 +123,6 @@
           "mobile_bottom_margin": 46
         }
       },
-      "12793297677437526120": {
-        "type": "shopify://apps/t-lab-ai-language-translate/blocks/custom_translations/b5b83690-efd4-434d-8c6a-a5cef4019faf",
-        "disabled": false,
-        "settings": {}
-      },
-      "2140405073069974119": {
-        "type": "shopify://apps/t-lab-ai-language-translate/blocks/language_detection/b5b83690-efd4-434d-8c6a-a5cef4019faf",
-        "disabled": false,
-        "settings": {}
-      },
       "16735461377607925125": {
         "type": "shopify://apps/terms-checkbox/blocks/app-embed/17661ca5-aeea-41b9-8091-d8f7233e8b22",
         "disabled": false,
@@ -166,7 +156,7 @@
       },
       "8765772171712610185": {
         "type": "shopify://apps/t-lab-ai-language-translate/blocks/language_switcher/b5b83690-efd4-434d-8c6a-a5cef4019faf",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "enable_language_switcher": true,
           "enable_country_region_switcher": true,
@@ -193,6 +183,16 @@
           "custom_switcher_background_color": "#ffffff",
           "custom_switcher_border_color": "#000000"
         }
+      },
+      "2140405073069974119": {
+        "type": "shopify://apps/t-lab-ai-language-translate/blocks/language_detection/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": true,
+        "settings": {}
+      },
+      "12793297677437526120": {
+        "type": "shopify://apps/t-lab-ai-language-translate/blocks/custom_translations/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
