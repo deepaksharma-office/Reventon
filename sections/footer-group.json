@@ -263,13 +263,27 @@
             "text_LWt8Pz",
             "text_f9CFLH"
           ]
+        },
+        "payment_icons_rJxmwF": {
+          "type": "payment-icons",
+          "name": "t:names.payment_icons",
+          "settings": {
+            "horizontal_alignment": "flex-start",
+            "gap": 10,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "group_iQitch",
         "menu_prd89X",
         "menu_JczEXe",
-        "group_H6VpwJ"
+        "group_H6VpwJ",
+        "payment_icons_rJxmwF"
       ],
       "name": "t:names.footer",
       "settings": {
