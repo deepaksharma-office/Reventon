@@ -163,6 +163,34 @@
         "padding-block-end": 20
       }
     },
+    "sub_qF4edB": {
+      "type": "sub",
+      "name": "Subcategory list",
+      "settings": {
+        "heading": "Explore Sub categories of {{ collection.title }}",
+        "heading_size": 32,
+        "heading_color": "#111111",
+        "color_scheme": "",
+        "container_width": 1400,
+        "desktop_columns": 6,
+        "mobile_columns": "3",
+        "desktop_gap": 24,
+        "mobile_gap": 14,
+        "image_size": 170,
+        "mobile_image_size": 95,
+        "image_border_width": 0,
+        "image_border_color": "#dddddd",
+        "title_size": 16,
+        "mobile_title_size": 13,
+        "title_color": "#111111",
+        "title_weight": "500",
+        "title_spacing": 12,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 24
+      }
+    },
     "main": {
       "type": "main-collection",
       "blocks": {
@@ -297,6 +325,7 @@
   "order": [
     "section",
     "section_398ryH",
+    "sub_qF4edB",
     "main"
   ]
 }
