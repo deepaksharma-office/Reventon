@@ -193,6 +193,11 @@
         "type": "shopify://apps/t-lab-ai-language-translate/blocks/custom_translations/b5b83690-efd4-434d-8c6a-a5cef4019faf",
         "disabled": true,
         "settings": {}
+      },
+      "14872573165681918521": {
+        "type": "shopify://apps/k-google-reviews-importer/blocks/app-extension/d356cdc8-81d9-427a-96f3-78536845c525",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
