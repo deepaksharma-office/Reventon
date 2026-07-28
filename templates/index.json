@@ -4546,6 +4546,7 @@
       "block_order": [
         "k_google_reviews_importer_app_embeded_gBaXBk"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
