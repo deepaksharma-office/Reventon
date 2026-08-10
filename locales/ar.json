@@ -911,11 +911,73 @@
             "contact_info_does_not_match_customer_account": "يجب أن تتطابق معلومات الاتصال مع الحساب الذي سجلت الدخول إليه.",
             "checkout_completion_target_is_missing": "هدف إتمام الدفع مفقود.",
             "checkout_completion_target_is_invalid_proc": "هدف إكمال عملية الدفع غير صالح.",
-            "buyer_identity_presentment_currency_does_not_match": "حدثت مشكلة أثناء معالجة طلبك. حاول مرة أخرى بعد بضع دقائق."
+            "buyer_identity_presentment_currency_does_not_match": "حدثت مشكلة أثناء معالجة طلبك. حاول مرة أخرى بعد بضع دقائق.",
+            "personal_order_not_allowed": "لا يُسمح بالطلبات الشخصية لهذا المتجر.",
+            "lost_access_to_company": "فقد العميل إمكانية الوصول إلى أي شركة.",
+            "phone_number_does_not_match_expected_pattern": "رقم الهاتف المحدد لا يتطابق مع النمط المتوقع.",
+            "email_required": "يلزم إدخال بريد إلكتروني عند شراء البضائع باستخدام اشتراك.",
+            "email_domain_is_invalid": "يتعذر حل اسم النطاق المحدد.",
+            "missing_contact_method": "طريقة اتصال صالحة مفقودة.",
+            "invalid_customer_profile": "تم تقديم ملف تعريف عميل غير صالح.",
+            "customer_profile_access_restricted": "لا يملك نظام إتمام الشراء إذنًا للوصول إلى ملف العميل الشخصي."
           },
           "attribution": {
             "retail_attribution_not_allowed": "لا يُسمح بإسناد المبيعات بالتجزئة لعملية الدفع هذه.",
             "retail_attribution_required": "إسناد مبيعات التجزئة مطلوب لإتمام عملية الدفع هذه."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "يجب أن يحتوي سلة التسوق على سطر توصيل واحد فقط.",
+            "wrong_number_of_delivery_lines": "يجب تحديد سطر توصيل لكل مجموعة من البضائع.",
+            "external_delivery_promise_error": "خطأ في جلب موعد التسليم الموعود من خدمة خارجية.",
+            "options_instructions_invalid": "التعليمات المحددة لا تتطابق مع النمط المتوقع.",
+            "destination_address_required": "يلزم إدخال عنوان الوجهة للمتابعة.",
+            "pickup_points_unavailable": "نقاط الاستلام غير متاحة حاليًا.",
+            "local_pickup_delivery_line_detail_changed": "يجب تغيير استراتيجية التسليم الحالية للاستلام المحلي للمتابعة.",
+            "selected_pickup_option_no_longer_available": "لم يعد خيار الاستلام المحدد سابقًا متاحًا.",
+            "local_pickup_no_delivery_strategy_available": "لم يتم العثور على استراتيجية متاحة لتوصيل الطلبات للاستلام المحلي.",
+            "origin_location_id_required": "يلزم تقديم معرّف موقع المنشأ عند طلب طريقة التسليم RETAIL.",
+            "invalid_origin_location_id": "تعذّر العثور على موقع يطابق معرّف موقع المنشأ.",
+            "origin_location_id_not_allowed": "طرق التسليم المطلوبة لا تدعم معرّف موقع المنشأ.",
+            "auto_fulfill_not_allowed": "هذه الجلسة غير مخوّلة لتجاوز سلوك تنفيذ الطلبات.",
+            "auto_fulfill_required": "يلزم التنفيذ التلقائي عند طلب طريقة التسليم RETAIL.",
+            "prefetch_shipping_rates_used": "يجب ألا تُرجع أسعار الشحن التي تم جلبها مسبقًا أي أسعار على الإطلاق.",
+            "fulfillment_constraints_not_satisfied": "لم يتم استيفاء قيد واحد أو أكثر من قيود تنفيذ الطلب.",
+            "must_fulfill_from_constraint_not_satisfied": "لم تتحقق قيود التنفيذ لأن العناصر لا يمكن تنفيذها من المواقع المطلوبة.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "لم يتم استيفاء قيود التنفيذ لأن العناصر لا يمكن تنفيذها من الموقع نفسه.",
+            "delivery_strategy_conditions_not_satisfied": "استراتيجيات التوصيل متاحة لهذا الموقع، لكن شروطها غير مستوفاة.",
+            "out_of_stock_at_origin_location": "لا يتوفر مخزون في الموقع الأصلي.",
+            "invalid_signature": "توقيع الخصم غير صالح.",
+            "mixed_destination_countries": "التوصيل غير متاح لأن خطوط التوصيل تمتد عبر عدة بلدان."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "لا يُسمح بالخصومات في متاجر التعاملات بين الشركات (B2B).",
+            "mixed_destination_countries": "لا تتوفر الخصومات لأن بنود التوصيل تمتد عبر عدة دول.",
+            "custom_discount_not_honoured": "لم يتم تطبيق الخصم المخصص المُقدَّم.",
+            "unsupported_expectation": "احتوى سطر الخصم المُقدَّم على توقّع لم تتمكّن السياسة من تفسيره.",
+            "additional_requested_discount_code_discarded": "{{code}} صالح لكنه غير قابل للتطبيق. تحقّق من شروط الخصم.",
+            "additional_requested_discount_discarded": "خصمك صالح لكنه غير قابل للتطبيق. تحقّق من شروط الخصم.",
+            "allocations_mismatch": "لقد تغيّر رمز الخصم الخاص بك. راجع سلة التسوق وحاول مرة أخرى.",
+            "discount_title_too_long": "لا يمكن أن يتجاوز عنوان الخصم 255 حرفًا."
+          },
+          "inventory": {
+            "missing_quantity_value": "حقل الكمية مفقود في بنود مخزون المشتري.",
+            "changing_behavior_not_allowed": "لا يملك هذا العميل الإذن لتغيير سلوك المخزون."
+          },
+          "captcha": {
+            "metadata_missing": "يجب إكمال اختبار CAPTCHA لإتمام عملية الدفع.",
+            "metadata_mismatch": "مزود ونوع اختبار CAPTCHA المُقدَّمان لا يتطابقان مع القيم المتوقعة.",
+            "token_missing": "يجب تقديم رمز CAPTCHA لإكمال عملية الدفع.",
+            "job_enqueue_failed": "تعذّر إدراج مهمة التحقق من اختبار CAPTCHA في قائمة الانتظار.",
+            "job_already_queued": "تم بالفعل وضع التحقق من رمز CAPTCHA هذا في قائمة الانتظار.",
+            "token_expired": "انتهت صلاحية رمز اختبار CAPTCHA المقدَّم. أكمل اختبار CAPTCHA جديدًا لمتابعة إتمام الشراء.",
+            "token_invalid": "رمز كابتشا المُقدَّم غير صالح. أكمل اختبار كابتشا جديدًا لمتابعة إتمام عملية الدفع.",
+            "token_not_valid_for_session": "لا يمكن استخدام رمز التحقق المُقدَّم مع صفحة إتمام الشراء هذه."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "يجب أن يكون المبلغ المستلم بعملة المتجر."
+          },
+          "checkout_source": {
+            "revoked": "لم يعد إتمام عملية الشراء هذه متاحًا."
           }
         },
         "continue_to_payment_plans_button_label": "المتابعة إلى خطط الدفع",
