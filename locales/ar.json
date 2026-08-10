@@ -1950,7 +1950,67 @@
         "expired_payment_method": "انتهت صلاحية طريقة الدفع المحددة",
         "gift_cards_unavailable": "لم يعد من الممكن تطبيق بطاقة الهدايا الخاصة بك على هذا الطلب، وقد تمت إزالتها.",
         "new_bank_account_disclaimer": "بإكمال طلبك، تفوّض %{shop_name} بخصم المبلغ الموضّح من الحساب أدناه عبر ACH في الوقت المحدّد.",
-        "multiple_primary_payment_not_allowed": "طرق الدفع غير الصالحة"
+        "multiple_primary_payment_not_allowed": "طرق الدفع غير الصالحة",
+        "payment_method_saved": "تم حفظ طريقة الدفع",
+        "pay_with_payment_method": "ادفع باستخدام %{payment_method}",
+        "pay_with_credit_card": "ادفع باستخدام بطاقة ائتمانية",
+        "pay_with_debit_card": "ادفع ببطاقة الخصم",
+        "order_covered_by_gift_cards_notice": {
+          "one": "طلبك مُغطّى ببطاقة الهدايا الخاصة بك.",
+          "other": "طلبك مشمول ببطاقات الهدايا الخاصة بك."
+        },
+        "offsite_gateway_redirect_hint": "سيتم تحويلك إلى %{gateway_label} لإتمام عملية الشراء.",
+        "offsite_gateway_review_page_redirect_hint": "بعد مراجعة طلبك، ستتم إعادة توجيهك إلى %{gateway_label} لإتمام عملية الشراء.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} الإجمالي %{total_shop_price}",
+        "offsite_gateway_redirect_hint_no_button_label": "سيتم تحويلك إلى %{gateway_label} لإتمام عملية الشراء.",
+        "no_method_error": "لا يمكن لهذا المتجر قبول المدفوعات في الوقت الحالي.",
+        "not_configured_error": "لا يمكن لهذا المتجر قبول المدفوعات في الوقت الحالي.",
+        "payment_method_not_available_for_shipping_address_error": "طريقة الدفع غير متاحة لعنوان الشحن المحدد. اختر طريقة دفع أخرى.",
+        "payment_method_unavailable_error": "طريقة الدفع هذه غير متاحة حاليًا. اختر طريقة دفع أخرى.",
+        "payment_method_loading_error": "لا تزال طريقة الدفع هذه قيد التحميل. حاول مرة أخرى بعد بضع ثوانٍ.",
+        "oxxo_label": "OXXO",
+        "no_real_orders_dev_store": "لا يمكن لهذا المتجر قبول طلبات حقيقية أو دفعات حقيقية.",
+        "no_taxes_banner_content": "لن تُفرض ضرائب على هذا الطلب. بعد تحصيل الدفعة، لا يمكن إضافة الضرائب.",
+        "order_covered_by_store_credit_notice": "طلبك مشمول برصيد متجرك.",
+        "order_covered_by_redeemables_notice": "طلبك مشمول بالتغطية.",
+        "no_working_method_error": "لا يمكن لهذا المتجر قبول المدفوعات حاليًا. حدّث هذه الصفحة أو عُد لاحقًا.",
+        "order_edit_banner_title": "يلزم دفع {{amount_owed}}",
+        "order_edit_banner_subtitle": "تم تحديث طلبك {{order_number}}. راجع هذه التغييرات، ثم ادفع لتأكيد طلبك.",
+        "order_edit_banner_items_added": {
+          "one": "تمت الإضافة",
+          "other": "تمت إضافة %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "تمت الإزالة",
+          "with_quantities": "تمت إزالة {{delta}} من {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "تم إرجاع {{quantity}}",
+          "with_quantities": "تم إرجاع {{delta}} من أصل {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "تمت إزالته من الإرجاع",
+          "with_quantities": "تمت إزالة {{delta}} من الإرجاع"
+        },
+        "order_edit_banner_single_item_added": "تمت الإضافة",
+        "order_edit_banner_multiple_items_added": "تمت إضافة {{amount}}",
+        "order_edit_banner_single_item_removed": "تمت الإزالة",
+        "order_edit_banner_multiple_items_removed": "تمت إزالة {{amount}}",
+        "order_edit_banner_single_item_returned": "تم الإرجاع",
+        "order_edit_banner_multiple_items_returned": "تم إرجاع {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "تمت إزالته من الإرجاع",
+        "order_edit_banner_multiple_items_return_line_item_removed": "تمت إزالة {{amount}} من المرتجع",
+        "order_edit_banner_single_item_updated": "تم التحديث",
+        "order_edit_banner_updated_order_label": "تم تحديث الطلب",
+        "order_edit_banner_previous_taxes_label": "الضرائب السابقة:",
+        "order_edit_banner_new_taxes_label": "ضرائب جديدة:",
+        "order_edit_banner_no_taxes_label": "لا شيء",
+        "payment_method": "طريقة الدفع",
+        "payment_method_rollup_accessibility_label": "خيارات طريقة الدفع",
+        "payment_method_update_failed": "فشل تحديث طريقة الدفع.",
+        "payment_method_incompatible_with_payment_terms": "طريقة الدفع غير متوافقة مع شروط الدفع.",
+        "pay_in_installments_split_pay_short": "4 دفعات بقيمة %{amount}",
+        "payment_flexibility_terms_id_mismatch": "عدم تطابق معرّف شروط مرونة الدفع"
       }
     },
     "attributes": {
