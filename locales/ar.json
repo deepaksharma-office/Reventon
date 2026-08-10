@@ -2664,7 +2664,9 @@
         "third_party_address_timeout": "تعذّر تحميل العناوين. أعد المحاولة أو استخدم عنوانًا مختلفًا.",
         "third_party_address_error": "حدث خطأ أثناء تحميل اختيار العنوان. أدخل عنوانك يدويًا أدناه.",
         "third_party_payment_timeout": "تعذّر تحميل طرق الدفع. أعد المحاولة أو استخدم طريقة دفع مختلفة.",
-        "third_party_payment_error": "حدث خطأ أثناء تحميل خيارات الدفع. استخدم طريقة دفع أخرى."
+        "third_party_payment_error": "حدث خطأ أثناء تحميل خيارات الدفع. استخدم طريقة دفع أخرى.",
+        "waiting_on_rate_notice": "جارٍ الحصول على أسعار الشحن المتاحة…",
+        "waiting_on_pickup_location_notice": "جارٍ الحصول على مواقع الاستلام المتاحة…"
       },
       "session_errors": {
         "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. حدّث هذه الصفحة للعودة إلى المتجر.",
@@ -2681,6 +2683,158 @@
         "continue": "متابعة باستخدام هذا العنوان",
         "use_saved_address": "استخدم عنوانًا مختلفًا",
         "return_to_cart": "العودة إلى سلة التسوق"
+      },
+      "shipping_errors": {
+        "shipping_method": "لقد تغيّرت خيارات الشحن لطلبك. راجع اختيارك.",
+        "shipping_method_not_available": "تم تحديث سلة التسوق، ولا يمكن شحن العناصر التي أضفتها إلى عنوانك. أزِل العناصر لإكمال طلبك.",
+        "shipping_method_not_available_generic": {
+          "one": "يتعذر شحن طلبك إلى العنوان المحدد. راجع عنوانك للتأكد من صحته وحاول مرة أخرى، أو اختر عنوانًا مختلفًا.",
+          "other": "لا يمكن شحن بعض العناصر في سلة التسوق إلى العنوان الذي أدخلته. راجع عنوانك للتأكد من صحته وحاول مرة أخرى، أو اختر عنوانًا مختلفًا."
+        },
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "العناصر الموجودة في سلة التسوق لا تستوفي متطلبات السعر أو الوزن للتأهل للشحن. حدّث سلتك وحاول مرة أخرى.",
+        "shipping_method_not_available_updated": {
+          "one": "المنتج الذي أضفته لا يتم شحنه إلى موقعك. أزِله لإتمام عملية الشراء، أو تواصل مع المتجر.",
+          "other": "عنصر واحد أو أكثر من العناصر التي أضفتها لا يمكن شحنه إلى موقعك. أزِلها لإتمام الشراء، أو تواصل مع المتجر."
+        },
+        "payment_method_not_supported": "لا يمكنك استخدام طريقة الدفع هذه في %{country}. استخدم طريقة دفع أخرى للشحن إلى هذا البلد.",
+        "empty_state": "أدخل عنوان الشحن لعرض طرق الشحن المتاحة.",
+        "title": "الشحن غير متاح",
+        "invalid_selected_address": "عنوان الشحن المحدد غير صالح",
+        "invalid_selected_address_with_update_link": "عنوان الشحن المحدد غير صالح. %{update_address_link} أو اختر عنوانًا مختلفًا",
+        "unavailable_addresses_only_countries": "لا يمكن شحن طلبك إلا إلى {{countriesList}}. أضف عنوانًا جديدًا للمتابعة.",
+        "unavailable_address_country": "الشحن غير متاح في البلد الذي اخترته. استخدم عنوانًا مختلفًا للمتابعة",
+        "unavailable_selected_address": "الشحن غير متاح للعنوان المحدد",
+        "unavailable_selected_address_for_region": "الشحن غير متاح إلى {{region}}. حدّد عنوانًا مختلفًا للمتابعة"
+      },
+      "shop_policies": {
+        "policy_label": "السياسة",
+        "policies_label": "السياسات",
+        "select_policy_label": "اختر سياسة",
+        "refund_policy": "سياسة استرداد الأموال",
+        "privacy_policy": "سياسة الخصوصية",
+        "terms_of_service": "شروط الخدمة",
+        "legal_notice": "إشعار قانوني",
+        "shipping_policy": "الشحن",
+        "terms_of_sale": "شروط البيع",
+        "subscription_policy": "الإلغاءات",
+        "purchase_options_policy": "سياسة خيارات الشراء",
+        "contact_information": "تواصل",
+        "purchase_options_cancellation_policy": "الإلغاءات",
+        "cookie_preferences": "ملفات تعريف الارتباط",
+        "terms_and_policies": "الشروط والسياسات"
+      },
+      "split_delivery": {
+        "accessibility": {
+          "status": {
+            "ship_separately": "سيتم شحن %{items} بشكل منفصل.",
+            "pickup_in_store": "سيتم استلام %{items} من المتجر.",
+            "remove_items": "تمت إزالة %{items} من سلة التسوق."
+          }
+        },
+        "delivery_method": "تقسيم طريقة التوصيل",
+        "delivery_method_menu": "قسّم قائمة طرق التسليم",
+        "inventory_issue_banner": {
+          "heading": {
+            "cannot_be_picked_up": {
+              "one": "لا يمكن استلام %{count} من العناصر",
+              "other": "لا يمكن استلام %{count} من العناصر"
+            },
+            "cannot_be_shipped": {
+              "one": "لا يمكن شحن %{count} من العناصر",
+              "other": "لا يمكن شحن %{count} من العناصر"
+            }
+          },
+          "remove_item": {
+            "one": "إزالة العنصر",
+            "other": "إزالة العناصر"
+          },
+          "remove_item_only": {
+            "one": "إزالة العنصر",
+            "other": "إزالة العناصر"
+          },
+          "ship_separately": {
+            "one": "اشحنه بشكل منفصل",
+            "other": "اشحنها بشكل منفصل"
+          },
+          "pick_them_up_in_store": {
+            "one": "استلمه من المتجر",
+            "other": "استلمها من المتجر"
+          },
+          "remove_items_or_ship": "%{ship_separately_link} أو %{remove_items_link}",
+          "remove_items_or_pickup": "%{pickup_in_store_link} أو %{remove_items_link}"
+        },
+        "cross_border": {
+          "modal": {
+            "heading": "تغيير الدولة؟",
+            "content": "يجب أن تكون مواقع الاستلام والشحن في البلد نفسه. سيؤدي تغيير البلد إلى إعادة تعيين جميع العناصر إلى الشحن.",
+            "country_changed_heading": "تم تغيير الدولة",
+            "change_country": "تغيير الدولة"
+          },
+          "banner": "تم تحديث طريقة التوصيل الخاصة بك"
+        },
+        "pickup_all_items": "التقط جميع العناصر",
+        "items_for_pickup": "العناصر للاستلام",
+        "items_for_shipping": "العناصر للشحن",
+        "items_moved_to_shipping_toast": "تم نقل العناصر التي لا يمكن استلامها إلى الشحن"
+      },
+      "shop_pay_external": {
+        "title": "إتمام الدفع عبر Shop Pay",
+        "errors": {
+          "problem_loading": "توجد مشكلة في تحميل Shop Pay",
+          "try_again_later": "تحقق من اتصالك أو أغلق هذه النافذة وحاول مجددًا بعد لحظات قليلة.",
+          "checkout_has_expired": "انتهت صلاحية إتمام طلبك. أغلق هذه النافذة وحاول إتمام الطلب مرة أخرى من {{shopName}}."
+        },
+        "return_to_store": "العودة إلى {{shopName}}",
+        "return_to_store_simple": "العودة إلى المتجر"
+      },
+      "stock": {
+        "page_title": "مشكلات المخزون",
+        "title": "غير متوفر حاليًا",
+        "items_unavailable_notice": "بعض العناصر لم تعد متوفرة.",
+        "product_column_header": "المنتجات",
+        "quantity_column_header": "الكمية",
+        "price_column_header": "السعر",
+        "status_column_header": "الحالة",
+        "removed_from_cart_notice": "تمت إزالته من سلة التسوق",
+        "sold_out_label": "نفد من المخزون",
+        "reduced_label": "مُخفَّض",
+        "reduced_with_quantity_label": "لم يتبقَّ سوى %{quantity_available}",
+        "remove_from_cart_button_label": "إزالة من السلة",
+        "continue_shopping_button_label": "متابعة",
+        "go_back_to_cart_button_label": "العودة إلى سلّتي",
+        "remove": "إزالة",
+        "return_to_store_label": "العودة إلى المتجر",
+        "continue_cta_label": "متابعة إتمام الشراء",
+        "item_label": {
+          "one": "{{count}} عنصر",
+          "other": "{{count}} عنصر"
+        },
+        "empty_cart_label": "سلة التسوق فارغة",
+        "quantity_update": {
+          "page_title": "تحديث الكمية",
+          "title": "تحديث الكمية",
+          "description": "تم تغيير الكميات المتاحة لهذه العناصر وتحديثها في سلة التسوق."
+        },
+        "unfulfillable_product": {
+          "default_message": {
+            "one": "طريقة التوصيل المختارة لم تعد متاحة لهذا المنتج.",
+            "other": "لم تعد طريقة التوصيل المحددة متاحة لهذه العناصر."
+          }
+        },
+        "price_update": {
+          "title": "تحديث السعر",
+          "description": "تم تغيير أسعار هذه العناصر وتحديثها في سلة التسوق الخاصة بك.",
+          "updated_price": "السعر المُحدَّث"
+        },
+        "price_and_quantity_update": {
+          "title": "تحديث السعر والكمية",
+          "description": "تم تغيير الأسعار والكميات المتاحة لهذه العناصر وتحديثها في سلة التسوق."
+        },
+        "out_of_stock": {
+          "description": "هذه العناصر لم تعد متاحة وستُزال من سلة التسوق.",
+          "items_unavailable": "لم تعد بعض العناصر متاحة، وستتم إزالتها من سلة التسوق الخاصة بك."
+        },
+        "out_of_stock_in_context_label": "هذا المنتج غير متوفر في بلدك/منطقتك."
       }
     },
     "attributes": {
