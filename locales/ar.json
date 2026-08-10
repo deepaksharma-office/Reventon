@@ -2010,7 +2010,75 @@
         "payment_method_update_failed": "فشل تحديث طريقة الدفع.",
         "payment_method_incompatible_with_payment_terms": "طريقة الدفع غير متوافقة مع شروط الدفع.",
         "pay_in_installments_split_pay_short": "4 دفعات بقيمة %{amount}",
-        "payment_flexibility_terms_id_mismatch": "عدم تطابق معرّف شروط مرونة الدفع"
+        "payment_flexibility_terms_id_mismatch": "عدم تطابق معرّف شروط مرونة الدفع",
+        "paypal_disconnect": "قطع الاتصال",
+        "saved_by_payment_method": "تم الحفظ بواسطة %{payment_method}",
+        "same_billing_address_label": "مطابق لعنوان الشحن",
+        "receiver_payment_experience_hint": "بعد إتمام طلبك، ستتلقى تفاصيل الدفع. أجرِ الدفع عبر Multibanco أو عبر الإنترنت خلال %{due_days} يومًا.",
+        "shop_pay_ideal_unavailable_error": "iDEAL | Wero غير متاح لهذا الطلب. اختر طريقة دفع أخرى.",
+        "paypal_label": "باي بال",
+        "paypal_wallet_label": "محفظة PayPal",
+        "shop_pay_installments_label": "أقساط Shop Pay",
+        "paypal_modal": {
+          "order_contains_subscriptions": "اشتراك",
+          "order_contains_fixed_selling_plans": "قد لا يشمل الإجمالي الضرائب والشحن والرسوم المؤجلة وبعض الخصومات. تابع إلى إتمام الشراء لمعرفة المبلغ المستحق اليوم."
+        },
+        "przelewy24_label": "Przelewy24",
+        "satispay_label": "Satispay",
+        "purchase_options_card_update_agreement_label_html": "بتحديث طريقة الدفع، فإنك تفوّض بإجراء الدفعات لأي عملية شراء متكررة أو مؤجلة وفقًا لـ <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">سياسة الإلغاء</a> الخاصة بهذا المتجر.",
+        "purchase_options_agreement_label": "عنصر واحد أو أكثر في سلة مشترياتك هو عملية شراء مؤجّلة أو متكرّرة. بمتابعة الدفع، فإنك توافق على تحصيل المبلغ تلقائيًا من طريقة الدفع الخاصة بك بالسعر والتكرار الموضحين في هذه الصفحة حتى انتهاء العملية أو إلغائها. تخضع جميع عمليات الإلغاء لـ %{cancellation_policy_label}.",
+        "purchase_options_agreement_label_html": "أفهم أن منتجًا واحدًا أو أكثر في سلّة التسوق الخاصة بي هو عملية شراء مؤجلة أو متكررة. بمتابعتي، أوافق على\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">سياسة الإلغاء</a>\nوأفوّضك بخصم المبالغ من طريقة الدفع الخاصة بي بالأسعار والتكرار والتواريخ الموضّحة في هذه الصفحة حتى يتم تنفيذ طلبي أو ألغيه، إذا كان ذلك مسموحًا.",
+        "purchase_options_agreement_label_wallets": "بمتابعة الدفع، فإنك توافق على الرسوم المستقبلية المذكورة في هذه الصفحة وعلى سياسة الإلغاء.",
+        "purchase_options_subscription_agreement_label": "تحتوي سلة التسوق على اشتراك يتجدد تلقائيًا. بالنقر على «%{button_label}»، %{consent_text} %{cancellation_instructions}",
+        "purchase_options_subscription_consent_text": "أنت توافق صراحةً وبشكلٍ واضح على أنه سيتم تلقائيًا تحصيل المبلغ أو المبالغ المتكررة الظاهرة في سلة التسوق الخاصة بك (بالإضافة إلى تكاليف الشحن والضرائب) حتى تنتهي الاشتراك أو تقوم بإلغائه.",
+        "purchase_options_subscription_cancellation_instructions": "%{cancel_text} يُرجى الاطّلاع على %{cancellation_policy_label}.",
+        "purchase_options_subscription_cancel_text": "يمكنك الإلغاء في أي وقت من خلال الانتقال إلى حسابك أو التواصل مع المتجر.",
+        "paypal": {
+          "connect": "انقر لربط حسابك على PayPal"
+        },
+        "pending_payment": {
+          "due_notice": "دفعتك البالغة %{amount_due} مستحقة في %{due_date}.",
+          "multibanco": {
+            "buyer_action_info": "يستحق سداد مبلغ %{amount_due} الخاص بك.",
+            "instruction_html": "أجرِ دفعتك عبر Multibanco أو عبر الإنترنت باستخدام التفاصيل أدناه. للاستفسارات أو لتحديث تفاصيل الدفع، %{contact_us}.",
+            "entity": "كيان",
+            "reference": "مرجع",
+            "amount": "المبلغ",
+            "find_nearest_atm": "اعثر على أقرب جهاز صراف آلي"
+          }
+        },
+        "same_billing_address_checkbox_label": "استخدم عنوان الشحن كعنوان للفوترة",
+        "shipping_rate_updated": "تم تحديث طرق الشحن المتاحة. أكّد اختيارك قبل إتمام عملية الدفع.",
+        "preview_not_available": {
+          "title": "المعاينة غير متاحة",
+          "content": "لا تقلق، تعمل خدمة الدفع السريع هذه لصالح عملائك.",
+          "button": "حسنًا"
+        },
+        "purchase_options_and_vaulting_agreement_label": "يوجد عنصر واحد أو أكثر في سلة التسوق الخاصة بك ضمن عملية شراء مؤجلة أو اشتراك. بمتابعة الدفع، فإنك توافق على خصم المبلغ تلقائيًا من طريقة الدفع الخاصة بك بالسعر والتكرار الموضحين في هذه الصفحة حتى انتهاء العملية أو إلغائها. تخضع جميع عمليات الإلغاء لـ %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "سياسة الإلغاء",
+        "saved_credit_card": "بطاقة الائتمان المحفوظة لديك",
+        "saved_credit_card_info": "الأرقام الأربعة الأخيرة",
+        "saved_credit_card_cvv_verification": "لأغراض التحقق، أدخل رمز أمان بطاقتك.",
+        "saved_credit_card_actions": {
+          "edit": "تحرير",
+          "delete": "حذف"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "عرض جميع البطاقات المحفوظة",
+          "done": "تم الإنجاز",
+          "cancel": "إلغاء"
+        },
+        "purchase_order_number": {
+          "title": "رقم أمر الشراء",
+          "label": "رقم أمر الشراء (اختياري)"
+        },
+        "proposed_gateway_unavailable": "بوابة الدفع المقترحة غير متاحة",
+        "payment_option": {
+          "accessibility_label": "اختر خيار دفع"
+        },
+        "separate_payments_label": "منتجاتك من أكثر من متجر. سيتم تحصيل المبلغ منك عبر %{separate_payments_link}.",
+        "separate_payments_text": "دفعات منفصلة",
+        "payments": "المدفوعات"
       }
     },
     "attributes": {
