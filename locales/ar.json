@@ -120,6 +120,68 @@
       "placeholder": "عنوان البريد الإلكتروني",
       "success": "شكرًا لاشتراكك!"
     },
-    "filter": "تصفية"
+    "filter": "تصفية",
+    "load_video": "تحميل الفيديو: {{ description }}",
+    "sold_out": "نفد من المخزون",
+    "payment_methods": "طرق الدفع",
+    "slider_label": "شريط تمرير"
+  },
+  "blogs": {
+    "article": {
+      "comments_heading": {
+        "one": "{{ count }} تعليق",
+        "other": "{{ count }} تعليقًا"
+      }
+    },
+    "comment_form": {
+      "email": "البريد الإلكتروني",
+      "error": "تعذّر نشر التعليق، يُرجى معالجة ما يلي:",
+      "heading": "اترك تعليقًا",
+      "message": "رسالة",
+      "moderated": "يرجى ملاحظة أن التعليقات تحتاج إلى الموافقة عليها قبل نشرها.",
+      "name": "الاسم",
+      "post": "انشر تعليقًا",
+      "success_moderated": "تم نشر التعليق، بانتظار المراجعة",
+      "success": "تم نشر التعليق"
+    }
+  },
+  "content": {
+    "cancel": "إلغاء",
+    "discount": "خصم",
+    "account_title": "الحساب",
+    "account_title_personalized": "مرحبًا {{ first_name }}",
+    "account_orders": "الطلبات",
+    "account_profile": "الملف الشخصي",
+    "cart_estimated_total": "الإجمالي التقديري",
+    "cart_title": "سلة التسوق",
+    "cart_subtotal": "المجموع الفرعي",
+    "cart_total": "إجمالي سلة التسوق",
+    "checkout": "إتمام الشراء",
+    "collection_placeholder": "عنوان المجموعة",
+    "discount_code": "رمز الخصم",
+    "discount_code_error": "لا يمكن تطبيق رمز الخصم على سلة التسوق الخاصة بك",
+    "discounts": "الخصومات",
+    "duties_and_taxes_included": "الرسوم والضرائب مشمولة.",
+    "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "الرسوم والضرائب مشمولة. تُحتسب الخصومات و<a href=\"{{ link }}\">تكاليف الشحن</a> عند إتمام عملية الدفع.",
+    "duties_and_taxes_included_shipping_at_checkout_with_policy_without_discounts_html": "الرسوم والضرائب مشمولة. تُحتسب تكلفة الشحن عند إتمام الشراء.",
+    "duties_and_taxes_included_shipping_at_checkout_without_policy": "شاملة الرسوم الجمركية والضرائب. تُحتسب الخصومات وتكاليف الشحن عند إتمام الطلب.",
+    "duties_and_taxes_included_shipping_at_checkout_without_policy_without_discounts": "الرسوم والضرائب مشمولة. تُحتسب تكلفة الشحن عند إتمام الشراء.",
+    "duties_included": "الرسوم الجمركية مشمولة.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "الرسوم مشمولة. تُحتسب الضرائب والخصومات و<a href=\"{{ link }}\">الشحن</a> عند إتمام عملية الدفع.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_without_discounts_html": "الرسوم الجمركية مشمولة. تُحتسب تكلفة الشحن عند الدفع.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "الرسوم الجمركية مشمولة. تُحتسب الضرائب والخصومات وتكاليف الشحن عند الدفع.",
+    "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy_without_discounts": "الرسوم الجمركية مشمولة. تُحتسب تكلفة الشحن عند الدفع.",
+    "featured_products": "المنتجات المميزة",
+    "filters": "الفلاتر",
+    "grid_view": {
+      "default_view": "افتراضي",
+      "grid_fieldset": "شبكة الأعمدة",
+      "single_item": "مفرد",
+      "zoom_out": "تصغير zoom"
+    },
+    "at_price_each": "بسعر {{ price }} لكل وحدة",
+    "each": "{{ price }}/وحدة",
+    "each_abbreviation": "لكلٍّ منها",
+    "errors": "أخطاء"
   }
 }
