@@ -961,7 +961,8 @@
           },
           "inventory": {
             "missing_quantity_value": "حقل الكمية مفقود في بنود مخزون المشتري.",
-            "changing_behavior_not_allowed": "لا يملك هذا العميل الإذن لتغيير سلوك المخزون."
+            "changing_behavior_not_allowed": "لا يملك هذا العميل الإذن لتغيير سلوك المخزون.",
+            "only_one_inventory_behavior_allowed": "حاليًا، يُسمح بسلوك واحد فقط للمخزون لكل عملية دفع."
           },
           "captcha": {
             "metadata_missing": "يجب إكمال اختبار CAPTCHA لإتمام عملية الدفع.",
@@ -978,6 +979,63 @@
           },
           "checkout_source": {
             "revoked": "لم يعد إتمام عملية الشراء هذه متاحًا."
+          },
+          "only_empty_terms_accepted": "هذه السياسة تقبل المصطلحات الفارغة فقط.",
+          "line_item_limit_reached": "تم الوصول إلى الحد الأقصى لعدد بنود الطلب.",
+          "merchandise": {
+            "only_value_constraint": "لا يُسمح في إدخال البضائع إلا بالقيم الدقيقة.",
+            "merchandise_not_found": "لم يتم العثور على المنتج.",
+            "merchandise_variant_not_found": "لم يتم العثور على نسخة المنتج.",
+            "merchandise_not_applicable": "لا يمكن شراء متغير المنتج.",
+            "mixed_currencies": "تتضمن صفحة الدفع عناصرَ بسُعَر بعملات مختلفة.",
+            "bundle_products_not_supported_for_b2b": "لا يمكن إضافة العناصر المجمّعة إلى طلبات B2B لهذا الموقع.",
+            "gift_card_quantity_mismatch": "عند إدخال رموز بطاقات الهدايا، يجب أن تتطابق كمية بند السلعة مع عدد رموز بطاقات الهدايا.",
+            "gift_card_not_supported": "بطاقات الهدايا غير مدعومة في صفحة الدفع هذه.",
+            "gift_card_not_unique": "تظهر بطاقة الهدايا التي تحمل الرمز {{code}} أكثر من مرة في عملية إتمام الشراء هذه. تُنسَّق الرموز قبل المقارنة.",
+            "gift_card_used": "رمز بطاقة الهدايا {{code}} مُعيَّن بالفعل لبطاقة هدايا. تُنسَّق الرموز قبل المقارنة.",
+            "gift_card_invalid": "رمز بطاقة الهدايا {{code}} غير صالح.",
+            "gift_card_code_changed": "تم تغيير رمز بطاقة الهدايا {{proposed_code}} إلى {{formatted_code}} ليتوافق مع قواعد التنسيق.",
+            "gift_card_with_attributes_not_supported": "بطاقات الهدايا ذات السمات المخصصة غير مدعومة في صفحة الدفع هذه.",
+            "gift_card_with_components_not_supported": "بطاقات الهدايا المكوّنة من عدة عناصر غير مدعومة في صفحة الدفع هذه.",
+            "selling_plan_mismatch": "تم تحديث الاشتراك.",
+            "selling_plan_not_supported": "الاشتراكات غير مدعومة.",
+            "selling_plan_not_supported_b2b": "لا يدعم الدفع للعملاء من الشركات (B2B) الاشتراكات.",
+            "price_mismatch": "السعر المقترح سابقًا لهذه البضاعة غير صالح وقد تم تحديثه.",
+            "inventory_not_found": "لم يتم العثور على مخزون لهذا المنتج.",
+            "product_not_published": "لم يتم نشر المنتج.",
+            "product_not_published_in_buyer_location": "المنتج غير متاح في موقع المشتري الحالي.",
+            "duplicated_stable_id": "يحمل خط المنتجات هذا المعرّف الثابت نفسه الموجود لدى خط آخر.",
+            "minimum_quantity_not_met": "كمية بعض العناصر لا تستوفي الحد الأدنى المطلوب.",
+            "maximum_quantity_exceeded": "تتجاوز كمية بعض العناصر الحد الأقصى المسموح به.",
+            "quantity_increment_not_met": "كمية بعض العناصر لا تتوافق مع حدود الطلب.",
+            "quantity_rules_not_met": "كمية بعض العناصر لا تتوافق مع حدود الطلب.",
+            "bundle_requires_components": "هذه الباقة من المنتجات لا تحتوي على مكوّنات.",
+            "combined_listing_parent_not_purchasable": "لا يمكن شراء المنتجات الرئيسية المدرجة ضمن مجموعة مباشرةً.",
+            "title_too_long": "عنوان المنتج طويل جدًا.",
+            "title_empty": "عنوان المنتج فارغ."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "لا يُسمح بالمدفوعات اليدوية في متاجر B2B.",
+            "positive_amount_expected": "يجب أن يكون المبلغ المطلوب دفعه أكبر من 0.",
+            "missing_session_id": "معلومات جلسة بطاقة الائتمان مفقودة.",
+            "gateway_not_supported": "بوابة الدفع لا تدعم تخزين طريقة الدفع.",
+            "credit_card_last_name_required": "لا يمكن أن يكون «اسم العائلة» فارغًا.",
+            "credit_card_update_failed": "فشل تحديث بطاقة الائتمان.",
+            "invalid_address_type": "نوع العنوان المُقدَّم غير صالح لطريقة الدفع هذه.",
+            "missing_retail_attributions": "يُشترط إدخال بيانات جهة البيع بالتجزئة لمدفوعات بطاقات الائتمان المُدخلة يدويًا.",
+            "invalid_card_source": "لا تملك هذه الجلسة إذنًا لاستخدام مصدر البطاقة هذا.",
+            "payment_instrument_not_found": "تعذّر العثور على طريقة الدفع",
+            "saved_payment_methods_cvv_verification_disabled": "طريقة الدفع المحددة تتطلب التحقق من رمز CVV، وهو غير مفعّل لهذا المتجر. اختر طريقة دفع مختلفة.",
+            "gift_cards_not_allowed_for_b2b": "لا يُسمح ببطاقات الهدايا في متاجر الشركات.",
+            "method_required": "يجب اقتراح طريقة دفع.",
+            "paypal_express_address_invalid": "أعاد PayPal عنوانًا غير صالح."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "يجب أن يحتوي اقتراح المشتري على non-negotiable_terms.",
+            "invalid_signature": "توقيع {{target_terms}} غير صالح."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "لا يُسمح برفض الرسوم الجمركية عند إتمام الشراء هذا."
           }
         },
         "continue_to_payment_plans_button_label": "المتابعة إلى خطط الدفع",
