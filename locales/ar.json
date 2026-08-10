@@ -1451,6 +1451,68 @@
       "memberships": {
         "delivery_promise_unfulfillable": "العنوان غير مدعوم للعضوية الحالية.",
         "items_split_across_locations_unsupported": "خدمة التوصيل برايم غير متاحة لطلبك. تم تحديث خيارات الشحن الخاصة بك."
+      },
+      "order_summary": {
+        "discount_code_applied": "تم تطبيق رمز الخصم",
+        "discount_code_applied_with_code": "تم تطبيق رمز الخصم %{code}",
+        "discount_code_removed": "تمت إزالة رمز الخصم %{code}",
+        "discount_code_replaced": "تمت إزالة رمز الخصم %{old_code} وتطبيق %{code}",
+        "discount_code_replaced_multiple": "تمت إزالة رموز الخصم المتعددة وتطبيق %{code}",
+        "discount_code_allocations_mismatch": "تغيّر رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> الخاص بك. راجع سلة التسوق وحاول مرة أخرى.",
+        "applied_free_shipping_discount_label": "تم التطبيق",
+        "apply_discount_button_label": "تطبيق",
+        "applied_discount_message": "خصم %{amount} من السعر الإجمالي للطلب",
+        "discount_has_been_applied": "تم تطبيق الخصم",
+        "automatic_discount_tooltip": "لا يمكن إزالة الخصومات المُطبَّقة تلقائيًا",
+        "discount_already_applied": "تم تطبيق خصم على هذا الطلب. لا يمكنك إضافة خصم آخر.",
+        "cart_does_not_meet_discount_requirements_notice": "رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> غير صالح للعناصر الموجودة في سلة التسوق لديك",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> رمز الخصم غير متاح لك في الوقت الحالي",
+        "customer_already_used_once_per_customer_discount_notice": "تم استخدام رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> من قبل",
+        "calculating_shipping": "جارٍ الحساب…",
+        "calculating": "جارٍ الحساب…",
+        "discount_code_aria_text": "رمز الخصم",
+        "deposit_label": "إيداع",
+        "discount_and_gift_card_savings_notice": "بعد خصم بقيمة %{discount_amount} وبطاقات هدايا بقيمة %{gift_card_amount}",
+        "cost_table_title": "ملخص التكلفة",
+        "cost_table_item_column_header": "عنصر",
+        "cost_table_value_column_header": "القيمة",
+        "description_label": "الوصف",
+        "collapse_order_summary_short": "إخفاء",
+        "compare_at_sale": "التخفيض (%{sale_amount})",
+        "confirmation_number_label": "التأكيد رقم %{confirmation_number}",
+        "amount_off_shipping": "خصم %{amount} على الشحن",
+        "deferred_payment_info": {
+          "title": "يستحق دفع %{amount_due} في %{due_at}",
+          "description_html": "للاستفسارات حول طلبك، %{contact_us}.",
+          "paid_today": "إجمالي المبلغ المدفوع اليوم",
+          "paid_today_next": "تم الدفع اليوم",
+          "due_on_fulfillment_title": "يستحق سداد %{amount_due} عند التنفيذ",
+          "due_on_receipt_title": "يستحق سداد %{amount_due} عند الاستلام"
+        },
+        "deferred_balance_info": {
+          "title": "الرصيد المستحق البالغ {{amount_due}} مستحق في {{due_at}}",
+          "due_on_fulfillment_title": "الرصيد المتبقي وقدره {{amount_due}} مستحق عند التنفيذ"
+        },
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> لا يعمل في الوقت الحالي. تواصل معنا للحصول على المساعدة.",
+        "deferred_total_due_date_label": "الإجمالي المستحق {{date}}",
+        "deferred_total_due_date_label_next": "مستحق في %{date}",
+        "custom_discount": "خصم مخصص",
+        "collapse_component_information": {
+          "one": "إخفاء %{count} عنصر",
+          "other": "إخفاء %{count} من العناصر"
+        },
+        "discount_discovery": {
+          "add_code": "أضف الخصم",
+          "back_to_finalize_order": "العودة إلى إتمام الطلب",
+          "merchandise_quantity_label": {
+            "one": "%{count} عنصر",
+            "other": "%{count} عنصر"
+          }
+        },
+        "alternative_payment_currency_total": "تم الخصم بقيمة %{amount_due}",
+        "alternative_payment_currency_chinese_yuan": "أكّد إجمالي اليوان الصيني النهائي في تطبيق %{wallet}.",
+        "alternative_payment_currency_total_disclosure": "يعالج %{shop_name} المدفوعات بعملة %{shop_currency} (%{amount_due}).",
+        "discount_applies_to_subscription_items_only": "يسري هذا الخصم على عناصر الاشتراك فقط"
       }
     },
     "attributes": {
