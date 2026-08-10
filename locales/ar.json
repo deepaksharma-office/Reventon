@@ -3489,7 +3489,75 @@
       "customer_already_used_once_per_customer_discount_notice": "لقد بلغ هذا الخصم حدّ الاستخدام المسموح به",
       "bad_domain": "يحتوي على اسم نطاق غير صالح",
       "contains_html_tags": "لا يمكن أن يحتوي على وسوم HTML",
-      "contains_spaces": "يبدأ أو ينتهي بمسافات."
+      "contains_spaces": "يبدأ أو ينتهي بمسافات.",
+      "empty": "لا يمكن أن يكون فارغًا",
+      "invalid_email": "يجب أن يكون عنوان بريد إلكتروني صالحًا",
+      "discount_expired": "هذا الخصم لم يعد ساريًا",
+      "discount_limit_reached": "لقد بلغ هذا الخصم حدّ الاستخدام المسموح به",
+      "discount_not_found": "تعذّر العثور على خصم صالح يطابق الرمز المُدخل",
+      "gift_card_already_applied": "تم تطبيق الرمز بالفعل على عملية الدفع الخاصة بك",
+      "gift_card_code_invalid": "الرمز غير صالح",
+      "gift_card_currency_mismatch": "لا يمكن استخدام بطاقة الهدايا هذه لإتمام عملية الشراء. تواصل مع %{shop_name} لإعادة إصدارها.",
+      "gift_card_depleted": "لا توجد أموال متبقية في بطاقة الهدايا هذه",
+      "gift_card_disabled": "بطاقة الهدايا معطّلة",
+      "gift_card_expired": "بطاقة الهدايا منتهية الصلاحية",
+      "invalid": "غير صالح",
+      "password_mismatch": "يجب أن يطابق كلمة المرور المُدخلة",
+      "invalid_for_country": "غير صالح لـ %{country}",
+      "invalid_for_country_and_province": "غير صالح لـ %{province} و%{country}",
+      "invalid_province_in_country": "ليست مقاطعة صالحة في %{country}",
+      "invalid_state_in_country": "ليست ولاية صالحة في %{country}",
+      "invalid_region_in_country": "ليست منطقة صالحة في %{country}",
+      "less_than_or_equal_to": "يجب أن يكون أقل من أو يساوي %{count}",
+      "not_supported": "غير مدعوم",
+      "full_name_required": "أدخل الاسم الأول واسم العائلة",
+      "invalid_for_card_type": "غير صالح",
+      "invalid_type": "عذرًا، لا نقبل البطاقات من هذا النوع.",
+      "invalid_format": "التنسيق غير صالح",
+      "expired": "انتهت صلاحيته",
+      "invalid_start_date_or_issue_number_for_debit": "يلزم إدخال تاريخ بدء أو رقم إصدار صالح",
+      "invalid_expiry_year": "ليست سنة انتهاء صلاحية صالحة",
+      "reset_password_html": "عنوان البريد الإلكتروني هذا مرتبط بالفعل بحساب. إذا كان هذا الحساب لك، فيمكنك <a href=\"/account/login#recover\">إعادة تعيين كلمة المرور</a>",
+      "product_not_available": "المنتج غير منشور لهذا العميل.",
+      "shop_404": {
+        "heros": {
+          "store_will_be_right_back": "سيعود هذا المتجر للعمل بعد قليل",
+          "store_unavailable": "هذا المتجر غير متاح حاليًا.",
+          "store_not_exist": "هذا المتجر غير موجود.",
+          "no_storefront": "هذا المتجر ليس لديه موقع إلكتروني بعد."
+        },
+        "links": {
+          "refresh_page": "حدّث الصفحة",
+          "explore_other_stores": "استكشف متاجر أخرى",
+          "start_free_trial": "ابدأ تجربة مجانية"
+        },
+        "owner_ctas": {
+          "add_storefront": "يمكنك إعداد موقعك الإلكتروني عبر إضافة قناة المتجر الإلكتروني في %{admin_link}. إذا واجهت مشكلة في الوصول إلى متجرك، فجرّب صفحة %{forgot_your_store_link}.",
+          "admin_link_text": "مسؤول الإدارة"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "بِعْ حضوريًا",
+            "caption": "احصل على الميزات التي تحتاجها لإدارة متجرك للبيع بالتجزئة، سواء كنت في بداية الطريق أو تعمل على توسيع نطاق عملك.",
+            "link_text": "ابدأ التجربة المجانية"
+          },
+          "open_a_store": {
+            "header": "افتح متجر Shopify جديدًا",
+            "caption": "ابدأ تجربة مجانية لمدة 3 أيام، ثم واصل مقابل دولار واحد شهريًا للأشهر الثلاثة التالية.",
+            "link_text": "سجّل الآن"
+          },
+          "editions": {
+            "header": "اطّلع على إصدارات Shopify",
+            "caption": "مع أكثر من 100 تحديث للمنتجات، يمكنك أن تكون أكثر إنتاجية وإبداعًا، وأن تحقق قوةً في التجارة لم تتخيلها من قبل.",
+            "link_text": "استكشف أحدث الإصدارات"
+          },
+          "store_owner": {
+            "header": "هل أنت صاحب المتجر؟",
+            "caption": "هل تواجه مشكلة في الدخول إلى متجرك؟ جرّب ميزة %{forgot_your_store_link}. إذا كنت ترغب في إعادة تفعيل متجرك، فتواصل مع %{shopify_support_link}.",
+            "shopify_support_link_text": "دعم Shopify"
+          }
+        }
+      }
     },
     "email_marketing": {
       "subscribed": {
