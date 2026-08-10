@@ -60,6 +60,66 @@
     "slideshow_previous": "الشريحة السابقة",
     "find_country": "ابحث عن الدولة",
     "price_filter_low": "سعر منخفض",
-    "price_filter_high": "سعر مرتفع"
+    "price_filter_high": "سعر مرتفع",
+    "unit_price": "سعر الوحدة",
+    "view_pricing_info": "عرض معلومات الأسعار"
+  },
+  "actions": {
+    "add": "إضافة",
+    "add_to_cart": "أضف إلى سلة التسوق",
+    "added": "تمت الإضافة",
+    "apply": "تطبيق",
+    "back": "رجوع",
+    "back_to": "العودة إلى {{ title }}",
+    "choose": "اختر",
+    "clear": "مسح",
+    "clear_all": "مسح الكل",
+    "close": "إغلاق",
+    "open": "افتح",
+    "continue_shopping": "متابعة التسوق",
+    "enter_password": "أدخل كلمة المرور",
+    "log_in_html": "هل لديك حساب؟ <a href=\"{{ link }}\">سجّل الدخول</a> لإتمام عملية الدفع بشكل أسرع.",
+    "log_in": "تسجيل الدخول",
+    "log_out": "تسجيل الخروج",
+    "open_image_in_full_screen": "فتح الصورة بملء الشاشة",
+    "remove": "إزالة",
+    "remove_discount": "إزالة الخصم {{ code }}",
+    "show_all_options": "عرض جميع الخيارات",
+    "see_items": {
+      "one": "عرض {{ count }} عنصر",
+      "other": "عرض {{ count }} من العناصر"
+    },
+    "show_filters": "تصفية",
+    "show_less": "عرض أقل",
+    "show_more": "عرض المزيد",
+    "sign_in_options": "خيارات تسجيل الدخول الأخرى",
+    "view_in_your_space": "اعرضه في مساحتك",
+    "view_all": "عرض الكل",
+    "more": "المزيد",
+    "zoom": "تكبير",
+    "zoom_media": "تكبير الوسائط {{ index }}",
+    "close_dialog": "إغلاق مربع الحوار",
+    "reset": "إعادة ضبط",
+    "enter_using_password": "الدخول باستخدام كلمة المرور",
+    "sign_up": "سجّل الاشتراك",
+    "submit": "إرسال",
+    "view_store_information": "عرض معلومات المتجر",
+    "sort": "فرز"
+  },
+  "blocks": {
+    "contact_form": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "هاتف",
+      "comment": "تعليق",
+      "post_success": "شكرًا لتواصلك معنا. سنرد عليك في أقرب وقت ممكن.",
+      "error_heading": "يرجى تعديل ما يلي:"
+    },
+    "email_signup": {
+      "label": "البريد الإلكتروني",
+      "placeholder": "عنوان البريد الإلكتروني",
+      "success": "شكرًا لاشتراكك!"
+    },
+    "filter": "تصفية"
   }
 }
