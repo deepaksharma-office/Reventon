@@ -1684,7 +1684,9 @@
         "unit_price": {
           "accessible_separator": "لكل",
           "per_item": {
-            "one": "%{price} لكل عنصر وعدده %{count}"
+            "one": "%{price} لكل عنصر وعدده %{count}",
+            "single": "%{price} لكل قطعة",
+            "other": "%{price} لكل %{count} عناصر"
           }
         },
         "recurring_subtotal_label": "الإجمالي الفرعي المتكرر",
@@ -1696,7 +1698,65 @@
         "recurring_total_multiple_label": "يتضمن هذا الطلب رسومًا متكررة لعدة عناصر.",
         "settlement_currency_note": "يعالج %{shop_name} المدفوعات بعملة %{processing_currency}. لقد تسوّقت بعملة %{original_currency}.",
         "settlement_currency_note_wallet": "يعالج %{shop_name} المدفوعات بعملة %{processing_currency}. لقد تسوّقت بعملة %{original_currency} ودفعت باستخدام %{wallet} باليوان الصيني. تحقّق من تطبيق %{wallet_app} لمعرفة المبلغ النهائي.",
-        "settlement_currency_note_wallet_no_conversion": "لقد دفعت باستخدام %{wallet} باليوان الصيني. تحقّق من تطبيق %{wallet_app} لمعرفة المبلغ النهائي."
+        "settlement_currency_note_wallet_no_conversion": "لقد دفعت باستخدام %{wallet} باليوان الصيني. تحقّق من تطبيق %{wallet_app} لمعرفة المبلغ النهائي.",
+        "view_all_items": {
+          "one": "عرض %{count} عنصر",
+          "other": "عرض جميع العناصر البالغ عددها %{count}"
+        },
+        "vat_label_html": "شاملًا %{amount} من الضرائب",
+        "updated_shipping_method": "تم تحديث طريقة الشحن: %{shipping_method}"
+      },
+      "payment": {
+        "amazon_payments_label": "Amazon Pay",
+        "amazon_payments_login_hint": "سيُطلب منك تسجيل الدخول باستخدام Amazon.",
+        "amazon_payments_logout": "تسجيل الخروج من Amazon Pay",
+        "amazon_payments_failed_mfa_challenge": "تعذّر استخدام طريقة الدفع المحددة. اختر طريقة أخرى أو تواصل مع البنك أو جهة إصدار بطاقتك.",
+        "amazon_payments_abandoned_mfa_challenge": "تعذّر إتمام عملية الدفع. جرّب طريقة دفع أخرى أو تواصل مع مصرفك أو جهة إصدار بطاقتك.",
+        "amazon_payments_could_not_enqueue_authorize": "حدثت مشكلة أثناء معالجة دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "amount_left_to_pay_label": "موعد استحقاق الدفع:",
+        "apply_gift_card_button_label": "تطبيق",
+        "bank_account_vaulted_company_location": "تم حفظ الحساب المصرفي لهذا الموقع",
+        "billing_address_associated_with_mandate": "استخدم العنوان المرتبط بطريقة الدفع",
+        "billing_address_associated_with_mandate_info": "إذا كنت ترغب في تغيير عنوان الفوترة، فأزل بيانات بطاقتك الائتمانية وأعد إدخالها",
+        "billing_address_title": "عنوان الفوترة",
+        "billing_address_rollup_accessibility_label": "خيارات عنوان الفوترة",
+        "billing_address_description": "اختر العنوان المطابق لبطاقتك أو طريقة الدفع.",
+        "billing_address_description_no_shipping_address": "أدخل العنوان المطابق لبطاقتك أو طريقة الدفع.",
+        "billing_address_not_supported_for_payment_method_error": "طريقة الدفع هذه غير متاحة لعنوان الفوترة والعملة المحددين. جرّب طريقة دفع أخرى.",
+        "bancontact_label": "Bancontact",
+        "bank_picker_label": "مصرف",
+        "afterpay_label": "Afterpay",
+        "alipay_label": "Alipay",
+        "apple_pay_payment_error": "تعذّر إتمام عملية الدفع. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "apple": {
+          "connect": "انقر لربط حساب Apple Pay الخاص بك",
+          "not_available": "Apple Pay غير متاح في هذا المتصفح. لربط حساب Apple Pay الخاص بك، ستحتاج إلى استخدام Safari على جهاز Apple."
+        },
+        "account_connected": "تم ربط الحساب.",
+        "billing_must_match_shipping_notice": "يجب أن يتطابق عنوان الفوترة لطريقة الدفع مع عنوان الشحن.",
+        "billing_address_invalid_phone": "حدّث رقم الهاتف في عنوان الفوترة الخاص بـ {{label}} {{last_digits}} للمتابعة.",
+        "billing_address_invalid_phone_no_card": "حدّث رقم الهاتف في عنوان الفوترة للمتابعة.",
+        "add_credit_card_modal": {
+          "title": "أضف بطاقة",
+          "save": "حفظ",
+          "cancel": "إلغاء"
+        },
+        "alternative_payment_currency_total_notice": "ملاحظة: سيتم تحصيل مبلغ %{amount_due} منك.",
+        "alternative_payment_currency_total_manual_payment_notice": "ملاحظة: الإجمالي بعد التحويل هو %{amount_due}.",
+        "alternative_payment_currency_total_notice_disclosure": "يعالج %{shop_name} المدفوعات بعملة %{shop_currency} (%{amount_due}).",
+        "alternative_payment_currency_total_manual_payment_notice_disclosure": "أنت تدفع إلى %{shop_name} بعملة %{shop_currency} (%{amount_due}).",
+        "bank_account_type": {
+          "checking": "جارٍ التحقق",
+          "savings": "التوفير"
+        },
+        "bank_account_disclaimer": "قد تستغرق مدفوعات ACH ما يصل إلى 4 أيام عمل لمعالجتها.",
+        "bank_account_choose": "اختر حسابًا لإتمام عملية الشراء بأمان",
+        "bank_account_connect_another": "اربط حسابًا مصرفيًا آخر",
+        "bank_account_connect": "ربط الحساب البنكي",
+        "bank_account_missing": "يجب ربط الحساب المصرفي",
+        "bank_account_generic_error": "تعذّر إضافة الحساب البنكي. يُرجى المحاولة مرة أخرى لاحقًا.",
+        "add_payment_method": "أضف طريقة دفع",
+        "add_new_payment_method": "أضف طريقة دفع جديدة"
       }
     },
     "attributes": {
