@@ -2384,9 +2384,36 @@
           "change_delivery_method_link_label": "تغيير طريقة التوصيل",
           "no_address": "(لا يوجد عنوان)",
           "due_after_order_reviewed_html": "مستحق بعد مراجعة الطلب",
-          "company_location": "موقع الشركة"
+          "company_location": "موقع الشركة",
+          "shipping_address_title": "الشحن إلى",
+          "shipping_method_title": "طريقة الشحن",
+          "payment_method_title": "طريقة الدفع",
+          "pick_up_in_store_shipping_method_html": "الاستلام من المتجر · %{location_name}",
+          "purchase_order_number_title": "رقم أمر الشراء",
+          "no_purchase_order_number": "(لا يوجد رقم أمر شراء)",
+          "no_purchase_order_number_long": "لا يوجد رقم أمر شراء",
+          "review_title_free_order": "راجِع طلبك وأكمله",
+          "payment_method_saved_company_location": "حفظ البطاقة لهذا الموقع",
+          "pickup_items_at": {
+            "one": "استلام %{count} عنصر عند",
+            "other": "استلام %{count} عناصر في"
+          },
+          "ship_items_to": {
+            "one": "اشحن %{count} عنصرًا إلى",
+            "other": "شحن %{count} من العناصر إلى"
+          }
         },
-        "block_title": "راجع معلوماتك"
+        "block_title": "راجع معلوماتك",
+        "title": "مراجعة",
+        "review_title": "أكمل طلبك",
+        "review_and_confirm_title": "راجِع وأكِّد",
+        "checkout_as_guest": "إتمام الشراء كزائر",
+        "checkout_a_different_way": "جرّب طريقة مختلفة",
+        "item_header": {
+          "change_value": "تغيير القيمة",
+          "section": "قسم",
+          "value": "القيمة"
+        }
       },
       "remote_policies": {
         "unavailable_policy": "لم يتم تقديم %{policy_name} لهذا المتجر. لمزيد من المعلومات، يُرجى التواصل مباشرةً مع %{shop_name}."
@@ -2403,6 +2430,45 @@
         "errors": {
           "interaction_required": "يلزم التفاعل مع الإضافة لإتمام عملية الدفع."
         }
+      },
+      "shipping": {
+        "arrives_time": "يصل %{time}",
+        "arrives_time_range": "يصل خلال %{min_time}–%{max_time}",
+        "address_update": "تحديث العنوان",
+        "add_address": "استخدم عنوانًا مختلفًا",
+        "add_delivery_instructions": "أضف تعليمات التوصيل",
+        "address_more": "مزيد من الإجراءات لهذا العنوان",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "حذف العنوان",
+        "address_confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان من حسابك؟",
+        "address_default": "تعيين كافتراضي",
+        "address_form": {
+          "add_address": "إضافة عنوان",
+          "save": "حفظ",
+          "cancel": "إلغاء",
+          "edit": "تعديل العنوان",
+          "update": "حفظ التغييرات",
+          "generic_error": "حدثت مشكلة أثناء حفظ عنوانك. حاول مرة أخرى.",
+          "one_time_address_subtitle": "استخدم عنوانًا لمرة واحدة لهذا الطلب"
+        },
+        "add_shipping_address": "أضف عنوان الشحن",
+        "add_new_delivery_address": "أضف عنوان توصيل جديدًا"
+      },
+      "session_errors": {
+        "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. حدّث هذه الصفحة للعودة إلى المتجر.",
+        "session_already_finished": "تم إرسال هذا الطلب مسبقًا. يمكنك العودة إلى المتجر لبدء طلب جديد."
+      },
+      "review_address_modal": {
+        "title": "مراجعة العنوان",
+        "subtitle": {
+          "one": "سيتم شحن هذا الطلب إلى العنوان الذي قدّمه {{merchant}}.",
+          "other": "سيتم شحن هذا الطلب إلى عنوان يقدمه {{merchant}}. اختر عنوان الشحن."
+        },
+        "subtitle_no_match": "هذا العنوان لا يطابق أيًا من عناوينك المحفوظة.",
+        "subtitle_must_use": "سيتم شحن طلبك إلى هذا العنوان.",
+        "continue": "متابعة باستخدام هذا العنوان",
+        "use_saved_address": "استخدم عنوانًا مختلفًا",
+        "return_to_cart": "العودة إلى سلة التسوق"
       }
     },
     "attributes": {
