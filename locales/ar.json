@@ -3218,7 +3218,79 @@
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تتضمن رقم طلبك.",
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "بعد إتمام الدفع، ستتلقى رسالة تأكيد تتضمن رقم طلبك.",
         "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "بعد إتمام الدفع، ستتلقى رسالة تأكيد تتضمن رقم طلبك.",
-        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "بعد إتمام الدفع، ستتلقى رسالة تأكيد تتضمن رقم طلبك."
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "بعد إتمام الدفع، ستتلقى رسالة تأكيد تتضمن رقم طلبك.",
+        "title": "شكرًا لك على شرائك!",
+        "tracking_number": "رقم التتبع:",
+        "thank_you_title": "تم تأكيد طلبك",
+        "thank_you_title_payment": "تم تأكيد دفعتك",
+        "thank_you_title_review": "تم إرسال طلبك للمراجعة",
+        "thank_you_title_payments_app_pending_default": "جارٍ معالجة دفعتك",
+        "thank_you_title_payments_app_pending_buyer_action_required": "تم استلام طلبك",
+        "thank_you_title_payments_app_failed_pending_payment": "تعذّر معالجة دفعتك",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "لم يتم تأكيد عنصر واحد",
+          "other": "بعض العناصر لم يتم تأكيدها"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "لم يتم تحصيل أي رسوم منك.",
+          "other": "لم يتم تحصيل رسوم منك مقابل هذه العناصر"
+        },
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "ستتلقى رسالة تأكيد تتضمن رقم طلبك بعد قليل.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "ستتلقى رسالة تأكيد تتضمن رقم طلبك بعد قليل.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "ستتلقى رسالة تأكيد تتضمن رقم طلبك بعد قليل.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "ستتلقى رسالة بريد إلكتروني عند تأكيد دفعتك.",
+        "track_your_order_link_text": "تتبّع طلبك",
+        "updated_time": "تم التحديث منذ %{time_ago}",
+        "unfulfilled_items_title": "جارٍ التحضير للشحن",
+        "unfulfilled_items_description": "نُجهّز هذه العناصر حاليًا للشحن.",
+        "track_shipment": "تتبّع الشحنة",
+        "view_business_customer_account": "عرض الحساب",
+        "thank_you_ready_for_picked_up": "تم استلام طلبك من %{address}.",
+        "vat_invoices": {
+          "title": "فواتير ضريبة القيمة المضافة"
+        },
+        "verify_shop_account_title": "تحقّق من حسابك على Shop",
+        "verify_shop_account_message": "تم حفظ معلوماتك باستخدام Shop، تحقّق من حسابك لاستخدامها تلقائيًا على ملايين المتاجر.",
+        "verify_shop_account_cta": "تحقّق من حسابك",
+        "verify_shop_account_confirmation": "تم حفظ تفاصيل الدفع"
+      },
+      "tips": {
+        "add_tip": "إضافة إكرامية"
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "محاولات كثيرة جدًا",
+          "description": "حاول مرة أخرى بعد بضع دقائق"
+        },
+        "line_to_check_out": "أنت في قائمة الانتظار لإتمام عملية الشراء",
+        "cart_summary_heading": "سلة مشترياتك",
+        "merchandise": {
+          "available": "متاح",
+          "sold_out": "نفد المخزون"
+        },
+        "inventory": {
+          "partial_inventory_banner": "جزء من سلة التسوق الخاصة بك نفد من المخزون ولن يكون متاحًا للشراء عند إتمام عملية الدفع.",
+          "sold_out": {
+            "heading": "نفدت جميع المنتجات من سلة التسوق لديك",
+            "storefront_body": "عُد إلى المتجر لمواصلة التسوق",
+            "no_storefront_body": "للأسف، لم يعد المنتج الذي تريد شراءه متاحًا.",
+            "link": "العودة إلى المتجر"
+          }
+        },
+        "title": "قائمة الانتظار",
+        "time_to_checkout_title": "حان وقت إتمام الشراء - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "جارٍ حساب الوقت التقديري للانتظار",
+          "less_than_one": "الوقت المتوقع للانتظار: أقل من دقيقة",
+          "one": "الوقت المقدّر للانتظار: {{count}} دقيقة",
+          "other": "الوقت المتوقع للانتظار: {{count}} دقيقة"
+        },
+        "last_checked": "(آخر فحص: {{time}})",
+        "footer": {
+          "heading": "لا تُحدّث هذه الصفحة، إذ ستتحدّث تلقائيًا.",
+          "body": "لا تُحجز المنتجات في سلة التسوق حتى تُكمل عملية الدفع."
+        }
       }
     },
     "attributes": {
