@@ -1366,9 +1366,91 @@
             "terms_of_service": "شروط الخدمة",
             "description_html": "بالتسجيل عبر الرسائل النصية، توافق على تلقي رسائل تسويقية آلية متكررة، بما في ذلك تذكيرات سلة التسوق، على رقم الهاتف المقدَّم. لا تُعد الموافقة شرطًا للشراء. أرسل STOP لإلغاء الاشتراك. أرسل HELP للحصول على المساعدة. يختلف تواتر الرسائل. قد تُطبَّق رسوم الرسائل والبيانات. اطّلع على %{privacy_policy_link} و%{terms_of_service_link}.",
             "description_transactional_html": "قد تتلقى رسائل نصية تتعلق بتأكيد الطلب وتحديثات الشحن. أرسل كلمة STOP لإلغاء الاشتراك. أرسل كلمة HELP للحصول على المساعدة. يختلف تواتر الرسائل. قد تُطبَّق رسوم الرسائل والبيانات. اطّلع على %{privacy_policy_modal_link} و%{terms_of_service_modal_link}."
-          }
+          },
+          "mobile_phone_number": "رقم الهاتف المحمول",
+          "get_offers_by_text": "احصل على العروض عبر الرسائل النصية"
         },
-        "accept_shop_pay_marketing_checkbox_label": "سجّلني للحصول على الأخبار والعروض من هذا المتجر"
+        "accept_shop_pay_marketing_checkbox_label": "سجّلني للحصول على الأخبار والعروض من هذا المتجر",
+        "unsubscribe": {
+          "title": "لقد ألغيت اشتراكك",
+          "description": "لن تتلقى منا أي تذكيرات أخرى بشأن سلة التسوق."
+        }
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "هذا المنتج غير متاح للتوصيل إلى %{location_name}.",
+          "some_products_other": "هذه المنتجات غير متاحة للتوصيل إلى %{location_name}.",
+          "all_products_one": "المنتج الموجود في سلة التسوق غير متاح للتوصيل إلى %{location_name}.",
+          "all_products_other": "المنتجات الموجودة في سلة التسوق الخاصة بك غير متاحة للتوصيل إلى %{location_name}."
+        },
+        "missing_country_fallback": "بلدك",
+        "indeterminate_location_fallback": "موقعك",
+        "cart_updated": "تم تحديث سلة التسوق الخاصة بك.",
+        "change_address_only": "غيّر عنوان التوصيل للمتابعة.",
+        "change_address_or_remove": "تغيير عنوان التسليم أو %{remove_action}.",
+        "remove_items_action": {
+          "one": "إزالة العنصر غير المتاح",
+          "other": "إزالة العناصر غير المتاحة"
+        },
+        "empty_cart_action": "أفرغ السلة والعودة إلى المتجر"
+      },
+      "merchant_instruction_errors": {
+        "empty_stable_id": "تحتوي تعليمات سلع %{position} %{name} على معرّف ثابت فارغ.",
+        "invalid_stable_id_target": "تشير تعليمات بضائع %{position} %{name} إلى المعرّف الثابت %{stable_id}، لكن هذا المعرّف الثابت غير موجود في أسطر البضائع.",
+        "duplicate_variant_id": "تحتوي تعليمة البضائع %{position} %{name} على معرّف متغير مكرر %{variant_id}.",
+        "invalid_variant_id_target": "تعليمات بضاعة %{name} تشير إلى معرّف المتغيّر %{variant_id}، لكن هذا المتغيّر غير موجود في أسطر البضاعة.",
+        "invalid_price_override_target": "تعليمة تجاوز سعر المنتج لبند السطر %{stable_id} غير صالحة لأنه مكوّن في حزمة.",
+        "discount_not_supported": "تعليمة التاجر لتطبيق خصم البضائع لا تدعم هذا النوع من الخصم."
+      },
+      "mor_policies": {
+        "terms_and_conditions": "شروط وأحكام التاجر المسجّل",
+        "privacy_policy": "سياسة الخصوصية للتاجر المسجّل"
+      },
+      "markets": {
+        "invalid_market_manager_error": "راجع معلومات الاتصال الخاصة بك قبل إتمام الدفع"
+      },
+      "no_address_location": {
+        "title": "موقع بلا عنوان",
+        "header": "ليس لديك عنوان شحن لهذا الموقع",
+        "alt_header": "عنوان الشحن مفقود",
+        "message": "تواصل معنا لإضافة عنوان لهذا الموقع وإتمام عملية الدفع.",
+        "email_us_button_label": "أرسل إلينا بريدًا إلكترونيًا"
+      },
+      "notice_banner": {
+        "company_location_changed": "تم تحديث سلة التسوق الخاصة بك. راجع طلبك قبل إرساله.",
+        "company_location_changed_product_removed": "تم تحديث سلة التسوق لأن بعض المنتجات غير متاحة في هذا الموقع. راجع طلبك قبل إرساله.",
+        "individual_violations_title": {
+          "DeliveryViolations": "عنوان الشحن"
+        },
+        "all_violations_content": "اتصل بنا أو راسلنا عبر {{emailLink}} لتحديث هذه المعلومات وإكمال طلبك:",
+        "all_violations_email_link": "بريد إلكتروني",
+        "editable_shipping_address_violations_message_title": "أضف هذه المعلومات لإكمال طلبك:",
+        "editable_shipping_address_violations_message_footer": "لتحديث عنوان هذا الموقع بشكل دائم، {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "تواصل معنا",
+        "calculating_shipping": "لا يزال حساب تكلفة الشحن جارياً. حاول مرة أخرى بعد بضع ثوانٍ. لم يتم تحصيل أي رسوم منك.",
+        "calculating_taxes": "لا تزال الضرائب قيد الاحتساب. حاول مرة أخرى بعد بضع ثوانٍ. لم يتم تحصيل أي رسوم منك.",
+        "generic_processing_error": {
+          "title": "حدثت مشكلة أثناء معالجة طلبك",
+          "body": "لم يتم تحصيل أي مبلغ منك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة."
+        },
+        "contact_information": {
+          "title": "معلومات الاتصال غير صالحة",
+          "header": "لتحديث معلوماتك، {{emailLink}}.",
+          "email_link": "تواصل معنا"
+        }
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "مراجعة",
+          "link_label": "{{partnerDisplayName}} الشروط والأحكام"
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "قلّل حجم الملاحظة إلى 5000 حرف أو أقل."
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "العنوان غير مدعوم للعضوية الحالية.",
+        "items_split_across_locations_unsupported": "خدمة التوصيل برايم غير متاحة لطلبك. تم تحديث خيارات الشحن الخاصة بك."
       }
     },
     "attributes": {
