@@ -2452,7 +2452,69 @@
           "one_time_address_subtitle": "استخدم عنوانًا لمرة واحدة لهذا الطلب"
         },
         "add_shipping_address": "أضف عنوان الشحن",
-        "add_new_delivery_address": "أضف عنوان توصيل جديدًا"
+        "add_new_delivery_address": "أضف عنوان توصيل جديدًا",
+        "delivery_title": "التوصيل",
+        "no_rates_for_cart_or_destination_notice": "لا توجد طرق شحن متاحة لسلة مشترياتك أو لعنوانك",
+        "no_pickup_location_notice": "منتج واحد على الأقل من منتجاتك غير متاح للاستلام",
+        "no_rates_for_country_notice": "لم يتم العثور على أسعار الشحن لهذا العنوان.",
+        "no_rates_contact_notice": "تواصل معنا لمزيد من المعلومات",
+        "free_rate_label": "مجانًا",
+        "cheapest_rate_label": "الأرخص",
+        "estimated_delivery_date": {
+          "one": "%{count} يوم عمل",
+          "other": "%{count} يوم عمل"
+        },
+        "estimated_delivery_date_range": "من %{minimum} إلى %{maximum} يوم عمل",
+        "estimated_delivery_time": "موعد التسليم المتوقع %{time}",
+        "estimated_delivery_time_range": "التوصيل المُقدّر %{min_time}–%{max_time}",
+        "delivery_today": "توصيل في اليوم نفسه %{time}",
+        "delivery_tomorrow": "التوصيل في اليوم التالي %{time}",
+        "delivery": "التوصيل %{time}",
+        "delivery_to": "التوصيل إلى",
+        "estimated_time": "متوقع في %{time}",
+        "estimated_time_range": "المدة المقدّرة %{min_time}–%{max_time}",
+        "default_description": "يُشحن خلال يوم عمل واحد",
+        "optional_shipping_line_delivery_instructions_label": "تعليمات التوصيل (اختياري)",
+        "other_method": {
+          "zero": "لا تتوفر طرق أخرى",
+          "one": "%{count} طريقة أخرى متاحة على",
+          "other": "%{count} طرق أخرى متاحة بدءًا من"
+        },
+        "local_delivery": "التوصيل المحلي",
+        "prime_not_available": {
+          "default": "خدمة التوصيل برايم غير متاحة لطلبك. تم تحديث خيارات الشحن الخاصة بك."
+        },
+        "one_time_purchase_shipping": "شحن لمرة واحدة",
+        "duties_and_taxes_title": "الرسوم والضرائب",
+        "loading_progressive_rates": "جارٍ البحث عن أسعار أخرى…",
+        "no_other_methods_available": "لا تتوفر طرق أخرى",
+        "duties_and_taxes_options": {
+          "ddu_title": "الدفع عند الاستلام",
+          "ddu_caption": "قد تُطبَّق رسوم إضافية",
+          "ddp_title": "ادفع الآن",
+          "ddp_caption": "لا توجد رسوم إضافية عند التوصيل"
+        },
+        "shipping_address_rollup_accessibility_label": "خيارات الشحن إلى العنوان",
+        "edit": "تحرير",
+        "delete": "حذف",
+        "back": "رجوع",
+        "different_shipping_method_summary": "أدخل عنوان شحن مختلفًا لعرض طرق الشحن المتاحة",
+        "invalid_shipping_method_summary": "أدخل عنوان شحن صالحًا لعرض طرق الشحن المتاحة",
+        "invalid_shipping_method_summary_selected": "حدّد عنوان شحن مختلفًا لعرض طرق الشحن المتاحة",
+        "method_summary": {
+          "incomplete_address_entered": "أدخل عنوان شحن كاملًا لعرض طرق الشحن المتاحة",
+          "incomplete_address_selected": "حدّد عنوان شحن كاملًا لعرض طرق الشحن المتاحة"
+        },
+        "local_pickup": {
+          "search_address": "ابحث عن عنوان",
+          "rollup_title": "موقع الاستلام",
+          "rollup_accessibility_label": "خيارات موقع الاستلام"
+        },
+        "missing_shipping_address": "عنوان الشحن مفقود",
+        "pre_order_ships_now": "يُشحن الآن",
+        "pre_order_ships_later": "يُشحن لاحقًا",
+        "pre_order_ships_date": "يُشحن في %{date}",
+        "choose_new_address": "اختر عنوانًا جديدًا"
       },
       "session_errors": {
         "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. حدّث هذه الصفحة للعودة إلى المتجر.",
