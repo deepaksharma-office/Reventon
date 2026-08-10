@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "accessibility": {
+    "account": "الحساب",
+    "active_filters": "الفلاتر النشطة:",
+    "cart": "سلة التسوق",
+    "cart_count": "إجمالي العناصر في سلة التسوق",
+    "close_dialog": "إغلاق مربع الحوار",
+    "country_region": "البلد/المنطقة",
+    "country_results_count": "{{ count }} نتيجة",
+    "product_details": "تفاصيل المنتج",
+    "show_product_details": "عرض تفاصيل المنتج {{ product_name }}",
+    "decrease_quantity": "تقليل الكمية",
+    "discount": "طبّق رمز الخصم",
+    "discount_menu": "رموز الخصم",
+    "discount_applied": "تم تطبيق رمز الخصم: {{ code }}",
+    "featured_product": "المنتج المميّز",
+    "filters": "الفلاتر",
+    "filter_count": {
+      "one": "تم تطبيق {{ count }} من الفلاتر",
+      "other": "تم تطبيق {{ count }} من عوامل التصفية"
+    },
+    "home_logo_alt": "{{ store_name }} - الرئيسية",
+    "increase_quantity": "زيادة الكمية",
+    "inventory_status": "حالة المخزون",
+    "localization_region_and_language": "محدد المنطقة واللغة",
+    "menu": "القائمة",
+    "header_navigation_label": "أساسي",
+    "nested_product": "{{ product_title }} لـ {{ parent_title }}",
+    "new_window": "يُفتح في نافذة جديدة.",
+    "quantity": "الكمية",
+    "pause_video": "إيقاف الفيديو مؤقتًا",
+    "play_model": "تشغيل نموذج ثلاثي الأبعاد",
+    "play_video": "تشغيل الفيديو",
+    "loading_product_recommendations": "جارٍ تحميل توصيات المنتجات",
+    "rating": "تقييم هذا المنتج هو {{ rating }} من أصل 5",
+    "remove_item": "أزل {{ title}}",
+    "remove": "إزالة",
+    "reset_search": "إعادة ضبط البحث",
+    "scroll_to": "مرّر إلى {{ title }}",
+    "search_results_count": "تم العثور على {{ count }} من نتائج البحث عن \"{{ query }}\"",
+    "search_results_no_results": "لم يتم العثور على نتائج لـ \"{{ query }}\"",
+    "search_suggestions_available": "اقتراحات البحث المتاحة لـ \"{{ query }}\"",
+    "skip_to_product_info": "انتقل مباشرةً إلى معلومات المنتج",
+    "skip_to_results_list": "تخطَّ إلى قائمة النتائج",
+    "skip_to_text": "تخطَّ إلى المحتوى",
+    "slide_status": "الشريحة {{ index }} من {{ length }}",
+    "slideshow": "عرض شرائح",
+    "slideshow_next": "الشريحة التالية",
+    "slideshow_pause": "إيقاف عرض الشرائح مؤقتًا",
+    "slideshow_play": "تشغيل عرض الشرائح",
+    "slideshow_previous": "الشريحة السابقة",
+    "find_country": "ابحث عن الدولة",
+    "price_filter_low": "سعر منخفض",
+    "price_filter_high": "سعر مرتفع"
+  }
+}
