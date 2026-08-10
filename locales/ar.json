@@ -400,8 +400,16 @@
         "address_delete": "حذف العنوان",
         "address_confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان من حسابك؟",
         "address_form": {
-          "add_address": "إضافة عنوان"
-        }
+          "add_address": "إضافة عنوان",
+          "save": "حفظ",
+          "cancel": "إلغاء"
+        },
+        "billing_address_title": "الفوترة إلى",
+        "billing_address_rollup_accessibility_label": "خيارات إرسال الفاتورة إلى",
+        "same_as_shipping": "مطابق لعنوان الشحن",
+        "edit": "تحرير",
+        "delete": "حذف",
+        "address_more": "مزيد من الإجراءات لهذا العنوان"
       },
       "alternative_payment_method_banner": {
         "express_checkout": "الدفع السريع",
@@ -423,6 +431,66 @@
       },
       "address_management": {
         "saved_with_store": "تم الحفظ مع هذا المتجر"
+      },
+      "contact": {
+        "address_title": "العنوان",
+        "delivery_option_title": "طريقة التوصيل",
+        "contact_method_title": "تواصل",
+        "email_label": "البريد الإلكتروني",
+        "email_or_phone_label": "البريد الإلكتروني أو رقم الهاتف المحمول",
+        "available_addresses_label": "العناوين المتاحة",
+        "company_label": "الشركة",
+        "company_attention_label": "الشركة/عناية:VEVENT",
+        "address1_label": "العنوان",
+        "address2_label": "الشقة، الجناح، إلخ.",
+        "barangay_label": "بارانغاي",
+        "colony_label": "مستعمرة",
+        "commune_label": "بلدية",
+        "district_label": "المنطقة район",
+        "block_label": "حظر",
+        "area_label": "المنطقة",
+        "city_label": "المدينة",
+        "country_label": "البلد/المنطقة",
+        "country_code": "رمز الدولة/المنطقة",
+        "county_label": "مقاطعة",
+        "county_placeholder": "مقاطعة",
+        "civic_number_warning": "أضف رقم المنزل إذا كان لديك واحدٌ منه",
+        "different_shipping_address_label": "الشحن إلى عنوان مختلف",
+        "different_shipping_address_text": "استخدم عنوانًا لمرة واحدة لهذا الطلب",
+        "change_company_location_link_label": "تغيير موقع الشركة",
+        "change_location_link_label": "تغيير الموقع"
+      },
+      "company_location": {
+        "location_title": "موقع الشركة",
+        "location_rollup_accessibility_label": "خيارات موقع الشركة"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "سيتم خصم %{amount} من بطاقتك الائتمانية",
+        "payment_total_label": "إجمالي الدفع",
+        "change_currency_link": "التغيير إلى %{currency_name}",
+        "card_provider_fx_charges_warning": "قد يفرض مزود بطاقتك رسومًا على المعاملات بعملة %{currency_code}.",
+        "currency_not_supported_by_shop": "العملة التي اخترتها لم تعد متاحة. جميع الأسعار الآن بـ %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "تم تحديث سلة التسوق بناءً على بلد الشحن المحدد.",
+        "cart_and_currency_updated_based_on_country": "تم تحديث سلة التسوق والعملة بناءً على بلد الشحن لديك.",
+        "currency_updated_for_country": "تم تحديث العملة لـ %{country}"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "تم تحديث بلدك/منطقتك. أدخل عنوان الشحن الخاص بك لمتابعة إتمام عملية الشراء."
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "حدثت مشكلة أثناء معالجة طلبك. يُرجى التواصل مع مالك المتجر."
+      },
+      "captcha": {
+        "title": "أكمل اختبار CAPTCHA للمتابعة",
+        "errors": {
+          "not_solved": "أكمل اختبار CAPTCHA للمتابعة"
+        }
+      },
+      "clipboard": {
+        "copied": "تم النسخ",
+        "failed_to_copy": "فشل النسخ"
       }
     },
     "attributes": {
