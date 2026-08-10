@@ -3038,6 +3038,78 @@
           "close": "إغلاق",
           "expand": "توسيع",
           "collapse": "طيّ"
+        },
+        "failed_pending_payment_page_title": "هناك مشكلة في عملية الدفع الخاصة بك",
+        "items_fulfilled_by_store": {
+          "one": "ستأتي العناصر التي اشتريتها من %{remote_shop_name}.",
+          "other": "ستأتي العناصر التي اشتريتها من متاجر أخرى."
+        },
+        "gift_card_confirmation_by_text": "إذا لم تستلمه، فأعد إرسال النص أو اتصل بنا.",
+        "gift_card_confirmation_by_email": "إذا لم تستلمه، فأعد إرسال البريد الإلكتروني أو اتصل بنا.",
+        "gift_card_title": "بطاقات الهدايا",
+        "in_transit": "في الطريق",
+        "in_transit_title": "طلبك في الطريق",
+        "in_transit_description": "ستتلقى تحديثات حول تقدّمه.",
+        "in_transit_description_days": "من المفترض أن تستلم طلبك خلال %{number} يومًا القادمة.",
+        "in_transit_description_today": "من المفترض أن تستلم طلبك اليوم.",
+        "in_transit_description_tomorrow": "من المفترض أن تستلم طلبك في غضون يوم واحد.",
+        "failure": "لم يتم التسليم",
+        "failed_title": "تعذّر تسليم طلبك",
+        "failed_contact_merchant": "تواصل مع %{company} لترتيب التوصيل.",
+        "failed_contact_merchant_no_company": "تواصل معنا لترتيب التوصيل.",
+        "let_us_know": "أخبرنا",
+        "login_title": "سجّل الدخول لعرض جميع تفاصيل الطلب",
+        "login_description": "يمكنك العثور على رقم طلبك في الإيصال الذي تلقيته عبر البريد الإلكتروني.",
+        "login_description_phone": "يمكنك العثور على رقم طلبك في الإيصال الذي تلقيته عبر رسالة نصية.",
+        "login_not_customer_html": "لست %{name}؟ يمكنك %{link}",
+        "login_reorder_link_text": {
+          "one": "اشترِ هذا المنتج أيضًا",
+          "other": "اشترِ هذه المنتجات أيضًا"
+        },
+        "login": "تسجيل الدخول",
+        "marker": {
+          "current": "موقع الشحنة الحالي",
+          "shipping": "عنوان الشحن"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "العناصر في هذه الشحنة",
+          "unfulfilled_table_title": "العناصر قيد التجهيز للشحن",
+          "product_image_label": "صورة المنتج",
+          "description_label": "الوصف",
+          "quantity_label": "الكمية"
+        },
+        "gift_card_sent_confirmation": "تم إرسال بطاقات الهدايا",
+        "missing_shipping_address_banner": {
+          "title": "الطلب لا يحتوي على عنوان شحن",
+          "text_html": "%{contact_us} لإضافة عنوانك",
+          "contact_us": "تواصل معنا"
+        },
+        "first_payment_complete": "اكتمل الدفع الأول",
+        "in_store_purchase": "الشراء من المتجر",
+        "manage_order_label": "أدر طلبك",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "ستتلقى رسالة نصية تحتوي على بطاقة هديتك خلال بضع دقائق.",
+          "other": "ستتلقى رسالةً تحتوي على بطاقات الهدايا الخاصة بك خلال بضع دقائق."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "ستتلقى رسالة بريد إلكتروني تحتوي على بطاقة الهدايا الخاصة بك خلال بضع دقائق.",
+          "other": "ستتلقى رسالة بريد إلكتروني تحتوي على بطاقات الهدايا الخاصة بك خلال بضع دقائق."
+        },
+        "gift_card_email_title": {
+          "one": "تم إرسال بطاقة الهدايا عبر البريد الإلكتروني",
+          "other": "تم إرسال بطاقات الهدايا عبر البريد الإلكتروني"
+        },
+        "gift_card_text_title": {
+          "one": "تم إرسال بطاقة الهدايا عبر رسالة نصية",
+          "other": "تم إرسال بطاقات الهدايا عبر رسالة نصية"
+        },
+        "gift_card_resent_confirmation": {
+          "one": "تمت إعادة إرسال بطاقة الهدية.",
+          "other": "تمت إعادة إرسال بطاقات الهدايا."
+        },
+        "gift_card_resend_failure": {
+          "one": "حدثت مشكلة أثناء إعادة إرسال بطاقة الهدايا الخاصة بك. حاول مرة أخرى أو تواصل معنا.",
+          "other": "حدثت مشكلة أثناء إعادة إرسال بطاقات الهدايا الخاصة بك. حاول مرة أخرى أو تواصل معنا."
         }
       }
     },
