@@ -2819,6 +2819,11 @@
           "default_message": {
             "one": "طريقة التوصيل المختارة لم تعد متاحة لهذا المنتج.",
             "other": "لم تعد طريقة التوصيل المحددة متاحة لهذه العناصر."
+          },
+          "title": "التوصيل غير متاح",
+          "message": {
+            "one": "لم يعد %{delivery_method} متاحًا لهذا العنصر.",
+            "other": "لم يعد %{delivery_method} متاحًا لهذه العناصر."
           }
         },
         "price_update": {
@@ -2834,7 +2839,100 @@
           "description": "هذه العناصر لم تعد متاحة وستُزال من سلة التسوق.",
           "items_unavailable": "لم تعد بعض العناصر متاحة، وستتم إزالتها من سلة التسوق الخاصة بك."
         },
-        "out_of_stock_in_context_label": "هذا المنتج غير متوفر في بلدك/منطقتك."
+        "out_of_stock_in_context_label": "هذا المنتج غير متوفر في بلدك/منطقتك.",
+        "unpurchasable_product": {
+          "title": "منتج غير قابل للشراء",
+          "header": "تمت إزالة بعض العناصر من سلة التسوق الخاصة بك",
+          "message": "هذه المنتجات غير متاحة لطلبات الشركات (B2B).",
+          "status_column_header": "غير متاح"
+        },
+        "unpurchasable_product_generic": {
+          "title": "منتج غير قابل للشراء",
+          "header": "تمت إزالة بعض العناصر من سلة التسوق الخاصة بك",
+          "message": "هذه العناصر غير متاحة.",
+          "status_column_header": "غير متاح"
+        },
+        "unshippable_product": {
+          "title": "لا يتوفر توصيل",
+          "header": {
+            "one": "لا يتوفر توصيل لـ %{count} عنصر",
+            "other": "لا يوجد توصيل للعناصر البالغ عددها %{count}"
+          },
+          "message": {
+            "one": "ستتم إزالة هذا العنصر من سلة التسوق الخاصة بك لعدم توفر طرق توصيل لعنوانك.",
+            "other": "ستتم إزالة هذه المنتجات من سلة التسوق لأنّه لا توجد طرق توصيل متاحة لعنوانك."
+          },
+          "status_column_header": "لا يوجد توصيل"
+        }
+      },
+      "store_credit_errors": {
+        "generic_error": "حدثت مشكلة في رصيد متجرك. حاول مرة أخرى أو أعد تحميل الصفحة."
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "يوم",
+            "other": "%{count} يومًا"
+          },
+          "week": {
+            "one": "أسبوع",
+            "other": "%{count} أسبوعًا"
+          },
+          "month": {
+            "one": "شهر",
+            "other": "%{count} شهرًا"
+          },
+          "year": {
+            "one": "السنة",
+            "other": "%{count} سنة"
+          }
+        },
+        "recurring_totals": "%{total_price} كل %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "الدفعة الأولى %{total_price_with_discount}، ثم %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "الدفعة الأولى %{total_price}",
+            "other": "أول %{count} دفعات بقيمة %{total_price} لكل دفعة"
+          },
+          "following_cycles": "، ثم %{total_price} كل %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": "، ثم دفعة %{count} بقيمة %{total_price}",
+            "other": "، ثم %{count} دفعات بقيمة %{total_price} لكل دفعة"
+          }
+        }
+      },
+      "taxes": {
+        "tax_details": "تفاصيل ضريبية إضافية",
+        "vat_number": {
+          "field": {
+            "label": "رقم ضريبة القيمة المضافة (اختياري)",
+            "tooltip": "يتحقق من رقم ضريبة القيمة المضافة ويطبّق تلقائيًا آلية الاحتساب العكسي على الطلبات عند استيفاء الشروط"
+          },
+          "add": "أضف رقم ضريبة القيمة المضافة",
+          "badge": "رقم ضريبة القيمة المضافة: %{number}",
+          "domestic_order": "ينطبق الإعفاء من ضريبة القيمة المضافة بنظام الاحتساب العكسي على الطلبات العابرة للحدود داخل الاتحاد الأوروبي فقط. وتُفرض ضريبة القيمة المضافة القياسية على الطلبات المحلية.",
+          "status": {
+            "invalid_format": {
+              "at": "تحتوي أرقام ضريبة القيمة المضافة النمساوية على AT و9 أحرف.",
+              "be": "تتضمن أرقام ضريبة القيمة المضافة البلجيكية BE و10 أحرف.",
+              "bg": "تحتوي أرقام ضريبة القيمة المضافة في بلغاريا على BG و9 إلى 10 أحرف",
+              "cy": "تتضمن أرقام ضريبة القيمة المضافة في قبرص الرمز CY و9 أحرف."
+            }
+          },
+          "accessibility": {
+            "status": {
+              "validating": "جارٍ التحقق من رقم ضريبة القيمة المضافة",
+              "valid": "رقم ضريبة القيمة المضافة صالح",
+              "applied": "تم تطبيق الإعفاء من ضريبة القيمة المضافة",
+              "domestic": "لم يتم تطبيق الإعفاء من ضريبة القيمة المضافة",
+              "invalid_number": "فشل الإعفاء من ضريبة القيمة المضافة",
+              "service_unavailable": "تعذّر التحقق من الإعفاء من ضريبة القيمة المضافة",
+              "service_error": "تعذّر التحقق من الإعفاء من ضريبة القيمة المضافة"
+            }
+          }
+        }
       }
     },
     "attributes": {
