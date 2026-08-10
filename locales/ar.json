@@ -1818,7 +1818,139 @@
         },
         "business_customer_vaulting_payment_label": "احفظ طريقة الدفع هذه عند إتمام الشراء وفوّض %{company} بخصم المبلغ منها مقابل المشتريات المستقبلية لهذا الموقع. يمكن لجميع جهات الاتصال المعيّنة لهذا الموقع استخدام طريقة الدفع.",
         "business_customer_with_bank_account_vaulting_payment_label": "احفظ طريقة الدفع هذه عند إتمام الشراء وفوّض %{company} بخصم المبالغ من حسابك مقابل عمليات الشراء المستقبلية التي توافق عليها لهذا الموقع، حتى تلغي التفويض. يمكن لجميع جهات الاتصال المعيّنة لهذا الموقع استخدام طريقة الدفع.",
-        "choose_new_payment_method": "اختر طريقة دفع جديدة"
+        "choose_new_payment_method": "اختر طريقة دفع جديدة",
+        "discount_button_action_label": "طبّق رمز الخصم",
+        "discount_codes_removed_summary": {
+          "one": "تمت إزالة رمز الخصم %{count}",
+          "other": "تمت إزالة %{count} من رموز الخصم"
+        },
+        "discount_codes_modified_summary": {
+          "one": "تم تعديل رمز خصم واحد (%{count})",
+          "other": "تم تعديل %{count} من رموز الخصم"
+        },
+        "discount_codes_removed_or_modified_summary": {
+          "one": "تمت إزالة رمز الخصم أو تعديله بنسبة %{count}",
+          "other": "تمت إزالة أو تعديل %{count} من رموز الخصم"
+        },
+        "discount_show_more_warnings": {
+          "one": "عرض %{count} المزيد",
+          "other": "عرض %{count} المزيد"
+        },
+        "detected_card_brand": "تم اكتشاف العلامة التجارية للبطاقة: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "احفظ بطاقتك الائتمانية",
+        "credit_card_vaulting_sign_in_banner_info": "سجّل الدخول أو أنشئ حسابًا لحفظ بطاقتك الائتمانية للمشتريات المستقبلية.",
+        "credit_card_vaulting_sign_in_banner_button_label": "تسجيل الدخول",
+        "credit_card_start_month": "شهر البدء",
+        "credit_card_start_year": "سنة البدء",
+        "delete_customer_mandate_modal_title": "هل تريد إزالة بطاقة الدفع هذه؟",
+        "delete_customer_mandate_modal_body": "إذا أزلت هذه البطاقة، فستحتاج إلى إضافتها مرة أخرى قبل استخدامها لإجراء عمليات الدفع.",
+        "delete_customer_mandate_modal_confirm": "إزالة البطاقة",
+        "delete_customer_mandate_modal_cancel": "إلغاء",
+        "ends_with_label": "ينتهي بـ %{last_digits}",
+        "crypto_payment_method": {
+          "description": "اربط محفظتك بأمان. لن تتم مشاركة رصيدك أو عنوانك.",
+          "tooltip": "لن تتم مشاركة رصيد محفظتك وعنوانك، ولا يمكن خصم سوى المبلغ المطلوب.",
+          "cashback_descriptor": {
+            "one": "ستحصل على استرداد نقدي بعد %{count} يومًا",
+            "other": "ستتلقى استردادك النقدي بعد %{count} يومًا"
+          }
+        },
+        "crypto_modal": {
+          "header": "ادفع إلى %{shop_name} %{total_price} بعملة USDC",
+          "error": {
+            "refresh": "تحديث",
+            "close": "إغلاق",
+            "sandbox_error": "حدث خطأ ما",
+            "web_component_error": "حدثت مشكلة أثناء تحميل هذه الصفحة"
+          }
+        },
+        "different_credit_card_label": "استخدم بطاقة ائتمان أخرى",
+        "different_billing_address_label": "استخدم عنوان فوترة مختلفًا",
+        "default": "افتراضي",
+        "eps_label": "تحويل eps",
+        "delete_credit_card_modal": {
+          "title": "حذف البطاقة",
+          "confirmation": "هل أنت متأكد من رغبتك في حذف {{brandName}} المنتهي بـ {{lastDigits}}؟",
+          "cancel": "إلغاء",
+          "delete": "حذف"
+        },
+        "edit_credit_card_modal": {
+          "title": "تعديل البطاقة",
+          "done": "تم الإنجاز",
+          "cancel": "إلغاء",
+          "description": "يمكنك تعديل عنوان الفوترة لبطاقتك فقط.",
+          "fields": {
+            "default": "تعيين كافتراضي",
+            "card_number": "رقم البطاقة",
+            "expiry": "تاريخ انتهاء الصلاحية",
+            "security_code": "رمز الأمان",
+            "name": "الاسم على البطاقة",
+            "billing": "الفوترة إلى"
+          }
+        },
+        "expired_cards_info": {
+          "one": "يوجد %{count} بطاقة منتهية الصلاحية، ويمكنك عرضها وتعديلها في حسابك.",
+          "other": "هناك %{count} بطاقات منتهية الصلاحية، ويمكنك عرضها وتعديلها في حسابك."
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "تأكيد الدفع المخصص في الموقع"
+        },
+        "network_card_payment_options": "اختر شبكة البطاقات",
+        "network_card_persistence_description": "سيتم حفظ الشبكة المحددة مع طريقة الدفع الخاصة بك للمعاملات المستقبلية.",
+        "gift_card_code_label": "رمز بطاقة الهدايا",
+        "gift_card_balance_label": "الرصيد:",
+        "ftd_vault_credit_card_label": "احفظ بطاقة الائتمان هذه في حسابي لإتمام عملية الدفع بشكل أسرع",
+        "name_on_card_label": "الاسم على البطاقة",
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "expiry_long": "(تنتهي الصلاحية في %{month}/%{year})",
+        "expiry_short": "(تاريخ الانتهاء %{month}/%{year})",
+        "free_order_notice_html": "طلبك <strong>مجاني</strong>. لا يلزم إجراء أي دفع.",
+        "express_checkout_free_order": "لن يتم تحصيل أي رسوم منك مقابل طلب مجاني",
+        "no_js_credit_card_fields_redirect_hint": "ستتم إعادة توجيهك لإضافة معلومات الدفع الخاصة بك.",
+        "missing_credit_card_error": "أدخل تفاصيل بطاقتك لإتمام الدفع",
+        "generic_incorrect_card_info": "تعذّر التحقق من تفاصيل الدفع. تحقّق من تفاصيل بطاقتك وحاول مرة أخرى.",
+        "klarna_label": "كلارنا",
+        "klarna_pay_later_label": "ادفع لاحقًا باستخدام Klarna",
+        "klarna_pay_now_label": "ادفع الآن باستخدام Klarna",
+        "giropay_label": "Giropay",
+        "multibanco_label": "مولتيبانكو",
+        "mb_way_label": "MB WAY",
+        "klarna_slice_it_label": "التمويل مع Klarna",
+        "ideal_label": "iDEAL | Wero",
+        "grabpay_label": "GrabPay",
+        "kcp_creditcard_label": "بطاقة ائتمان KCP",
+        "google": {
+          "connect": "انقر للاتصال بحسابك على Google Pay",
+          "error_authorizing": "حدث خطأ أثناء تفويض الدفع"
+        },
+        "mor_disclaimer_html": "بالنقر أدناه وإتمام طلبك، فإنك توافق على شراء منتجك (منتجاتك) من Global-e بصفتها التاجر المسجّل لهذه المعاملة، وفقًا لـ <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">الشروط والأحكام</a> و<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">سياسة الخصوصية</a> الخاصة بـ Global-e. Global-e هي مزوّد دولي لخدمات تنفيذ الطلبات لصالح %{shop_name}",
+        "location_billing_address_label": "الموقع عنوان إرسال الفواتير",
+        "fact_billing_address_label": "عنوان الفوترة",
+        "location_shipping_address_label": "موقع عنوان الشحن",
+        "local_payment_method_receiver_notice": "بعد تقديم طلبك، ستتلقى تفاصيل الدفع. أجرِ الدفع عبر جهاز الصراف الآلي أو عبر الإنترنت خلال {{dueDays}} يومًا.",
+        "gift_card_wrapper": {
+          "heading": "بطاقة هدايا",
+          "apply_gift_card_label": "استخدم بطاقة هدايا",
+          "apply_another_gift_card_label": "تطبيق بطاقة هدايا أخرى",
+          "gift_card_label": "بطاقة هدايا %{identifier}",
+          "payment_tag": "بطاقة هدايا",
+          "add_label": "أضف بطاقة هدايا",
+          "manage_label": "إدارة بطاقات الهدايا"
+        },
+        "gift_card_store_credit": {
+          "add_label": "أضف بطاقة هدايا أو رصيدًا للمتجر",
+          "manage_label": "إدارة بطاقات الهدايا أو الرصيد المتجرِي"
+        },
+        "gift_card_checkbox_label": "تطبيق بطاقة الهدايا",
+        "markets_pro_disclaimer_label": "بإتمام طلبك، فإنك توافق على الشراء من Global-e بصفتها التاجر المسجّل، وفقًا لـ %{markets_pro_terms} و%{privacy_policy} الخاصتين بـ Global-e، وعلى مشاركة معلوماتك مع %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "الشروط والأحكام",
+        "markets_pro_disclaimer_privacy_policy": "سياسة الخصوصية",
+        "markets_pro_disclaimer_terms_and_conditions_title": "شروط وأحكام التاجر المسجّل",
+        "markets_pro_disclaimer_privacy_policy_title": "سياسة الخصوصية للتاجر المسجّل",
+        "expired_payment_method": "انتهت صلاحية طريقة الدفع المحددة",
+        "gift_cards_unavailable": "لم يعد من الممكن تطبيق بطاقة الهدايا الخاصة بك على هذا الطلب، وقد تمت إزالتها.",
+        "new_bank_account_disclaimer": "بإكمال طلبك، تفوّض %{shop_name} بخصم المبلغ الموضّح من الحساب أدناه عبر ACH في الوقت المحدّد.",
+        "multiple_primary_payment_not_allowed": "طرق الدفع غير الصالحة"
       }
     },
     "attributes": {
