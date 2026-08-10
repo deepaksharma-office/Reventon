@@ -292,6 +292,170 @@
     "recipient_form_send_on_label": "إرسال في (اختياري)",
     "recipient_form_fields_visible": "أصبحت حقول نموذج المستلم مرئية الآن",
     "recipient_form_fields_hidden": "أصبحت حقول نموذج المستلم مخفية الآن",
-    "recipient_form_error": "حدث خطأ أثناء إرسال النموذج"
+    "recipient_form_error": "حدث خطأ أثناء إرسال النموذج",
+    "your_cart": "سلة مشترياتك",
+    "view_more_details": "عرض مزيد من التفاصيل",
+    "volume_pricing_available": "تتوفر أسعار للكميات الكبيرة",
+    "volume_pricing": "تسعير الكميات",
+    "your_cart_is_empty": "سلة التسوق فارغة",
+    "wrong_password": "كلمة المرور غير صحيحة"
+  },
+  "fields": {
+    "separator": "إلى"
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "استخدم رمز بطاقة الهدايا عبر الإنترنت أو رمز QR في المتجر",
+      "title": "إليك رصيد بطاقة الهدايا الخاصة بك بقيمة {{ value }} من {{ shop }}!",
+      "subtext": "بطاقة الهدايا الخاصة بك",
+      "shop_link": "تصفّح المتجر الإلكتروني",
+      "add_to_apple_wallet": "أضف إلى Apple Wallet",
+      "qr_image_alt": "رمز QR — امسحه لاسترداد بطاقة الهدايا",
+      "copy_code": "انسخ رمز بطاقة الهدايا",
+      "expiration_date": "ينتهي في {{ expires_on }}",
+      "copy_code_success": "تم نسخ الرمز بنجاح",
+      "expired": "منتهي الصلاحية"
+    }
+  },
+  "placeholders": {
+    "password": "كلمة المرور",
+    "search": "بحث",
+    "product_title": "عنوان المنتج",
+    "collection_title": "عنوان المجموعة",
+    "blog_posts": "مقالات المدونة",
+    "blog_post_title": "العنوان",
+    "blog_post_author": "المؤلف",
+    "blog_post_date": "التاريخ",
+    "blog_post_description": "مقتطف من محتوى منشور مدونتك"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "أضف إلى سلة التسوق",
+      "adding_to_cart": "جارٍ الإضافة...",
+      "added_to_cart": "تمت الإضافة إلى سلة التسوق",
+      "add_to_cart_error": "خطأ في الإضافة إلى سلة التسوق",
+      "in_cart": "في سلة التسوق",
+      "default_title": "العنوان الافتراضي",
+      "quantity_error_max": "هذا العنصر له حد أقصى قدره {{ maximum }}",
+      "sold_out": "نفد من المخزون",
+      "unavailable": "غير متاح",
+      "quantity": "الكمية",
+      "quantity_increments": "بزيادات قدرها {{ increment }}",
+      "quantity_minimum": "الحد الأدنى {{ minimum }}",
+      "quantity_maximum": "الحد الأقصى هو {{ maximum }}",
+      "sticky_add_to_cart": "شريط الإضافة السريعة إلى سلة التسوق"
+    }
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "لا يوجد شريط تمرير"
+    },
+    "CarouselV3": {
+      "no_slider": "لا يوجد شريط تمرير"
+    },
+    "Newsletter": {
+      "err_msg_default": "تعذّر إرسال البريد الإلكتروني. يُرجى المحاولة مرة أخرى لاحقًا.",
+      "success_msg_default": "شكرًا لاشتراكك"
+    },
+    "IconListV2": {
+      "icons_not_found": "لم يتم العثور على الأيقونات"
+    },
+    "IconList": {
+      "icons_not_found": "لم يتم العثور على الأيقونات"
+    },
+    "IconListHoz": {
+      "icons_not_found": "لم يتم العثور على الأيقونات"
+    },
+    "Product": {
+      "product_not_found": "لم يتم العثور على المنتج"
+    },
+    "ProductList": {
+      "product_not_found": "لم يتم العثور على المنتج!",
+      "no_products_found": "لم يتم العثور على منتجات!",
+      "no_related_products": "لا توجد منتجات ذات صلة!"
+    },
+    "ProductListV3": {
+      "product_not_found": "لم يتم العثور على المنتج!",
+      "no_products_found": "لم يتم العثور على منتجات!",
+      "no_related_products": "لا توجد منتجات ذات صلة!"
+    },
+    "ProductTitle": {
+      "product_not_found": "المنتج غير موجود"
+    },
+    "ProductVariants": {
+      "please_select": "يرجى اختيار خيار"
+    },
+    "StockCounter": {
+      "let_buy_now": "<mark>أسرع!</mark> لنشترِ الآن."
+    },
+    "Breadcrumb": {
+      "home": "الرئيسية"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "billing": {
+        "add_address": "استخدم عنوانًا مختلفًا",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "حذف العنوان",
+        "address_confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان من حسابك؟",
+        "address_form": {
+          "add_address": "إضافة عنوان"
+        }
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "الدفع السريع",
+        "or": "أو",
+        "or_pay_another_way": "أو ادفع بطريقة أخرى",
+        "or_check_out_another_way": "أو اطّلع على طريقة أخرى",
+        "or_pay_with_credit_card": "أو ادفع باستخدام بطاقة ائتمان",
+        "show_more_options": "عرض المزيد من الخيارات",
+        "hide_more_options": "إخفاء المزيد من الخيارات"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "حدثت مشكلة أثناء معالجة طلبك. حاول مرة أخرى بعد بضع دقائق."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "لم تعد لديك صلاحية لتقديم طلبات B2B. %{logout_url} لتقديم طلب شخصي بدلًا من ذلك.",
+        "log_out_link_text": "تسجيل الخروج",
+        "lost_permissions_subtitle": "لم يعد لديك إذن لإجراء طلبات B2B. سجّل الخروج لإجراء طلب شخصي.",
+        "lost_permissions_title": "لا توجد أذونات للموقع"
+      },
+      "address_management": {
+        "saved_with_store": "تم الحفظ مع هذا المتجر"
+      }
+    },
+    "attributes": {
+      "email": "بريد إلكتروني",
+      "password": "كلمة المرور",
+      "password_confirmation": "تأكيد كلمة المرور",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "body": "الجسم",
+      "signature": "العنوان"
+    },
+    "addresses": {
+      "zip_code": "الرمز البريدي",
+      "postal_code": "الرمز البريدي",
+      "postcode": "الرمز البريدي",
+      "pincode": "الرمز البريدي",
+      "region": "المنطقة",
+      "prefecture": "المحافظة",
+      "province": "مقاطعة",
+      "state": "الحالة",
+      "state_and_territory": "الولاية/الإقليم",
+      "county": "مقاطعة",
+      "emirate": "إمارة",
+      "governorate": "المحافظة",
+      "confirm": "هل أنت متأكد من رغبتك في حذف هذا العنوان؟"
+    },
+    "cart": {
+      "discounts_with_count": "تم تطبيق خصومات بعدد %{count}"
+    },
+    "challenge": {
+      "message": "للمتابعة، أخبرنا بأنك لست روبوتًا.",
+      "error": "إجابتك لم تكن صحيحة، يُرجى المحاولة مرة أخرى.",
+      "submit_button_text": "إرسال"
+    }
   }
 }
