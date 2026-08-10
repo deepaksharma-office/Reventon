@@ -3256,7 +3256,15 @@
         "verify_shop_account_confirmation": "تم حفظ تفاصيل الدفع"
       },
       "tips": {
-        "add_tip": "إضافة إكرامية"
+        "add_tip": "إضافة إكرامية",
+        "title": "إضافة إكرامية",
+        "description": "أظهر دعمك للفريق لدى %{shop_name}",
+        "presets_description": "اختر نسبة البقشيش",
+        "custom_label": "إكرامية مخصصة",
+        "update_tip": "تحديث النصيحة",
+        "message": "شكرًا لك، نحن نُقدّر ذلك.",
+        "no_tip_label": "لا شيء",
+        "not_available_with_spi": "غير متاح مع أقساط Shop Pay"
       },
       "throttle": {
         "too_many_attempts": {
@@ -3291,6 +3299,70 @@
           "heading": "لا تُحدّث هذه الصفحة، إذ ستتحدّث تلقائيًا.",
           "body": "لا تُحجز المنتجات في سلة التسوق حتى تُكمل عملية الدفع."
         }
+      },
+      "ucp": {
+        "standard_errors": {
+          "item_unavailable": "لا يمكن شراء العنصر"
+        }
+      },
+      "vaulted": {
+        "change_button": "تغيير",
+        "loading_section": "جارٍ تحميل {{section}}…"
+      },
+      "wallets": {
+        "connect_shipping_methods": "{{method1}} و{{method2}}",
+        "deceleration": {
+          "one_more_step": "خطوة أخرى..."
+        },
+        "call_to_action": "ادفع باستخدام {{walletName}}",
+        "errors": {
+          "discount_code": "تعذّر تطبيق رمز الخصم هذا. راجع الرمز وحاول مرة أخرى.",
+          "detour": {
+            "stock_problems": "بعض العناصر لم تعد متاحة. أغلق {{walletName}} وحاول مرة أخرى.",
+            "price_change": "تغيّرت أسعار بعض العناصر. أغلق {{walletName}} لمراجعة طلبك وحاول مرة أخرى.",
+            "queue": "تم وضعك في قائمة انتظار لإتمام عملية الدفع. أغلق {{walletName}} للمتابعة.",
+            "currency_change": "لا يمكنك استخدام عنوان مختلف مع {{walletName}}. استخدم العنوان الأصلي، أو جرّب طريقة دفع أخرى."
+          },
+          "formatting": {
+            "name_contains_emojis": "احذف الرموز التعبيرية من اسمك",
+            "postal_code_contains_emoji": "احذف الرموز التعبيرية من رمزك البريدي",
+            "first_name_too_long": "الاسم الأول يحتوي على عدد كبير جدًا من الأحرف",
+            "last_name_too_long": "اسم العائلة يحتوي على عدد كبير جدًا من الأحرف",
+            "address_too_long": "سطر العنوان طويل جدًا"
+          }
+        }
+      },
+      "units": {
+        "milligram": "ملغ",
+        "kilogram": "كغ",
+        "milliliter": "مل",
+        "centiliter": "نعم",
+        "liter": "L",
+        "cubic_meter": "م³",
+        "millimeter": "مم",
+        "centimeter": "سم",
+        "square_meter": "م²",
+        "ounce": "أونصة",
+        "pound": "رطل",
+        "fluid_ounce": "أونصة سائلة",
+        "pint": "البرتغالية",
+        "quart": "كيو تي",
+        "gallon": "جال",
+        "inch": "في",
+        "foot": "قدم",
+        "yard": "ياردة",
+        "square_foot": "قدم²",
+        "item": "عنصر"
+      },
+      "tooltip": {
+        "accessibility_label_context": "مزيد من المعلومات حول %{context}",
+        "additional_payment_methods": "طرق الدفع الإضافية"
+      },
+      "too_many_requests": {
+        "title": "محاولات دفع كثيرة جدًا",
+        "body": "يرجى الانتظار بضع دقائق ثم المحاولة مرة أخرى من سلة التسوق.",
+        "body_no_cart": "يرجى الانتظار بضع دقائق ثم المحاولة مرة أخرى.",
+        "return_to_cart": "العودة إلى سلة التسوق"
       }
     },
     "attributes": {
