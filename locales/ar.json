@@ -807,7 +807,30 @@
         "gift_card_invalid": "بطاقة الهدايا \"••••%{last_four_characters}\" لم تعد صالحة",
         "invalid_delivery_address_reference_handle": "تعذّر مطابقة معرّف مرجع عنوان التسليم مع أيٍّ من عناوين التسليم المتاحة.",
         "must_use_available_delivery_address": "يجب اختيار عنوان التسليم من عناوين التسليم المتاحة.",
-        "must_use_available_shipping_rate": "يجب اختيار سعر الشحن من أسعار الشحن المتاحة."
+        "must_use_available_shipping_rate": "يجب اختيار سعر الشحن من أسعار الشحن المتاحة.",
+        "reduction_code_code_not_found": "أدخل رمز خصم أو بطاقة هدايا صالحة",
+        "reduction_code_discount_not_found": "أدخل رمز خصم صالحًا",
+        "reduction_code_gift_card_code_invalid": "أدخل بطاقة هدايا صالحة",
+        "reduction_code_gift_card_unusable": "لا يمكنك استخدام بطاقة هدايا لشراء بطاقة هدايا أخرى",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "بطاقات الهدايا غير مدعومة مع خيارات الشراء المؤجل.",
+        "shipping_line_phone_blank": "أدخل رقم هاتف لاستخدام طريقة التوصيل هذه",
+        "shipping_line_phone_invalid": "أدخل رقم هاتف صالحًا",
+        "tips_invalid_tip_amount": "أدخل إكرامية أقل من %{amount}",
+        "payment_gateway_unsupported_for_subscriptions": "طريقة الدفع هذه غير متاحة لطلبات الاشتراك.",
+        "payment_gateway_unsupported_for_development_store_html": "لإجراء طلب تجريبي، ستحتاج إلى استخدام بوابة دفع تجريبية. تعرّف على المزيد حول <a href=\"%{docs_link}\">اختبار الطلبات في المتاجر قيد التطوير</a>.",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "لقد وصلت إلى الحد الأقصى لطلبات متجر التطوير باستخدام معالج الدفع هذا. لطلب آخر، ستحتاج إلى استخدام بوابة دفع تجريبية. تعرّف على المزيد حول <a href=\"%{docs_link}\">اختبار الطلبات في متاجر التطوير</a>.",
+        "purchase_options_agreement_blank": "للمتابعة في عملية الشراء، وافق على شروط الشراء المؤجل أو المتكرر.",
+        "physical_gift_card_invalid_quantity": "يجب أن تتطابق كمية بنود بطاقات الهدايا الفعلية مع عدد رموز بطاقات الهدايا.",
+        "physical_gift_card_duplicate_code": "يحتوي بند بطاقة الهدايا الفعلية على رمز مكرر.",
+        "physical_gift_card_invalid_code": "رمز بطاقة الهدايا المادية غير صالح.",
+        "phone_blank": "أدخل رقم هاتف",
+        "vaulting_agreement_blank": "يجب حفظ طريقة الدفع الخاصة بك لأن سداد رصيد هذا الطلب مستحق لاحقًا.",
+        "sms_marketing_phone_invalid": "أدخل رقم هاتف صالحًا",
+        "shipping_method_invalid_phone_number": "حدّث رقم الهاتف في عنوان التسليم لرؤية طرق الشحن المتاحة.",
+        "split_cart_international_shipping_not_supported": "يجب أن تستخدم جميع العناصر طريقة التوصيل نفسها عند الشحن دوليًا. حدّث طريقة التوصيل أو أنشئ طلبات متعددة.",
+        "split_by_delivery_method_not_allowed": "لا يُسمح بالتقسيم حسب طريقة التوصيل لهذه الجلسة أو المتجر.",
+        "split_by_delivery_method_requires_merchandise_from_single_location": "يتطلب التقسيم حسب طريقة التوصيل تنفيذ أسطر المنتجات الفردية من موقع واحد.",
+        "split_by_delivery_method_unsupported_method_type": "تمت محاولة التقسيم حسب طريقة تسليم من نوع غير مدعوم."
       },
       "failed_payment": {
         "page_title": "تعذّرت معالجة الدفع",
@@ -843,6 +866,37 @@
         "navigation": {
           "store_logo_accessibility_label": "انتقل إلى المتجر الإلكتروني"
         }
+      },
+      "general": {
+        "breadcrumb": "مسار التنقّل",
+        "continue_button_label": "متابعة",
+        "complete_purchase_button_label": "إتمام الطلب",
+        "authenticate_purchase_button_label": "صادِق على الدفع",
+        "all_rights_reserved": "جميع الحقوق محفوظة %{shop_name}",
+        "cart": "سلة التسوق",
+        "close_modal_label": "إغلاق",
+        "close_notice_label": "إغلاق",
+        "back_to_cart": "العودة إلى سلة التسوق",
+        "back_to_contact_information": "العودة إلى المعلومات",
+        "back_to_shipping_method": "العودة إلى الشحن",
+        "back_to_payment_method": "العودة إلى الدفع",
+        "choose_shipping_method": "اختر طريقة الشحن",
+        "choose_payment_method": "اختر طريقة دفع",
+        "choose_billing_address": "اختر عنوان الفوترة",
+        "contact_us_html": "تواصل معنا لمزيد من المعلومات",
+        "autocomplete_title": "اقتراحات",
+        "autocomplete_single_item": "يتوفر عنصر واحد",
+        "autocomplete_multi_item": "{{number}} عنصرًا متاحًا",
+        "autocomplete_selection": "{{number}} من {{total}}",
+        "autocomplete_close": "إغلاق الاقتراحات",
+        "checkout_context": {
+          "step_one": "%{shop_name} - إتمام الشراء"
+        },
+        "confirm_order_button_label": "تأكيد الطلب",
+        "back_button_label": "رجوع",
+        "choose_delivery_strategy": "اختر طريقة التوصيل",
+        "autocomplete_zero_item": "لا توجد عناصر متاحة",
+        "autocomplete_powered_by_google": "مدعوم من {{brandName}}"
       }
     },
     "attributes": {
