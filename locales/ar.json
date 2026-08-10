@@ -3606,6 +3606,74 @@
       "message": "حل اختبار CAPTCHA للمتابعة",
       "error": "فشل التحقق من كابتشا",
       "submit_button_text": "إرسال"
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "خطأ في إعادة تعيين كلمة المرور",
+        "subscribe_error": "خطأ في الاشتراك",
+        "unsubscribe_error": "خطأ في إلغاء الاشتراك",
+        "open_tracking_error": "خطأ في تتبع الفتح",
+        "no_account_found": "لم يتم العثور على حساب مرتبط بهذا البريد الإلكتروني.",
+        "invalid_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+        "denylisted_reset_password": "تعذّر الوصول إلى حسابك لأن كلمة المرور الحالية غير آمنة. ستتلقى رسالة بريد إلكتروني لتحديث كلمة المرور.",
+        "signup_disabled": "تم تعطيل إنشاء حسابات العملاء."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "تمت الإضافة %{delta}",
+          "increment_item": "تمت الإضافة %{delta}",
+          "decrement_item": "تمت إزالة %{delta} من %{total}",
+          "decrement_fulfilled_line_item": "تم إرجاع %{delta} من %{total}",
+          "decrement_return_line_item": "تمت إزالة %{delta} من الإرجاع"
+        }
+      },
+      "order": {
+        "not_available": "هذا الطلب غير متاح",
+        "financial_status": {
+          "authorized": "مصرّح به",
+          "pending": "قيد الانتظار",
+          "paid": "مدفوع",
+          "unpaid": "غير مدفوع",
+          "voided": "ملغى",
+          "partially_paid": "مدفوع جزئيًا",
+          "partially_refunded": "تم ردّ جزء من المبلغ",
+          "refunded": "تم ردّ المبلغ",
+          "expired": "منتهي الصلاحية"
+        },
+        "fulfillment_status": {
+          "fulfilled": "تم التنفيذ",
+          "complete": "مكتمل",
+          "partial": "جزئي",
+          "unfulfilled": "غير مُنجَز",
+          "restocked": "تمت إعادة التوفّر"
+        },
+        "cancel_reason": {
+          "declined": "تم رفض الدفع",
+          "inventory": "العناصر غير متاحة",
+          "fraud": "طلب احتيالي",
+          "customer": "غيّر العميل الطلب/ألغاه",
+          "staff": "خطأ من الموظفين",
+          "other": "أخرى"
+        },
+        "cash_on_delivery": "الدفع عند الاستلام (COD)"
+      },
+      "cart": {
+        "only_n_items_available": "يمكنك إضافة %{count} %{name} فقط إلى سلة التسوق.",
+        "too_many_items_in_cart": "لا يمكنك إضافة المزيد من %{name} إلى سلة التسوق.",
+        "only_one_added_to_cart": "تمت إضافة عنصر واحد فقط إلى سلّة مشترياتك بسبب التوفّر.",
+        "only_n_added_to_cart": "تمت إضافة %{quantity} عنصرًا فقط إلى سلة التسوق الخاصة بك بسبب التوفر.",
+        "product_not_available": "المنتج غير متاح",
+        "too_many_line_items_error": "لا يمكن أن تحتوي سلة التسوق على أكثر من %{max} من العناصر.",
+        "stock_problems_html": "لم يعد عنصر واحد أو أكثر متاحًا. لقد وفرنا لك <a href='%{link}'>سلة محدثة</a>.",
+        "product_sold_out": "المنتج «%{name}» نفد من المخزون بالفعل.",
+        "variant_not_found": "تعذّر العثور على الخيار",
+        "variant_requires_selling_plan": "لا يمكن شراء هذا الخيار إلا ضمن خطة بيع.",
+        "selling_plan_not_available_for_company_locations": "يتوفر الشراء لمرة واحدة فقط لطلبات الشركات (B2B)",
+        "selling_plan_not_applicable": "لا يمكن تطبيق خطة البيع على الخيار",
+        "shipping_address_not_required": "هذه السلة لا تتطلب شحنًا",
+        "shipping_address_invalid": "حدثت مشكلة أثناء حساب أسعار الشحن. تابع إلى إتمام الشراء لاختيار سعر الشحن قبل إكمال طلبك.",
+        "view_lines_limit_reached": "يجب ألا تتجاوز الأسطر %{limit}"
+      }
     }
   }
 }
