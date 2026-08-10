@@ -2078,7 +2078,71 @@
         },
         "separate_payments_label": "منتجاتك من أكثر من متجر. سيتم تحصيل المبلغ منك عبر %{separate_payments_link}.",
         "separate_payments_text": "دفعات منفصلة",
-        "payments": "المدفوعات"
+        "payments": "المدفوعات",
+        "title": "الدفع",
+        "supported_card_brands_more_label": "والمزيد…",
+        "technical_error": "لا يمكن معالجة المدفوعات الآن بسبب مشكلة تقنية. يُرجى المحاولة مرة أخرى بعد بضع دقائق.",
+        "sofort_label": "تحويل مصرفي فوري",
+        "twint_label": "TWINT",
+        "swish_label": "سويش",
+        "vipps_label": "Vipps",
+        "wechat_pay_label": "WeChat Pay",
+        "usdc_label": "USDC",
+        "usdc_cashback_title": "%{incentive_percentage}% استرداد نقدي",
+        "usdc_cashback_additional_info": "ادفع باستخدام USDC على Base واسترد %{incentive_percentage}% في محفظتك خلال 30 يومًا.",
+        "usdc_cashback_terms": "تسري الشروط والحدود",
+        "subscription_card_update_agreement_label": "سيؤدي تغيير طريقة الدفع إلى تحديث اشتراكك والدفعات المتكررة المستقبلية.",
+        "subscription_agreement_label": "عنصر واحد أو أكثر في سلة التسوق الخاصة بك هو عملية شراء مؤجلة أو اشتراك. بمتابعة الدفع، فإنك توافق على أن يتم تلقائيًا تحصيل المبلغ من طريقة الدفع الخاصة بك بالسعر والتكرار الموضحين في هذه الصفحة حتى انتهاء الاشتراك أو إلغائه. تخضع جميع عمليات الإلغاء لـ %{cancelled}.",
+        "subscription_agreement_cancelled": "سياسة الإلغاء",
+        "subscription_heading": "اتفاقية الاشتراك",
+        "subscription_agreement_label_html": "أفهم أنني أوافق على اشتراك. سيتجدد بالسعر والتكرار المُدرجين حتى ينتهي أو يتم\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">إلغاؤه</a>.",
+        "waiting_on_payment_methods": "جارٍ جلب طرق الدفع المتاحة...",
+        "taxes_not_included": "الضرائب غير مشمولة",
+        "update_payment_method": "تحديث طريقة الدفع",
+        "store_credit": {
+          "label": "رصيد المتجر",
+          "apply_label": "استخدم رصيد المتجر",
+          "add_label": "إضافة رصيد المتجر",
+          "manage_label": "إدارة رصيد المتجر",
+          "buying_gift_card": "لا يمكنك استخدام رصيد المتجر لشراء بطاقة هدايا",
+          "no_fixed_selling_plans": "لا يمكنك استخدام رصيد المتجر مع خيارات الشراء المؤجّل"
+        },
+        "use_order_billing_address_label": "استخدم عنوان فوترة الطلب",
+        "use_location_billing_address_label": "استخدم عنوان الفوترة للموقع",
+        "use_location_shipping_address_label": "استخدم عنوان الشحن الخاص بالموقع",
+        "simulated_checkout": "ستتوفر المعاينة قريبًا",
+        "simulated_express_checkout": "المحافظ غير متاحة في المعاينة داخل المحرّر بسبب منطقتك أو متصفحك",
+        "vaulting_agreement_label": "احفظ معلومات الدفع الخاصة بي مع %{company} لإتمام عملية الدفع بشكل أسرع.",
+        "use_different_credit_card_label": "استخدم بطاقة مختلفة",
+        "waiting_on_taxes_message": "إذا لم تُحتسب ضرائبك خلال الثواني القليلة القادمة، فأعِد تحميل الصفحة.",
+        "waiting_on_taxes_notice": "حساب الضرائب",
+        "vault_for_payment_later": {
+          "pay_button_label": "إتمام الطلب",
+          "notice": "لن يتم تحصيل أي رسوم منك الآن. بمتابعة الدفع، فإنك توافق على تحصيل المبلغ من طريقة الدفع الخاصة بك عند معالجة طلبك."
+        }
+      },
+      "payment_collection": {
+        "cancelled": "لم يعد هذا الدفع مطلوبًا. يُرجى زيارة صفحة الطلب لمعرفة التفاصيل.",
+        "paid": "تم إرسال هذه الدفعة بالفعل. يُرجى زيارة صفحة الطلب للاطلاع على التفاصيل."
+      },
+      "payment_errors": {
+        "amount_too_small": "يجب أن يكون الحد الأدنى لمبلغ الدفع أكبر من 0.50 دولار أمريكي. حاول مرة أخرى باستخدام مبلغ أعلى."
+      },
+      "payment_challenge_modal": {
+        "instructions": "أكمل عملية الشراء باستخدام رمز {{paymentMethod}} الخاص بك",
+        "timer_message": "لديك {{timeLeft}} لإتمام الدفع",
+        "copy_text": "انسخ رمز {{paymentMethod}}",
+        "open_app_text": "افتح تطبيق {{paymentMethod}}",
+        "header": "ادفع باستخدام {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "أكمل عملية الشراء باستخدام رمز {{paymentMethod}} الخاص بك",
+          "wechat_instructions": "امسح رمز QR هذا باستخدام تطبيق WeChat على هاتفك لإتمام عملية الشراء",
+          "wechat_instructions_mobile": "امسح رمز QR هذا باستخدام تطبيق WeChat على جهاز آخر لإكمال عملية الشراء"
+        },
+        "external": {
+          "instructions": "أكّد الدفع على تطبيقك لإتمام عملية الشراء"
+        },
+        "close": "أغلِق التحدّي"
       }
     },
     "attributes": {
