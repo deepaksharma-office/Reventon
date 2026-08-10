@@ -2178,7 +2178,19 @@
         "paypal_over_capture": "تم تحديث إجمالي طلبك. ادفع باستخدام {{walletName}} لإكمال طلبك.",
         "captcha_required": "أدخل معلومات الدفع وحل اختبار CAPTCHA لإتمام عملية الشراء.",
         "captcha_required_without_payment_information": "حلّ اختبار CAPTCHA لإتمام عملية الشراء.",
-        "payment_credential_delegation_error": "حدثت مشكلة أثناء معالجة دفعتك. اختر طريقة دفع جديدة."
+        "payment_credential_delegation_error": "حدثت مشكلة أثناء معالجة دفعتك. اختر طريقة دفع جديدة.",
+        "three_d_secure_failed": "تعذّر التحقق من دفعتك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "three_d_secure_failed_duplicate": "فشلت مصادقة البطاقة الائتمانية باستخدام 3D Secure لأن مصادقة أخرى قيد التنفيذ بالفعل.",
+        "three_d_secure_failed_payment_method": "تعذّر التحقّق من بطاقتك. حاول مرة أخرى أو أضف بطاقة أخرى.",
+        "three_d_secure_throttled": "محاولات كثيرة جدًا؛ انتظر قبل المحاولة مجددًا",
+        "subscription_agreement_blank": "لشراء اشتراك، يجب حفظ تفاصيل الدفع الخاصة بك. للمتابعة، أكّد موافقتك أو أزل عناصر الاشتراك من طلبك.",
+        "shipping_must_match_billing": "يجب أن يطابق عنوان إرسال الفواتير عنوان الشحن. استخدم طريقة دفع مختلفة.",
+        "shipping_company_required_error": "يتطلب {{shopName}} اسم الشركة لعنوان الشحن.",
+        "test_mode_live_card": "لا يمكن لهذا المتجر قبول طلبات حقيقية أو مدفوعات حقيقية.",
+        "test_mode_enabled_only_test_cards": "تم تفعيل وضع الاختبار، ولا يمكن إضافة سوى بطاقات ائتمان للاختبار.",
+        "transient_error": "حدثت مشكلة أثناء معالجة دفعتك. حاول تحديث هذه الصفحة أو تحقّق من اتصالك بالإنترنت.",
+        "successful_offsite_with_gift_card_error": "حدثت مشكلة أثناء معالجة دفعة بطاقة الهدايا الخاصة بك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+        "shop_pay_wallet_not_available": "خدمة Shop Pay غير متاحة لعملية الدفع هذه."
       },
       "payment_challenge_modal": {
         "instructions": "أكمل عملية الشراء باستخدام رمز {{paymentMethod}} الخاص بك",
@@ -2195,6 +2207,54 @@
           "instructions": "أكّد الدفع على تطبيقك لإتمام عملية الشراء"
         },
         "close": "أغلِق التحدّي"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "الرصيد الحالي %{amount}",
+        "credit_card_expires_on_notice": "ينتهي في %{month}/%{year}",
+        "express_payment_gateway_label": "سريع",
+        "manual_payment_gateway_label": "دليل الاستخدام",
+        "billing_address_title": "عنوان الفوترة",
+        "free_label": "مجانًا"
+      },
+      "payment_gateway": {
+        "credit_card_label": "بطاقة ائتمانية",
+        "bogus_label": "اختبار بوابة الدفع",
+        "bank_deposit_label": "إيداع بنكي",
+        "bank_account_label": "حساب مصرفي",
+        "cash_on_delivery_label": "الدفع عند الاستلام (COD)",
+        "money_order_label": "حوالة مالية",
+        "debit_card_label": "بطاقة خصم مباشر",
+        "credit_or_debit_card_label": "ائتمان/خصم",
+        "deferred_payment_label": "اختر طريقة الدفع لاحقًا",
+        "fixed_payment_label": "سيستحق دفعك في {{dueDate}}.",
+        "generic_payment_terms": "أنت تستخدم شروط {{translatedName}}. سيستحق دفعك في {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} إلى حساب يتيح الوصول إلى هذا الموقع لإضافة طرق الدفع المحفوظة أو استخدامها.",
+            "link": "تسجيل الدخول"
+          }
+        },
+        "direct_payment_terms": "أنت مشمول بشروط {{translatedName}}. سيتم خصم المبلغ من بطاقتك في {{dueDate}}.",
+        "fixed_direct_payment_terms": "سيتم خصم المبلغ من بطاقتك في {{dueDate}}.",
+        "order_due_on_fulfillment_choose_later": "سيستحق دفعك بمجرد تنفيذ طلبك.",
+        "order_due_on_fulfillment_payment": "سيتم خصم المبلغ من بطاقتك بمجرد تنفيذ طلبك.",
+        "order_due_on_receipt_choose_later": "يستحق دفعك عند الاستلام.",
+        "order_deposit_due_now": "{{depositAmount}} مستحق اليوم. الرصيد وفق شروط {{translatedName}}، ويستحق في {{dueDate}}.",
+        "order_deposit_due_on_fulfillment": "مبلغ {{depositAmount}} مستحق اليوم. وسيصبح الرصيد مستحقًا عند إتمام طلبك.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} مستحق اليوم. وسيستحق المبلغ المتبقي لاحقًا.",
+        "order_deposit_due_on_fixed_date": "يستحق سداد {{depositAmount}} اليوم. وسيستحق سداد الرصيد في {{dueDate}}.",
+        "draft_order_payment_due_later_no_terms": "سيستحق دفعك بمجرد تأكيد طلبك.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "سيتم خصم المبلغ من بطاقتك بمجرد تأكيد طلبك.",
+        "draft_order_payment_due_later_terms": "ستصبح على علاقة ودّية مع {{translatedName}} بمجرد تأكيد طلبك.",
+        "draft_order_payment_due_on_fulfillment": "سيستحق دفعك بمجرد تأكيد طلبك وتنفيذه.",
+        "draft_order_deposit_due_later": "سيستحق دفع {{depositAmount}} عند تأكيد طلبك. وسيكون الرصيد وفقًا لشروط {{translatedName}}.",
+        "draft_order_deposit_due_on_fulfillment": "سيستحق مبلغ {{depositAmount}} عند تأكيد طلبك. وسيُستحق المبلغ المتبقي بعد تنفيذ طلبك."
+      },
+      "pickup_point": {
+        "business_hours": "ساعات العمل",
+        "address_label": "العنوان",
+        "could_not_resolve_address": "تعذر العثور على عنوانك. حاول مرة أخرى أو استخدم عنوانًا مختلفًا.",
+        "change": "تغيير الموقع"
       }
     },
     "attributes": {
