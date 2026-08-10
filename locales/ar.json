@@ -1638,7 +1638,65 @@
             "post_purchase_disclosure": "عرض الإجمالي باليوان الصيني في Alipay"
           }
         },
-        "pay_merchant_label": "ادفع إلى %{merchant_name}"
+        "pay_merchant_label": "ادفع إلى %{merchant_name}",
+        "title": "ملخص الطلب",
+        "shopping_cart_label": "سلة التسوق",
+        "remove_gift_card_label": "بطاقة هدايا شفافة",
+        "remove_discount_label": "إزالة الخصم",
+        "return_restocking_fee_label": "رسوم إعادة التخزين",
+        "return_shipping_fee_label": "شحن المرتجعات",
+        "shipping_information_does_not_meet_discount_requirements_notice": "رمز الخصم <strong style=\"text-transform:uppercase\">%{code}</strong> غير متاح لعنوان الشحن الخاص بك",
+        "subtotal_label": "المجموع الفرعي",
+        "subtotal_label_with_quantity": {
+          "one": "المجموع الفرعي · %{count} عنصر",
+          "other": "المجموع الفرعي · %{count} عناصر"
+        },
+        "shipping_label": "الشحن",
+        "tip_label": "نصيحة",
+        "unconfirmed_label": "غير مؤكد",
+        "shipping_default_value": "يُحتسب في الخطوة التالية",
+        "shipping_discount_title": "خصم الشحن",
+        "shipping_pending_message": "غير متاح بعد",
+        "shipping_policy_link": "تكاليف الشحن",
+        "taxes_label": "الضرائب",
+        "tax_line": {
+          "hst": "HST",
+          "gst": "ضريبة السلع والخدمات",
+          "pst": "التوقيت الباسيفيكي القياسي",
+          "rst": "RST",
+          "qst": "QST",
+          "vpt": "VPT"
+        },
+        "total_savings": "إجمالي المدخرات",
+        "total_label": "الإجمالي",
+        "total_due_label": "الإجمالي المستحق",
+        "total_paid_label": "إجمالي المبلغ المدفوع",
+        "total_price_label": "السعر الإجمالي",
+        "total_outstanding_label": "المبلغ المستحق دفعه",
+        "total_due_today_label": "إجمالي المبلغ المستحق اليوم",
+        "total_due_later_label": "إجمالي المبلغ المستحق لاحقًا",
+        "quantity_label": "الكمية",
+        "product_image_quantity_label": "الكمية",
+        "scroll_order_summary": "مرّر لعرض المزيد من العناصر",
+        "sale_price": "سعر التخفيض",
+        "total_updated_label": "السعر الإجمالي المحدّث:",
+        "total_already_paid_label": "مدفوع",
+        "unit_price": {
+          "accessible_separator": "لكل",
+          "per_item": {
+            "one": "%{price} لكل عنصر وعدده %{count}"
+          }
+        },
+        "recurring_subtotal_label": "الإجمالي الفرعي المتكرر",
+        "recurring_total_label": "الإجمالي المتكرر",
+        "recurring_total_tooltip": "لا يشمل الشحن أو الضرائب أو الرسوم الجمركية أو أي خصومات سارية.",
+        "subscriptions": "الاشتراكات",
+        "total_updated_label_with_price": "السعر الإجمالي المحدّث: %{totalPrice}",
+        "recurring_payments": "المدفوعات المتكررة",
+        "recurring_total_multiple_label": "يتضمن هذا الطلب رسومًا متكررة لعدة عناصر.",
+        "settlement_currency_note": "يعالج %{shop_name} المدفوعات بعملة %{processing_currency}. لقد تسوّقت بعملة %{original_currency}.",
+        "settlement_currency_note_wallet": "يعالج %{shop_name} المدفوعات بعملة %{processing_currency}. لقد تسوّقت بعملة %{original_currency} ودفعت باستخدام %{wallet} باليوان الصيني. تحقّق من تطبيق %{wallet_app} لمعرفة المبلغ النهائي.",
+        "settlement_currency_note_wallet_no_conversion": "لقد دفعت باستخدام %{wallet} باليوان الصيني. تحقّق من تطبيق %{wallet_app} لمعرفة المبلغ النهائي."
       }
     },
     "attributes": {
