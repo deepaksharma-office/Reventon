@@ -30,8 +30,8 @@
         "announcement_K6tqLz": {
           "type": "_announcement",
           "settings": {
-            "text": "Buy 3 get 40% Off on order",
-            "link": "",
+            "text": "Contact us today for your next event 0500400618",
+            "link": "shopify://pages/contact",
             "font": "var(--font-subheading--family)",
             "font_size": "1.25rem",
             "weight": "",
