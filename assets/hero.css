@@ -1,0 +1,103 @@
+/* Responsive visibility helpers used in Liquid */
+@media screen and (max-width: 749px) {
+  .small-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .medium-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .large-up-hide {
+    display: none !important;
+  }
+}
+
+.blocks-container-hero{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+/* Base container structure */
+.banner-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__container-box {
+  position: relative;
+  width: 100%;
+}
+
+.slider__banner-wrap-custom {
+  width: 100%;
+  position: relative;
+}
+
+.slider__imagcontent-box {
+  position: relative;
+  width: 100%;
+}
+
+/* Image container */
+.customsliderimage__container-all {
+  position: relative;
+  width: 100%;
+}
+
+.banners_images-custom {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.customslider {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Video */
+.custom-video_content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video__hero-wrap {
+  width: 100%;
+  height: auto;
+}
+
+.video__hero-wrap.customheight {
+  width: 100%;
+  height: var(--slider-video-height-desktop);
+}
+
+/* Overlay */
+.customskideroverlay__container-all {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--slider-overlay-background);
+  opacity: var(--slider-overlay-opacity);
+  z-index: 1;
+}
+
+/* Mobile video height variable */
+@media screen and (max-width: 749px) {
+  .video__hero-wrap.customheight {
+    height: var(--slider-video-height-mobile);
+  }
+}

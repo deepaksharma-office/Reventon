@@ -1,0 +1,132 @@
+{%- assign gallery_id = 'EventGallery-' | append: section.id -%}
+{{ 'event-category-gallery.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'event-category-gallery.js' | asset_url }}" defer="defer"></script>
+
+<section id="{{ gallery_id }}" class="event-gallery" data-event-gallery-section style="--eg-desktop-columns: {{ section.settings.desktop_columns }}; --eg-mobile-columns: {{ section.settings.mobile_columns }}; --eg-gap: {{ section.settings.grid_gap }}px; --eg-radius: {{ section.settings.card_radius }}px; --eg-background: {{ section.settings.background_color }}; --eg-text: {{ section.settings.text_color }}; --eg-accent: {{ section.settings.accent_color }}; --eg-padding-top: {{ section.settings.padding_top }}px; --eg-padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="event-gallery__container">
+    {% if section.settings.heading != blank or section.settings.description != blank %}
+      <div class="event-gallery__header">
+        {% if section.settings.heading != blank %}<h2 class="event-gallery__heading">{{ section.settings.heading }}</h2>{% endif %}
+        {% if section.settings.description != blank %}<div class="event-gallery__description">{{ section.settings.description }}</div>{% endif %}
+      </div>
+    {% endif %}
+    {% if section.blocks.size > 0 %}
+      <div class="event-gallery__tabs-wrap">
+        <div class="event-gallery__tabs" role="tablist" aria-label="Event gallery categories">
+          {% for block in section.blocks %}
+            {%- assign tab_label = block.settings.label | default: 'Gallery' -%}
+            <button type="button" id="{{ gallery_id }}-tab-{{ block.id }}" class="event-gallery__tab{% if forloop.first %} is-active{% endif %}" role="tab" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="{{ gallery_id }}-panel-{{ block.id }}" tabindex="{% if forloop.first %}0{% else %}-1{% endif %}" data-gallery-tab data-panel-id="{{ gallery_id }}-panel-{{ block.id }}">{{ tab_label | escape }}</button>
+          {% endfor %}
+        </div>
+      </div>
+      {% for block in section.blocks %}
+        {%- assign tab_label = block.settings.label | default: 'Gallery' -%}
+        <div id="{{ gallery_id }}-panel-{{ block.id }}" class="event-gallery__panel" role="tabpanel" aria-labelledby="{{ gallery_id }}-tab-{{ block.id }}" data-gallery-panel {% unless forloop.first %}hidden{% endunless %} {{ block.shopify_attributes }}>
+          <div class="event-gallery__grid">
+            {% for image_number in (1..50) %}
+              {%- liquid
+                assign image_id = 'image_' | append: image_number
+                assign gallery_image = block.settings[image_id]
+                assign image_alt = gallery_image.alt | default: tab_label
+              -%}
+              {% if gallery_image != blank %}
+                {%- capture image_sizes -%}(min-width: 990px) calc((100vw - 40px) / {{ section.settings.desktop_columns }}), calc((100vw - 32px) / {{ section.settings.mobile_columns }}){%- endcapture -%}
+                <button type="button" class="event-gallery__card event-gallery__card--{{ section.settings.image_ratio }}" data-gallery-open data-image-url="{{ gallery_image | image_url | escape }}" data-image-alt="{{ image_alt | escape }}" aria-label="Open {{ image_alt | escape }}">
+                  <span class="event-gallery__media">{{ gallery_image | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '320, 480, 640, 800, 1000, 1200, 1500, 1800', sizes: image_sizes, class: 'event-gallery__image', alt: image_alt }}</span>
+                </button>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+  <dialog class="event-gallery__modal" data-gallery-modal aria-label="Image viewer">
+    <button type="button" class="event-gallery__modal-close" data-gallery-close aria-label="Close image viewer">&times;</button>
+    <div class="event-gallery__modal-media"><img class="event-gallery__modal-image" data-gallery-modal-image src="" alt="" width="1" height="1"></div>
+  </dialog>
+</section>
+
+{% schema %}
+{
+  "name": "Event category gallery",
+  "tag": "section",
+  "class": "section-event-category-gallery",
+  "max_blocks": 50,
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Our Event Gallery" },
+    { "type": "richtext", "id": "description", "label": "Description", "default": "<p>Explore our work from previous events.</p>" },
+    { "type": "header", "content": "Gallery layout" },
+    { "type": "range", "id": "desktop_columns", "label": "Images per row - desktop", "min": 2, "max": 5, "step": 1, "default": 4 },
+    { "type": "range", "id": "mobile_columns", "label": "Images per row - mobile", "min": 1, "max": 3, "step": 1, "default": 2 },
+    { "type": "range", "id": "grid_gap", "label": "Image gap", "min": 4, "max": 40, "step": 2, "unit": "px", "default": 16 },
+    { "type": "select", "id": "image_ratio", "label": "Image format", "options": [{ "value": "auto", "label": "Auto" }, { "value": "square", "label": "Square" }, { "value": "portrait", "label": "Portrait" }], "default": "auto" },
+    { "type": "range", "id": "card_radius", "label": "Image corner radius", "min": 0, "max": 32, "step": 2, "unit": "px", "default": 16 },
+    { "type": "header", "content": "Colors" },
+    { "type": "color", "id": "background_color", "label": "Background", "default": "#F8F8F6" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#161616" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#1F6A43" },
+    { "type": "header", "content": "Spacing" },
+    { "type": "range", "id": "padding_top", "label": "Top padding", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_bottom", "label": "Bottom padding", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 72 }
+  ],
+  "blocks": [{
+    "type": "gallery_category",
+    "name": "Gallery category",
+    "settings": [
+      { "type": "text", "id": "label", "label": "Tab label", "default": "Event category" },
+      { "type": "image_picker", "id": "image_1", "label": "Image 1" },
+      { "type": "image_picker", "id": "image_2", "label": "Image 2" },
+      { "type": "image_picker", "id": "image_3", "label": "Image 3" },
+      { "type": "image_picker", "id": "image_4", "label": "Image 4" },
+      { "type": "image_picker", "id": "image_5", "label": "Image 5" },
+      { "type": "image_picker", "id": "image_6", "label": "Image 6" },
+      { "type": "image_picker", "id": "image_7", "label": "Image 7" },
+      { "type": "image_picker", "id": "image_8", "label": "Image 8" },
+      { "type": "image_picker", "id": "image_9", "label": "Image 9" },
+      { "type": "image_picker", "id": "image_10", "label": "Image 10" },
+      { "type": "image_picker", "id": "image_11", "label": "Image 11" },
+      { "type": "image_picker", "id": "image_12", "label": "Image 12" },
+      { "type": "image_picker", "id": "image_13", "label": "Image 13" },
+      { "type": "image_picker", "id": "image_14", "label": "Image 14" },
+      { "type": "image_picker", "id": "image_15", "label": "Image 15" },
+      { "type": "image_picker", "id": "image_16", "label": "Image 16" },
+      { "type": "image_picker", "id": "image_17", "label": "Image 17" },
+      { "type": "image_picker", "id": "image_18", "label": "Image 18" },
+      { "type": "image_picker", "id": "image_19", "label": "Image 19" },
+      { "type": "image_picker", "id": "image_20", "label": "Image 20" },
+      { "type": "image_picker", "id": "image_21", "label": "Image 21" },
+      { "type": "image_picker", "id": "image_22", "label": "Image 22" },
+      { "type": "image_picker", "id": "image_23", "label": "Image 23" },
+      { "type": "image_picker", "id": "image_24", "label": "Image 24" },
+      { "type": "image_picker", "id": "image_25", "label": "Image 25" },
+      { "type": "image_picker", "id": "image_26", "label": "Image 26" },
+      { "type": "image_picker", "id": "image_27", "label": "Image 27" },
+      { "type": "image_picker", "id": "image_28", "label": "Image 28" },
+      { "type": "image_picker", "id": "image_29", "label": "Image 29" },
+      { "type": "image_picker", "id": "image_30", "label": "Image 30" },
+      { "type": "image_picker", "id": "image_31", "label": "Image 31" },
+      { "type": "image_picker", "id": "image_32", "label": "Image 32" },
+      { "type": "image_picker", "id": "image_33", "label": "Image 33" },
+      { "type": "image_picker", "id": "image_34", "label": "Image 34" },
+      { "type": "image_picker", "id": "image_35", "label": "Image 35" },
+      { "type": "image_picker", "id": "image_36", "label": "Image 36" },
+      { "type": "image_picker", "id": "image_37", "label": "Image 37" },
+      { "type": "image_picker", "id": "image_38", "label": "Image 38" },
+      { "type": "image_picker", "id": "image_39", "label": "Image 39" },
+      { "type": "image_picker", "id": "image_40", "label": "Image 40" },
+      { "type": "image_picker", "id": "image_41", "label": "Image 41" },
+      { "type": "image_picker", "id": "image_42", "label": "Image 42" },
+      { "type": "image_picker", "id": "image_43", "label": "Image 43" },
+      { "type": "image_picker", "id": "image_44", "label": "Image 44" },
+      { "type": "image_picker", "id": "image_45", "label": "Image 45" },
+      { "type": "image_picker", "id": "image_46", "label": "Image 46" },
+      { "type": "image_picker", "id": "image_47", "label": "Image 47" },
+      { "type": "image_picker", "id": "image_48", "label": "Image 48" },
+      { "type": "image_picker", "id": "image_49", "label": "Image 49" },
+      { "type": "image_picker", "id": "image_50", "label": "Image 50" }
+    ]
+  }],
+  "presets": [{ "name": "Event category gallery", "blocks": [{ "type": "gallery_category" }] }]
+}
+{% endschema %}

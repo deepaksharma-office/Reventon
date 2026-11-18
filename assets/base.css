@@ -2615,9 +2615,9 @@ form.payment-terms {
       flex: 1 1 min-content;
     }
 
-    > .text-block {
+    /* > .text-block {
       flex: 1 1 var(--max-width--display-tight);
-    }
+    } */
 
     > .image-block {
       flex: 1 1 var(--size-style-width-mobile-min);

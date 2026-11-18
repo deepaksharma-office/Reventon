@@ -1,0 +1,392 @@
+{% liquid
+  assign block_id = 'payment-icons-' | append: block.id
+%}
+
+<div
+  id="{{ block_id }}"
+  class="payment-icons-block"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.heading != blank %}
+    <div class="payment-icons-block__heading">
+      {{ block.settings.heading }}
+    </div>
+  {% endif %}
+
+  <div class="payment-icons-block__icons">
+
+    {%- comment -%} PayPal {%- endcomment -%}
+    {% if block.settings.show_paypal %}
+      <div class="payment-icons-block__item" title="PayPal">
+        {{ 'paypal' | payment_type_svg_tag }}
+      </div>
+    {% endif %}
+
+
+    {%- comment -%} Tabby {%- endcomment -%}
+    {% if block.settings.show_tabby %}
+      <div class="payment-icons-block__item payment-icons-block__item--custom" title="Tabby">
+        {% if block.settings.tabby_icon != blank %}
+          {{
+            block.settings.tabby_icon
+            | image_url: width: 160
+            | image_tag:
+              loading: 'lazy',
+              widths: '40, 60, 80, 120, 160',
+              alt: 'Tabby'
+          }}
+        {% else %}
+          <span class="payment-placeholder payment-placeholder--tabby">
+            tabby
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+
+    {%- comment -%} Visa {%- endcomment -%}
+    {% if block.settings.show_visa %}
+      <div class="payment-icons-block__item" title="Visa">
+        {{ 'visa' | payment_type_svg_tag }}
+      </div>
+    {% endif %}
+
+
+    {%- comment -%} Mastercard {%- endcomment -%}
+    {% if block.settings.show_mastercard %}
+      <div class="payment-icons-block__item" title="Mastercard">
+        {{ 'master' | payment_type_svg_tag }}
+      </div>
+    {% endif %}
+
+
+    {%- comment -%} American Express {%- endcomment -%}
+    {% if block.settings.show_amex %}
+      <div class="payment-icons-block__item" title="American Express">
+        {{ 'american_express' | payment_type_svg_tag }}
+      </div>
+    {% endif %}
+
+
+    {%- comment -%} Mada {%- endcomment -%}
+    {% if block.settings.show_mada %}
+      <div class="payment-icons-block__item payment-icons-block__item--custom" title="Mada">
+        {% if block.settings.mada_icon != blank %}
+          {{
+            block.settings.mada_icon
+            | image_url: width: 160
+            | image_tag:
+              loading: 'lazy',
+              widths: '40, 60, 80, 120, 160',
+              alt: 'Mada'
+          }}
+        {% else %}
+          <span class="payment-placeholder">
+            mada
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+
+    {%- comment -%} STC Pay {%- endcomment -%}
+    {% if block.settings.show_stc %}
+      <div class="payment-icons-block__item payment-icons-block__item--custom" title="STC Pay">
+        {% if block.settings.stc_icon != blank %}
+          {{
+            block.settings.stc_icon
+            | image_url: width: 160
+            | image_tag:
+              loading: 'lazy',
+              widths: '40, 60, 80, 120, 160',
+              alt: 'STC Pay'
+          }}
+        {% else %}
+          <span class="payment-placeholder">
+            stc pay
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+
+    {%- comment -%} Tamara {%- endcomment -%}
+    {% if block.settings.show_tamara %}
+      <div class="payment-icons-block__item payment-icons-block__item--custom" title="Tamara">
+        {% if block.settings.tamara_icon != blank %}
+          {{
+            block.settings.tamara_icon
+            | image_url: width: 160
+            | image_tag:
+              loading: 'lazy',
+              widths: '40, 60, 80, 120, 160',
+              alt: 'Tamara'
+          }}
+        {% else %}
+          <span class="payment-placeholder payment-placeholder--tamara">
+            ♥
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% stylesheet %}
+  .payment-icons-block {
+    width: 100%;
+  }
+
+  .payment-icons-block__heading {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  .payment-icons-block__icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--payment-icons-gap, 8px);
+  }
+
+  .payment-icons-block__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: var(--payment-icon-height, 26px);
+    line-height: 0;
+  }
+
+  .payment-icons-block__item svg {
+    display: block;
+    width: auto;
+    height: var(--payment-icon-height, 26px);
+  }
+
+  .payment-icons-block__item img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: var(--payment-icon-height, 26px);
+    object-fit: contain;
+  }
+
+  .payment-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: var(--payment-icon-height, 26px);
+    padding: 0 7px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #fff;
+    color: #111;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .payment-placeholder--tabby {
+    background: #3ef2a6;
+    border-color: #3ef2a6;
+    color: #000;
+  }
+
+  .payment-placeholder--tamara {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+    min-width: 35px;
+  }
+{% endstylesheet %}
+
+<style>
+  #{{ block_id }} {
+    --payment-icon-height: {{ block.settings.icon_height }}px;
+    --payment-icons-gap: {{ block.settings.icon_gap }}px;
+
+    {% case block.settings.alignment %}
+      {% when 'center' %}
+        text-align: center;
+      {% when 'right' %}
+        text-align: right;
+      {% else %}
+        text-align: left;
+    {% endcase %}
+  }
+
+  #{{ block_id }} .payment-icons-block__icons {
+    {% case block.settings.alignment %}
+      {% when 'center' %}
+        justify-content: center;
+      {% when 'right' %}
+        justify-content: flex-end;
+      {% else %}
+        justify-content: flex-start;
+    {% endcase %}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Payment icons Custom",
+  "tag": null,
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Secure payment options"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "icon_height",
+      "min": 18,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Icon height",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "icon_gap",
+      "min": 2,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Gap",
+      "default": 8
+    },
+
+    {
+      "type": "header",
+      "content": "PayPal"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_paypal",
+      "label": "Show PayPal",
+      "default": true
+    },
+
+    {
+      "type": "header",
+      "content": "Tabby"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tabby",
+      "label": "Show Tabby",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "tabby_icon",
+      "label": "Tabby logo"
+    },
+
+    {
+      "type": "header",
+      "content": "Cards"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_visa",
+      "label": "Show Visa",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_mastercard",
+      "label": "Show Mastercard",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_amex",
+      "label": "Show American Express",
+      "default": true
+    },
+
+    {
+      "type": "header",
+      "content": "Mada"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_mada",
+      "label": "Show Mada",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "mada_icon",
+      "label": "Mada logo"
+    },
+
+    {
+      "type": "header",
+      "content": "STC Pay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_stc",
+      "label": "Show STC Pay",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "stc_icon",
+      "label": "STC Pay logo"
+    },
+
+    {
+      "type": "header",
+      "content": "Tamara"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tamara",
+      "label": "Show Tamara",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "tamara_icon",
+      "label": "Tamara logo"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Payment icons Custom"
+    }
+  ]
+}
+{% endschema %}

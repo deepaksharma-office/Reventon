@@ -1,2 +1,9 @@
 {{ 'overflow-list.css' | asset_url | preload_tag: as: 'style' }}
 {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'splide.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+
+
+{% unless request.design_mode %}
+  {{ 'animation_global.css' | asset_url | stylesheet_tag: preload: true }}
+{% endunless %}
