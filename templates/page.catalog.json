@@ -48,7 +48,6 @@
         "heading",
         "page-content"
       ],
-      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -56,65 +55,9 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
-    },
-    "event_category_gallery_UiLEeK": {
-      "type": "event-category-gallery",
-      "blocks": {
-        "gallery_image_RkFi7j": {
-          "type": "gallery_image",
-          "settings": {
-            "label": "Saudi National Day",
-            "image": "shopify://shop_images/02-saudi-foundation-day.png"
-          }
-        },
-        "gallery_image_Jb78tb": {
-          "type": "gallery_image",
-          "settings": {
-            "label": "Birthday Events",
-            "image": "shopify://shop_images/03-birthday.png"
-          }
-        },
-        "gallery_image_JKQfL3": {
-          "type": "gallery_image",
-          "settings": {
-            "label": "Graduation",
-            "image": "shopify://shop_images/09-graduation.png"
-          }
-        },
-        "gallery_image_Y4TqYm": {
-          "type": "gallery_image",
-          "settings": {
-            "label": "Corporate Events",
-            "image": "shopify://shop_images/corprate-evetns.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "gallery_image_RkFi7j",
-        "gallery_image_Jb78tb",
-        "gallery_image_JKQfL3",
-        "gallery_image_Y4TqYm"
-      ],
-      "name": "Event category gallery",
-      "settings": {
-        "heading": "Our Event Gallery",
-        "description": "<p>Explore our work from previous events.</p>",
-        "desktop_columns": 4,
-        "mobile_columns": 2,
-        "grid_gap": 16,
-        "image_ratio": "landscape",
-        "show_image_labels": true,
-        "card_radius": 16,
-        "background_color": "#f8f8f6",
-        "text_color": "#161616",
-        "accent_color": "#1f6a43",
-        "padding_top": 72,
-        "padding_bottom": 72
-      }
     }
   },
   "order": [
-    "main",
-    "event_category_gallery_UiLEeK"
+    "main"
   ]
 }
