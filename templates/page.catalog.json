@@ -48,6 +48,7 @@
         "heading",
         "page-content"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -55,9 +56,214 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "event_category_gallery_UWm6hr": {
+      "type": "event-category-gallery",
+      "blocks": {
+        "gallery_category_6Gxtx6": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_fKVXP8": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_bUaHEr": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_xey84D": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_kQ9TJC": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_e8qYaJ": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_V6WVyp": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_DGF3dH": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_bJhz48": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_DVLBMq": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_zNWzCB": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_yAQab8": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_Uj6VwB": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_VeD6Jc": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_hac4QM": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_JFJdPU": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_XEYdmP": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_g8xkM4": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_TJRkEx": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_6py9dw": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_G3QnC8": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_6MfqYe": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_QjcfBH": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_9GyNdi": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_g9bHhN": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        },
+        "gallery_category_kramkb": {
+          "type": "gallery_category",
+          "settings": {
+            "label": "Event category"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_category_6Gxtx6",
+        "gallery_category_fKVXP8",
+        "gallery_category_bUaHEr",
+        "gallery_category_xey84D",
+        "gallery_category_kQ9TJC",
+        "gallery_category_e8qYaJ",
+        "gallery_category_V6WVyp",
+        "gallery_category_DGF3dH",
+        "gallery_category_bJhz48",
+        "gallery_category_DVLBMq",
+        "gallery_category_zNWzCB",
+        "gallery_category_yAQab8",
+        "gallery_category_Uj6VwB",
+        "gallery_category_VeD6Jc",
+        "gallery_category_hac4QM",
+        "gallery_category_JFJdPU",
+        "gallery_category_XEYdmP",
+        "gallery_category_g8xkM4",
+        "gallery_category_TJRkEx",
+        "gallery_category_6py9dw",
+        "gallery_category_G3QnC8",
+        "gallery_category_6MfqYe",
+        "gallery_category_QjcfBH",
+        "gallery_category_9GyNdi",
+        "gallery_category_g9bHhN",
+        "gallery_category_kramkb"
+      ],
+      "name": "Event category gallery",
+      "settings": {
+        "heading": "Our Event Gallery",
+        "description": "<p>Explore our work from previous events.</p>",
+        "desktop_columns": 4,
+        "mobile_columns": 2,
+        "grid_gap": 16,
+        "image_ratio": "auto",
+        "card_radius": 16,
+        "background_color": "#F8F8F6",
+        "text_color": "#161616",
+        "accent_color": "#1F6A43",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "event_category_gallery_UWm6hr"
   ]
 }
