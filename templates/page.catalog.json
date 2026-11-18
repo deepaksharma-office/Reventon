@@ -64,157 +64,580 @@
           "type": "gallery_category",
           "settings": {
             "label": "Saudi National Day",
-            "image_1": "shopify://shop_images/saudi-national-day_1.jpg"
+            "image_1": "shopify://shop_images/saudi-national-day_1.jpg",
+            "image_2": "shopify://shop_images/saudi-national-day_2.jpg",
+            "image_3": "shopify://shop_images/saudi-national-day_3.jpg",
+            "image_4": "shopify://shop_images/saudi-national-day_4.jpg",
+            "image_5": "shopify://shop_images/saudi-national-day_5.jpg",
+            "image_6": "shopify://shop_images/saudi-national-day_6.jpg",
+            "image_7": "shopify://shop_images/saudi-national-day_7.jpg",
+            "image_8": "shopify://shop_images/saudi-national-day_8.jpg",
+            "image_9": "shopify://shop_images/saudi-national-day_9.jpg",
+            "image_10": "shopify://shop_images/saudi-national-day_10.jpg",
+            "image_11": "shopify://shop_images/saudi-national-day_11.jpg",
+            "image_12": "shopify://shop_images/saudi-national-day_12.jpg",
+            "image_13": "shopify://shop_images/saudi-national-day_13.jpg",
+            "image_14": "shopify://shop_images/saudi-national-day_14.jpg",
+            "image_15": "shopify://shop_images/saudi-national-day_15.jpg",
+            "image_16": "shopify://shop_images/saudi-national-day_16.jpg",
+            "image_17": "shopify://shop_images/saudi-national-day_17.jpg",
+            "image_18": "shopify://shop_images/saudi-national-day_18.jpg",
+            "image_19": "shopify://shop_images/saudi-national-day_19.jpg",
+            "image_20": "shopify://shop_images/saudi-national-day_20.jpg"
           }
         },
         "gallery_category_fKVXP8": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Baby Shower",
+            "image_1": "shopify://shop_images/babay-shower_1.jpg",
+            "image_2": "shopify://shop_images/babay-shower_2.jpg",
+            "image_3": "shopify://shop_images/babay-shower_3.jpg",
+            "image_4": "shopify://shop_images/babay-shower_4.jpg",
+            "image_5": "shopify://shop_images/babay-shower_5.jpg",
+            "image_6": "shopify://shop_images/babay-shower_6.jpg",
+            "image_7": "shopify://shop_images/babay-shower_7.jpg",
+            "image_8": "shopify://shop_images/babay-shower_8.jpg",
+            "image_9": "shopify://shop_images/babay-shower_9.jpg",
+            "image_10": "shopify://shop_images/babay-shower_10.jpg",
+            "image_11": "shopify://shop_images/babay-shower_11.jpg",
+            "image_12": "shopify://shop_images/babay-shower_12.jpg",
+            "image_13": "shopify://shop_images/babay-shower_13.jpg",
+            "image_14": "shopify://shop_images/babay-shower_14.jpg"
           }
         },
         "gallery_category_bUaHEr": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Baby Welcoming",
+            "image_1": "shopify://shop_images/baby-welcoming_1.jpg",
+            "image_2": "shopify://shop_images/baby-welcoming_2.jpg",
+            "image_3": "shopify://shop_images/baby-welcoming_3.jpg",
+            "image_4": "shopify://shop_images/baby-welcoming_4.jpg",
+            "image_5": "shopify://shop_images/baby-welcoming_5.jpg",
+            "image_6": "shopify://shop_images/baby-welcoming_6.jpg",
+            "image_7": "shopify://shop_images/baby-welcoming_7.jpg",
+            "image_8": "shopify://shop_images/baby-welcoming_8.jpg",
+            "image_9": "shopify://shop_images/baby-welcoming_9.jpg",
+            "image_10": "shopify://shop_images/baby-welcoming_10.jpg",
+            "image_11": "shopify://shop_images/baby-welcoming_11.jpg",
+            "image_12": "shopify://shop_images/baby-welcoming_12.jpg",
+            "image_13": "shopify://shop_images/baby-welcoming_13.jpg",
+            "image_14": "shopify://shop_images/baby-welcoming_14.jpg",
+            "image_15": "shopify://shop_images/baby-welcoming_15.jpg",
+            "image_16": "shopify://shop_images/baby-welcoming_16.jpg",
+            "image_17": "shopify://shop_images/baby-welcoming_17.jpg",
+            "image_18": "shopify://shop_images/baby-welcoming_18.jpg",
+            "image_19": "shopify://shop_images/baby-welcoming_19.jpg",
+            "image_20": "shopify://shop_images/baby-welcoming_20.jpg"
           }
         },
         "gallery_category_xey84D": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Back to School",
+            "image_1": "shopify://shop_images/back-to-school_1.jpg",
+            "image_2": "shopify://shop_images/back-to-school_2.jpg",
+            "image_3": "shopify://shop_images/back-to-school_3.jpg"
           }
         },
         "gallery_category_kQ9TJC": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Backdrops Without Balloons",
+            "image_1": "shopify://shop_images/backdrops-without-ballons_1.jpg",
+            "image_2": "shopify://shop_images/backdrops-without-ballons_2.jpg",
+            "image_3": "shopify://shop_images/backdrops-without-ballons_3.jpg",
+            "image_4": "shopify://shop_images/backdrops-without-ballons_4.jpg",
+            "image_5": "shopify://shop_images/backdrops-without-ballons_5.jpg",
+            "image_6": "shopify://shop_images/backdrops-without-ballons_6.jpg",
+            "image_7": "shopify://shop_images/backdrops-without-ballons_7.jpg",
+            "image_8": "shopify://shop_images/backdrops-without-ballons_8.jpg",
+            "image_9": "shopify://shop_images/backdrops-without-ballons_9.jpg",
+            "image_10": "shopify://shop_images/backdrops-without-ballons_10.jpg",
+            "image_11": "shopify://shop_images/backdrops-without-ballons_11.jpg",
+            "image_12": "shopify://shop_images/backdrops-without-ballons_12.jpg",
+            "image_13": "shopify://shop_images/backdrops-without-ballons_13.jpg",
+            "image_14": "shopify://shop_images/backdrops-without-ballons_14.jpg",
+            "image_15": "shopify://shop_images/backdrops-without-ballons_15.jpg",
+            "image_16": "shopify://shop_images/backdrops-without-ballons_16.jpg",
+            "image_17": "shopify://shop_images/backdrops-without-ballons_17.jpg",
+            "image_18": "shopify://shop_images/backdrops-without-ballons_18.jpg",
+            "image_19": "shopify://shop_images/backdrops-without-ballons_19.jpg",
+            "image_20": "shopify://shop_images/backdrops-without-ballons_20.jpg"
           }
         },
         "gallery_category_e8qYaJ": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Balloon Packages",
+            "image_1": "shopify://shop_images/baloon-packages_1.jpg",
+            "image_2": "shopify://shop_images/baloon-packages_2.jpg",
+            "image_3": "shopify://shop_images/baloon-packages_3.jpg",
+            "image_4": "shopify://shop_images/baloon-packages_4.jpg",
+            "image_5": "shopify://shop_images/baloon-packages_5.jpg",
+            "image_6": "shopify://shop_images/baloon-packages_6.jpg",
+            "image_7": "shopify://shop_images/baloon-packages_7.jpg",
+            "image_8": "shopify://shop_images/baloon-packages_8.jpg",
+            "image_9": "shopify://shop_images/baloon-packages_9.jpg",
+            "image_10": "shopify://shop_images/baloon-packages_10.jpg",
+            "image_11": "shopify://shop_images/baloon-packages_11.jpg",
+            "image_12": "shopify://shop_images/baloon-packages_12.jpg",
+            "image_13": "shopify://shop_images/baloon-packages_13.jpg",
+            "image_14": "shopify://shop_images/baloon-packages_14.jpg",
+            "image_15": "shopify://shop_images/baloon-packages_15.jpg",
+            "image_16": "shopify://shop_images/baloon-packages_16.jpg",
+            "image_17": "shopify://shop_images/baloon-packages_17.jpg",
+            "image_18": "shopify://shop_images/baloon-packages_18.jpg",
+            "image_19": "shopify://shop_images/baloon-packages_19.jpg",
+            "image_20": "shopify://shop_images/baloon-packages_20.jpg"
           }
         },
         "gallery_category_V6WVyp": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Birthday",
+            "image_1": "shopify://shop_images/birthday_1.jpg",
+            "image_2": "shopify://shop_images/birthday_2.jpg",
+            "image_3": "shopify://shop_images/birthday_3.jpg",
+            "image_4": "shopify://shop_images/birthday_4.jpg",
+            "image_5": "shopify://shop_images/birthday_5.jpg",
+            "image_6": "shopify://shop_images/birthday_6.jpg",
+            "image_7": "shopify://shop_images/birthday_7.jpg",
+            "image_8": "shopify://shop_images/birthday_8.jpg",
+            "image_9": "shopify://shop_images/birthday_9.jpg",
+            "image_10": "shopify://shop_images/birthday_10.jpg",
+            "image_11": "shopify://shop_images/birthday_11.jpg",
+            "image_12": "shopify://shop_images/birthday_12.jpg",
+            "image_13": "shopify://shop_images/birthday_13.jpg",
+            "image_14": "shopify://shop_images/birthday_14.jpg",
+            "image_15": "shopify://shop_images/birthday_15.jpg",
+            "image_16": "shopify://shop_images/birthday_16.jpg",
+            "image_17": "shopify://shop_images/birthday_17.jpg",
+            "image_18": "shopify://shop_images/birthday_18.jpg",
+            "image_19": "shopify://shop_images/birthday_19.jpg",
+            "image_20": "shopify://shop_images/birthday_20.jpg"
           }
         },
         "gallery_category_DGF3dH": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Boys' Birthday",
+            "image_1": "shopify://shop_images/boys-birthday_1.jpg",
+            "image_2": "shopify://shop_images/boys-birthday_2.jpg",
+            "image_3": "shopify://shop_images/boys-birthday_3.jpg",
+            "image_4": "shopify://shop_images/boys-birthday_4.jpg",
+            "image_5": "shopify://shop_images/boys-birthday_5.jpg",
+            "image_6": "shopify://shop_images/boys-birthday_6.jpg",
+            "image_7": "shopify://shop_images/boys-birthday_7.jpg",
+            "image_8": "shopify://shop_images/boys-birthday_8.jpg",
+            "image_9": "shopify://shop_images/boys-birthday_9.jpg",
+            "image_10": "shopify://shop_images/boys-birthday_10.jpg",
+            "image_11": "shopify://shop_images/boys-birthday_11.jpg",
+            "image_12": "shopify://shop_images/boys-birthday_12.jpg",
+            "image_13": "shopify://shop_images/boys-birthday_13.jpg",
+            "image_14": "shopify://shop_images/boys-birthday_14.jpg",
+            "image_15": "shopify://shop_images/boys-birthday_15.jpg",
+            "image_16": "shopify://shop_images/boys-birthday_16.jpg",
+            "image_17": "shopify://shop_images/boys-birthday_17.jpg",
+            "image_18": "shopify://shop_images/boys-birthday_18.jpg",
+            "image_19": "shopify://shop_images/boys-birthday_19.jpg",
+            "image_20": "shopify://shop_images/boys-birthday_20.jpg"
           }
         },
         "gallery_category_bJhz48": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Bride-to-Be",
+            "image_1": "shopify://shop_images/bride-to-be_1.jpg",
+            "image_2": "shopify://shop_images/bride-to-be_2.jpg",
+            "image_3": "shopify://shop_images/bride-to-be_3.jpg",
+            "image_4": "shopify://shop_images/bride-to-be_4.jpg"
           }
         },
         "gallery_category_DVLBMq": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Corporate Event",
+            "image_1": "shopify://shop_images/corporate-event_1.jpg",
+            "image_2": "shopify://shop_images/corporate-event_2.jpg",
+            "image_3": "shopify://shop_images/corporate-event_3.jpg",
+            "image_4": "shopify://shop_images/corporate-event_4.jpg",
+            "image_5": "shopify://shop_images/corporate-event_5.jpg",
+            "image_6": "shopify://shop_images/corporate-event_6.jpg",
+            "image_7": "shopify://shop_images/corporate-event_7.jpg",
+            "image_8": "shopify://shop_images/corporate-event_8.jpg",
+            "image_9": "shopify://shop_images/corporate-event_9.jpg",
+            "image_10": "shopify://shop_images/corporate-event_10.jpg",
+            "image_11": "shopify://shop_images/corporate-event_11.jpg",
+            "image_12": "shopify://shop_images/corporate-event_12.jpg",
+            "image_13": "shopify://shop_images/corporate-event_13.jpg",
+            "image_14": "shopify://shop_images/corporate-event_14.jpg",
+            "image_15": "shopify://shop_images/corporate-event_15.jpg",
+            "image_16": "shopify://shop_images/corporate-event_16.jpg",
+            "image_17": "shopify://shop_images/corporate-event_17.jpg",
+            "image_18": "shopify://shop_images/corporate-event_18.jpg",
+            "image_19": "shopify://shop_images/corporate-event_19.jpg",
+            "image_20": "shopify://shop_images/corporate-event_20.jpg"
           }
         },
         "gallery_category_zNWzCB": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Desert Camping",
+            "image_1": "shopify://shop_images/desert-camping_1.jpg",
+            "image_2": "shopify://shop_images/desert-camping_2.jpg",
+            "image_3": "shopify://shop_images/desert-camping_3.jpg",
+            "image_4": "shopify://shop_images/desert-camping_4.jpg",
+            "image_5": "shopify://shop_images/desert-camping_5.jpg",
+            "image_6": "shopify://shop_images/desert-camping_6.jpg",
+            "image_7": "shopify://shop_images/desert-camping_7.jpg",
+            "image_8": "shopify://shop_images/desert-camping_8.jpg",
+            "image_9": "shopify://shop_images/desert-camping_9.jpg",
+            "image_10": "shopify://shop_images/desert-camping_10.jpg",
+            "image_11": "shopify://shop_images/desert-camping_11.jpg",
+            "image_12": "shopify://shop_images/desert-camping_12.jpg",
+            "image_13": "shopify://shop_images/desert-camping_13.jpg",
+            "image_14": "shopify://shop_images/desert-camping_14.jpg",
+            "image_15": "shopify://shop_images/desert-camping_15.jpg",
+            "image_16": "shopify://shop_images/desert-camping_16.jpg",
+            "image_17": "shopify://shop_images/desert-camping_17.jpg",
+            "image_18": "shopify://shop_images/desert-camping_18.jpg",
+            "image_19": "shopify://shop_images/desert-camping_19.jpg",
+            "image_20": "shopify://shop_images/desert-camping_20.jpg"
           }
         },
         "gallery_category_yAQab8": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Eid",
+            "image_1": "shopify://shop_images/eid_1.jpg",
+            "image_2": "shopify://shop_images/eid_2.jpg",
+            "image_3": "shopify://shop_images/eid_3.jpg",
+            "image_4": "shopify://shop_images/eid_4.jpg",
+            "image_5": "shopify://shop_images/eid_5.jpg",
+            "image_6": "shopify://shop_images/eid_6.jpg",
+            "image_7": "shopify://shop_images/eid_7.jpg",
+            "image_8": "shopify://shop_images/eid_8.jpg",
+            "image_9": "shopify://shop_images/eid_9.jpg",
+            "image_10": "shopify://shop_images/eid_10.jpg",
+            "image_11": "shopify://shop_images/eid_11.jpg",
+            "image_12": "shopify://shop_images/eid_12.jpg",
+            "image_13": "shopify://shop_images/eid_13.jpg",
+            "image_14": "shopify://shop_images/eid_14.jpg",
+            "image_15": "shopify://shop_images/eid_15.jpg",
+            "image_16": "shopify://shop_images/eid_16.jpg",
+            "image_17": "shopify://shop_images/eid_17.jpg",
+            "image_18": "shopify://shop_images/eid_18.jpg",
+            "image_19": "shopify://shop_images/eid_19.jpg",
+            "image_20": "shopify://shop_images/eid_20.jpg"
           }
         },
         "gallery_category_Uj6VwB": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Eid Al-Adha",
+            "image_1": "shopify://shop_images/eid-al-adha_1.jpg",
+            "image_2": "shopify://shop_images/eid-al-adha_2.jpg",
+            "image_3": "shopify://shop_images/eid-al-adha_3.jpg",
+            "image_4": "shopify://shop_images/eid-al-adha_4.jpg",
+            "image_5": "shopify://shop_images/eid-al-adha_5.jpg",
+            "image_6": "shopify://shop_images/eid-al-adha_6.jpg",
+            "image_7": "shopify://shop_images/eid-al-adha_7.jpg",
+            "image_8": "shopify://shop_images/eid-al-adha_8.jpg",
+            "image_9": "shopify://shop_images/eid-al-adha_9.jpg",
+            "image_10": "shopify://shop_images/eid-al-adha_10.jpg",
+            "image_11": "shopify://shop_images/eid-al-adha_11.jpg",
+            "image_12": "shopify://shop_images/eid-al-adha_12.jpg",
+            "image_13": "shopify://shop_images/eid-al-adha_13.jpg",
+            "image_14": "shopify://shop_images/eid-al-adha_14.jpg",
+            "image_15": "shopify://shop_images/eid-al-adha_15.jpg",
+            "image_16": "shopify://shop_images/eid-al-adha_16.jpg",
+            "image_17": "shopify://shop_images/eid-al-adha_17.jpg",
+            "image_18": "shopify://shop_images/eid-al-adha_18.jpg",
+            "image_19": "shopify://shop_images/eid-al-adha_19.jpg",
+            "image_20": "shopify://shop_images/eid-al-adha_20.jpg"
           }
         },
         "gallery_category_VeD6Jc": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Engagement",
+            "image_1": "shopify://shop_images/engagement_1.jpg",
+            "image_2": "shopify://shop_images/engagement_2.jpg",
+            "image_3": "shopify://shop_images/engagement_3.jpg",
+            "image_4": "shopify://shop_images/engagement_4.jpg",
+            "image_5": "shopify://shop_images/engagement_5.jpg",
+            "image_6": "shopify://shop_images/engagement_6.jpg",
+            "image_7": "shopify://shop_images/engagement_7.jpg",
+            "image_8": "shopify://shop_images/engagement_8.jpg",
+            "image_9": "shopify://shop_images/engagement_9.jpg",
+            "image_10": "shopify://shop_images/engagement_10.jpg",
+            "image_11": "shopify://shop_images/engagement_11.jpg",
+            "image_12": "shopify://shop_images/engagement_12.jpg",
+            "image_13": "shopify://shop_images/engagement_13.jpg",
+            "image_14": "shopify://shop_images/engagement_14.jpg",
+            "image_15": "shopify://shop_images/engagement_15.jpg",
+            "image_16": "shopify://shop_images/engagement_16.jpg"
           }
         },
         "gallery_category_hac4QM": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Engraving",
+            "image_1": "shopify://shop_images/engraving_1.jpg",
+            "image_2": "shopify://shop_images/engraving_2.jpg",
+            "image_3": "shopify://shop_images/engraving_3.jpg",
+            "image_4": "shopify://shop_images/engraving_4.jpg",
+            "image_5": "shopify://shop_images/engraving_5.jpg",
+            "image_6": "shopify://shop_images/engraving_6.jpg",
+            "image_7": "shopify://shop_images/engraving_7.jpg",
+            "image_8": "shopify://shop_images/engraving_8.jpg",
+            "image_9": "shopify://shop_images/engraving_9.jpg",
+            "image_10": "shopify://shop_images/engraving_10.jpg",
+            "image_11": "shopify://shop_images/engraving_11.jpg",
+            "image_12": "shopify://shop_images/engraving_12.jpg",
+            "image_13": "shopify://shop_images/engraving_13.jpg",
+            "image_14": "shopify://shop_images/engraving_14.jpg",
+            "image_15": "shopify://shop_images/engraving_15.jpg",
+            "image_16": "shopify://shop_images/engraving_16.jpg",
+            "image_17": "shopify://shop_images/engraving_17.jpg",
+            "image_18": "shopify://shop_images/engraving_18.jpg",
+            "image_19": "shopify://shop_images/engraving_19.jpg",
+            "image_20": "shopify://shop_images/engraving_20.jpg"
           }
         },
         "gallery_category_JFJdPU": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Games",
+            "image_1": "shopify://shop_images/games_1.jpg",
+            "image_2": "shopify://shop_images/games_2.jpg",
+            "image_3": "shopify://shop_images/games_3.jpg",
+            "image_4": "shopify://shop_images/games_4.jpg",
+            "image_5": "shopify://shop_images/games_5.jpg",
+            "image_6": "shopify://shop_images/games_6.jpg",
+            "image_7": "shopify://shop_images/games_7.jpg",
+            "image_8": "shopify://shop_images/games_8.jpg",
+            "image_9": "shopify://shop_images/games_9.jpg"
           }
         },
         "gallery_category_XEYdmP": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Gifts",
+            "image_1": "shopify://shop_images/gifts_1.jpg",
+            "image_2": "shopify://shop_images/gifts_2.jpg",
+            "image_3": "shopify://shop_images/gifts_3.jpg",
+            "image_4": "shopify://shop_images/gifts_4.jpg",
+            "image_5": "shopify://shop_images/gifts_5.jpg",
+            "image_6": "shopify://shop_images/gifts_6.jpg",
+            "image_7": "shopify://shop_images/gifts_7.jpg",
+            "image_8": "shopify://shop_images/gifts_8.jpg",
+            "image_9": "shopify://shop_images/gifts_9.jpg",
+            "image_10": "shopify://shop_images/gifts_10.jpg",
+            "image_11": "shopify://shop_images/gifts_11.jpg",
+            "image_12": "shopify://shop_images/gifts_12.jpg",
+            "image_13": "shopify://shop_images/gifts_13.jpg",
+            "image_14": "shopify://shop_images/gifts_14.jpg",
+            "image_15": "shopify://shop_images/gifts_15.jpg",
+            "image_16": "shopify://shop_images/gifts_16.jpg",
+            "image_17": "shopify://shop_images/gifts_17.jpg",
+            "image_18": "shopify://shop_images/gifts_18.jpg",
+            "image_19": "shopify://shop_images/gifts_19.jpg",
+            "image_20": "shopify://shop_images/gifts_20.jpg"
           }
         },
         "gallery_category_g8xkM4": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Graduation Gifts",
+            "image_1": "shopify://shop_images/gifts-graduation_1.jpg",
+            "image_2": "shopify://shop_images/gifts-graduation_2.jpg",
+            "image_3": "shopify://shop_images/gifts-graduation_3.jpg",
+            "image_4": "shopify://shop_images/gifts-graduation_4.jpg",
+            "image_5": "shopify://shop_images/gifts-graduation_5.jpg",
+            "image_6": "shopify://shop_images/gifts-graduation_6.jpg",
+            "image_7": "shopify://shop_images/gifts-graduation_7.jpg",
+            "image_8": "shopify://shop_images/gifts-graduation_8.jpg",
+            "image_9": "shopify://shop_images/gifts-graduation_9.jpg",
+            "image_10": "shopify://shop_images/gifts-graduation_10.jpg",
+            "image_11": "shopify://shop_images/gifts-graduation_11.jpg"
           }
         },
         "gallery_category_TJRkEx": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Girls' Birthday",
+            "image_1": "shopify://shop_images/girls-birthday_1.jpg",
+            "image_2": "shopify://shop_images/girls-birthday_2.jpg",
+            "image_3": "shopify://shop_images/girls-birthday_3.jpg",
+            "image_4": "shopify://shop_images/girls-birthday_4.jpg",
+            "image_5": "shopify://shop_images/girls-birthday_5.jpg",
+            "image_6": "shopify://shop_images/girls-birthday_6.jpg",
+            "image_7": "shopify://shop_images/girls-birthday_7.jpg",
+            "image_8": "shopify://shop_images/girls-birthday_8.jpg",
+            "image_9": "shopify://shop_images/girls-birthday_9.jpg",
+            "image_10": "shopify://shop_images/girls-birthday_10.jpg",
+            "image_11": "shopify://shop_images/girls-birthday_11.jpg",
+            "image_12": "shopify://shop_images/girls-birthday_12.jpg",
+            "image_13": "shopify://shop_images/girls-birthday_13.jpg",
+            "image_14": "shopify://shop_images/girls-birthday_14.jpg",
+            "image_15": "shopify://shop_images/girls-birthday_15.jpg",
+            "image_16": "shopify://shop_images/girls-birthday_16.jpg",
+            "image_17": "shopify://shop_images/girls-birthday_17.jpg",
+            "image_18": "shopify://shop_images/girls-birthday_18.jpg",
+            "image_19": "shopify://shop_images/girls-birthday_19.jpg",
+            "image_20": "shopify://shop_images/girls-birthday_20.jpg"
           }
         },
         "gallery_category_6py9dw": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Graduation",
+            "image_1": "shopify://shop_images/graduation_1.jpg",
+            "image_2": "shopify://shop_images/graduation_2.jpg",
+            "image_3": "shopify://shop_images/graduation_3.jpg",
+            "image_4": "shopify://shop_images/graduation_4.jpg",
+            "image_5": "shopify://shop_images/graduation_5.jpg",
+            "image_6": "shopify://shop_images/graduation_6.jpg",
+            "image_7": "shopify://shop_images/graduation_7.jpg",
+            "image_8": "shopify://shop_images/graduation_8.jpg",
+            "image_9": "shopify://shop_images/graduation_9.jpg",
+            "image_10": "shopify://shop_images/graduation_10.jpg",
+            "image_11": "shopify://shop_images/graduation_11.jpg",
+            "image_12": "shopify://shop_images/graduation_12.jpg",
+            "image_13": "shopify://shop_images/graduation_13.jpg",
+            "image_14": "shopify://shop_images/graduation_14.jpg",
+            "image_15": "shopify://shop_images/graduation_15.jpg",
+            "image_16": "shopify://shop_images/graduation_16.jpg",
+            "image_17": "shopify://shop_images/graduation_17.jpg",
+            "image_18": "shopify://shop_images/graduation_18.jpg",
+            "image_19": "shopify://shop_images/graduation_19.jpg",
+            "image_20": "shopify://shop_images/graduation_20.jpg"
           }
         },
         "gallery_category_G3QnC8": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Halloween",
+            "image_1": "shopify://shop_images/halloween_1.jpg",
+            "image_2": "shopify://shop_images/halloween_2.jpg",
+            "image_3": "shopify://shop_images/halloween_3.jpg",
+            "image_4": "shopify://shop_images/halloween_4.jpg",
+            "image_5": "shopify://shop_images/halloween_5.jpg",
+            "image_6": "shopify://shop_images/halloween_6.jpg",
+            "image_7": "shopify://shop_images/halloween_7.jpg",
+            "image_8": "shopify://shop_images/halloween_8.jpg",
+            "image_9": "shopify://shop_images/halloween_9.jpg",
+            "image_10": "shopify://shop_images/halloween_10.jpg",
+            "image_11": "shopify://shop_images/halloween_11.jpg",
+            "image_12": "shopify://shop_images/halloween_12.jpg",
+            "image_13": "shopify://shop_images/halloween_13.jpg",
+            "image_14": "shopify://shop_images/halloween_14.jpg",
+            "image_15": "shopify://shop_images/halloween_15.jpg",
+            "image_16": "shopify://shop_images/halloween_16.jpg",
+            "image_17": "shopify://shop_images/halloween_17.jpg",
+            "image_18": "shopify://shop_images/halloween_18.jpg",
+            "image_19": "shopify://shop_images/halloween_19.jpg",
+            "image_20": "shopify://shop_images/halloween_20.jpg"
           }
         },
         "gallery_category_6MfqYe": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "New Year",
+            "image_1": "shopify://shop_images/new-year_1.jpg",
+            "image_2": "shopify://shop_images/new-year_2.jpg",
+            "image_3": "shopify://shop_images/new-year_3.jpg",
+            "image_4": "shopify://shop_images/new-year_4.jpg"
           }
         },
         "gallery_category_QjcfBH": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Party Bags",
+            "image_1": "shopify://shop_images/party-bags_1.jpg",
+            "image_2": "shopify://shop_images/party-bags_2.jpg",
+            "image_3": "shopify://shop_images/party-bags_3.jpg",
+            "image_4": "shopify://shop_images/party-bags_4.jpg",
+            "image_5": "shopify://shop_images/party-bags_5.jpg",
+            "image_6": "shopify://shop_images/party-bags_6.jpg",
+            "image_7": "shopify://shop_images/party-bags_7.jpg",
+            "image_8": "shopify://shop_images/party-bags_8.jpg",
+            "image_9": "shopify://shop_images/party-bags_9.jpg",
+            "image_10": "shopify://shop_images/party-bags_10.jpg",
+            "image_11": "shopify://shop_images/party-bags_11.jpg",
+            "image_12": "shopify://shop_images/party-bags_12.jpg",
+            "image_13": "shopify://shop_images/party-bags_13.jpg",
+            "image_14": "shopify://shop_images/party-bags_14.jpg",
+            "image_15": "shopify://shop_images/party-bags_15.jpg",
+            "image_16": "shopify://shop_images/party-bags_16.jpg",
+            "image_17": "shopify://shop_images/party-bags_17.jpg",
+            "image_18": "shopify://shop_images/party-bags_18.jpg",
+            "image_19": "shopify://shop_images/party-bags_19.jpg",
+            "image_20": "shopify://shop_images/party-bags_20.jpg"
           }
         },
         "gallery_category_9GyNdi": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Production",
+            "image_1": "shopify://shop_images/production_1.jpg",
+            "image_2": "shopify://shop_images/production_2.jpg",
+            "image_3": "shopify://shop_images/production_3.jpg"
           }
         },
         "gallery_category_g9bHhN": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Ramadan",
+            "image_1": "shopify://shop_images/ramadan_1.jpg",
+            "image_2": "shopify://shop_images/ramadan_2.jpg",
+            "image_3": "shopify://shop_images/ramadan_3.jpg",
+            "image_4": "shopify://shop_images/ramadan_4.jpg",
+            "image_5": "shopify://shop_images/ramadan_5.jpg",
+            "image_6": "shopify://shop_images/ramadan_6.jpg",
+            "image_7": "shopify://shop_images/ramadan_7.jpg",
+            "image_8": "shopify://shop_images/ramadan_8.jpg",
+            "image_9": "shopify://shop_images/ramadan_9.jpg",
+            "image_10": "shopify://shop_images/ramadan_10.jpg",
+            "image_11": "shopify://shop_images/ramadan_11.jpg",
+            "image_12": "shopify://shop_images/ramadan_12.jpg",
+            "image_13": "shopify://shop_images/ramadan_13.jpg",
+            "image_14": "shopify://shop_images/ramadan_14.jpg",
+            "image_15": "shopify://shop_images/ramadan_15.jpg",
+            "image_16": "shopify://shop_images/ramadan_16.jpg",
+            "image_17": "shopify://shop_images/ramadan_17.jpg",
+            "image_18": "shopify://shop_images/ramadan_18.jpg",
+            "image_19": "shopify://shop_images/ramadan_19.jpg",
+            "image_20": "shopify://shop_images/ramadan_20.jpg"
           }
         },
         "gallery_category_kramkb": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Saudi Founding Day",
+            "image_1": "shopify://shop_images/saudi-founding-day_1.jpg",
+            "image_2": "shopify://shop_images/saudi-founding-day_2.jpg",
+            "image_3": "shopify://shop_images/saudi-founding-day_3.jpg",
+            "image_4": "shopify://shop_images/saudi-founding-day_4.jpg",
+            "image_5": "shopify://shop_images/saudi-founding-day_5.jpg",
+            "image_6": "shopify://shop_images/saudi-founding-day_6.jpg",
+            "image_7": "shopify://shop_images/saudi-founding-day_7.jpg",
+            "image_8": "shopify://shop_images/saudi-founding-day_8.jpg",
+            "image_9": "shopify://shop_images/saudi-founding-day_9.jpg",
+            "image_10": "shopify://shop_images/saudi-founding-day_10.jpg",
+            "image_11": "shopify://shop_images/saudi-founding-day_11.jpg",
+            "image_12": "shopify://shop_images/saudi-founding-day_12.jpg",
+            "image_13": "shopify://shop_images/saudi-founding-day_13.jpg",
+            "image_14": "shopify://shop_images/saudi-founding-day_14.jpg",
+            "image_15": "shopify://shop_images/saudi-founding-day_15.jpg",
+            "image_16": "shopify://shop_images/saudi-founding-day_16.jpg",
+            "image_17": "shopify://shop_images/saudi-founding-day_17.jpg",
+            "image_18": "shopify://shop_images/saudi-founding-day_18.jpg",
+            "image_19": "shopify://shop_images/saudi-founding-day_19.jpg",
+            "image_20": "shopify://shop_images/saudi-founding-day_20.jpg"
           }
         }
       },
