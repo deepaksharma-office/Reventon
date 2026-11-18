@@ -63,7 +63,8 @@
         "gallery_category_6Gxtx6": {
           "type": "gallery_category",
           "settings": {
-            "label": "Event category"
+            "label": "Saudi National Day",
+            "image_1": "shopify://shop_images/saudi-national-day_1.jpg"
           }
         },
         "gallery_category_fKVXP8": {
