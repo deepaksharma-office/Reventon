@@ -253,7 +253,7 @@
         "desktop_columns": 4,
         "mobile_columns": 2,
         "grid_gap": 16,
-        "image_ratio": "auto",
+        "image_ratio": "square",
         "card_radius": 16,
         "background_color": "#F8F8F6",
         "text_color": "#161616",
